@@ -1,0 +1,15 @@
+node_modules
+.env
+public/img/*
+public/vid/*
+public/real/*
+public/broll/*
+public/sfx/*
+!public/**/.gitkeep
+public/*.wav
+public/*.mp4
+whisper.cpp/
+out/
+*.log
+img_index*.json
+vid_index*.json

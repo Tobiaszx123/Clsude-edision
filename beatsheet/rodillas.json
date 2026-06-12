@@ -1,0 +1,41 @@
+{
+  "video": "rodillas",
+  "avatar": "timoteo_3s.mp4",
+  "_nota": "SECCION 1 (apertura). v2: sin temblor, +zoom en las tomas, +tarjetas flotantes (floatcard) en títulos/explicaciones, +variedad. Reusa las imágenes ya generadas (no genera nuevas).",
+  "beats": [
+    { "id": "h1", "start": 0.0, "dur": 8.0, "kind": "impact", "image": "img/hook_masaje.png", "impact": "7 NOCHES", "impactAccent": "good", "hitAt": 1.4, "boom": 1,
+      "gen": { "type": "image", "name": "hook_masaje", "prompt": "Realistic handheld 16:9 documentary close-up of an older man's weathered hands rubbing dark herbal oil onto his bare knee at night, a small dark amber glass jar on the wooden nightstand beside, warm dim bedside lamp light. Natural soft light, muted earthy colors, realistic imperfect handheld angle, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, oversaturated colors, cartoon, CGI, 3D render, distorted hands, extra fingers, blurry, watermark, logo, text overlay." } },
+
+    { "id": "b02", "start": 8.0, "dur": 6.0, "kind": "floatcard", "image": "img/consulta.png", "kicker": "20 años de consultas", "title": "Lo que ningún reumatólogo me dijo", "side": "left", "hue": "cold", "accent": "amber" },
+
+    { "id": "b03", "start": 14.0, "dur": 7.0, "kind": "headline", "tokens": [ { "t": "El dolor de rodillas " }, { "t": "NO es inevitable", "danger": true } ], "eyebrow": "Lo primero que tenés que saber", "bg": "image", "image": "img/rodilla_dolor.png" },
+
+    { "id": "b04", "start": 21.0, "dur": 7.0, "kind": "chips", "bg": "image", "image": "img/rodilla_inflamada.png", "title": "La causa real", "chips": [ "Inflamación", "Mala circulación", "Tejido sin nutrir" ], "hue": "red" },
+
+    { "id": "b05", "start": 28.0, "dur": 8.0, "kind": "raw", "src": "img/timoteo_rodilla.png", "kicker": "A los 48 empezó", "zoom": [1.06, 1.24] },
+
+    { "id": "b06", "start": 36.0, "dur": 4.0, "kind": "raw", "src": "img/escaleras.png", "zoom": [1.08, 1.30] },
+
+    { "id": "b07", "start": 40.0, "dur": 4.0, "kind": "raw", "src": "img/silla.png", "zoom": [1.22, 1.05] },
+
+    { "id": "b08", "start": 44.0, "dur": 6.0, "kind": "raw", "src": "img/primeros_pasos.png", "kicker": "Los primeros pasos del día", "zoom": [1.05, 1.20] },
+
+    { "id": "b09", "start": 50.0, "dur": 8.0, "kind": "floatcard", "image": "img/pastillas.png", "kicker": "El médico", "title": "«Antiinflamatorios y reposo»", "body": "Diclofenaco. Funcionaba mientras lo tomaba.", "side": "right", "hue": "cold", "accent": "danger" },
+
+    { "id": "b10", "start": 58.0, "dur": 7.0, "kind": "raw", "src": "img/gastritis.png", "kicker": "Ahora también el estómago", "zoom": [1.06, 1.22] },
+
+    { "id": "b11", "start": 65.0, "dur": 8.0, "kind": "raw", "src": "vid/huerta_viento.mp4", "hue": "amber", "kicker": "El vecino de la huerta" },
+
+    { "id": "b12", "start": 73.0, "dur": 7.0, "kind": "raw", "src": "img/aurelio_malezas.png", "zoom": [1.20, 1.04] },
+
+    { "id": "b13", "start": 80.0, "dur": 7.0, "kind": "raw", "src": "img/charla_cerca.png", "zoom": [1.05, 1.20] },
+
+    { "id": "b14", "start": 87.0, "dur": 7.0, "kind": "raw", "src": "vid/frasco_mov.mp4", "hue": "amber", "kicker": "Un frasco de vidrio oscuro" },
+
+    { "id": "q1", "start": 94.0, "dur": 6.0, "kind": "quote", "image": "img/frasco_noche.png", "eyebrow": "Me dijo", "text": "Frótate esto. *Siete noches*.", "accent": "good", "hue": "cold", "fontSize": 98 },
+
+    { "id": "q2", "start": 100.0, "dur": 9.0, "kind": "quote", "image": "img/sangre_rodilla.png", "eyebrow": "Y algo que no olvidé", "text": "El problema no está en la rodilla. Está en la *sangre que no llega*.", "accent": "danger", "hue": "cold", "fontSize": 78 },
+
+    { "id": "b15", "start": 109.0, "dur": 9.0, "kind": "floatcard", "image": "img/ingredientes_mesa.png", "kicker": "Hoy te lo enseño", "title": "El preparado, la ciencia y la rutina de 7 noches", "body": "Todo lo que cambia ese dolor que llevás meses cargando.", "side": "left", "hue": "amber", "accent": "good" }
+  ]
+}
