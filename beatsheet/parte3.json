@@ -1,0 +1,717 @@
+{
+  "video": "parte3",
+  "avatar": "parte3_opt.mp4",
+  "_nota": "Parte 3 (~6:28): el chupón fuerte (excepción), poda del indeterminado (1/2/3 guías), herramientas/tijera limpia, poda de mañana, hojas de abajo y el despunte final. Densa, reusa imágenes de partes 1-2.",
+  "beats": [
+    {
+      "id": "p3_01",
+      "start": 0.24,
+      "dur": 2.94,
+      "kind": "quote",
+      "image": "img/chupon_axila.png",
+      "anchor": "una sola excepción",
+      "eyebrow": "Una excepción que vale oro",
+      "text": "Hay *una* sola excepción.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 92
+    },
+    {
+      "id": "p3_02",
+      "start": 3.18,
+      "dur": 4.3,
+      "kind": "raw",
+      "src": "img/universidad_estudio.png",
+      "anchor": "los agrónomos lo estudiaron",
+      "hue": "cold",
+      "kicker": "Lo estudiaron los agrónomos",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        50,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "universidad_estudio",
+        "prompt": "Realistic handheld 16:9 documentary photo of an agronomist in a university research greenhouse examining tomato plants with a clipboard, lab coat, rows of plants, neutral daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_03",
+      "start": 7.48,
+      "dur": 5.28,
+      "kind": "annotated",
+      "image": "img/chupon_fuerte.png",
+      "anchor": "justo abajo del primer racimo",
+      "eyebrow": "El chupón fuerte",
+      "caption": "El de justo debajo del 1er racimo",
+      "hue": "cold",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 50,
+          "y": 50,
+          "fromX": 74,
+          "fromY": 28,
+          "label": "Dejá este"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "chupon_fuerte",
+        "prompt": "Realistic handheld 16:9 documentary macro of a strong vigorous sucker shoot growing just below the first flower cluster on a tomato plant main stem, thicker than the others, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_04",
+      "start": 12.76,
+      "dur": 5.1,
+      "kind": "quote",
+      "image": "img/chupon_fuerte.png",
+      "anchor": "conviene dejarlo",
+      "eyebrow": "Ese sí",
+      "text": "Se vuelve una rama *cargada de fruta*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80
+    },
+    {
+      "id": "p3_05",
+      "start": 17.86,
+      "dur": 6.48,
+      "kind": "process",
+      "anchor": "quita todos los de abajo",
+      "eyebrow": "Determinado: el resumen",
+      "title": "Quitá abajo, dejá el fuerte",
+      "accent": "amber",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Quitá los 6-7 de abajo",
+          "desc": "Debajo del 1er racimo",
+          "image": "img/quitar_brotes.png"
+        },
+        {
+          "title": "Dejá el fuerte",
+          "desc": "El de justo debajo del racimo",
+          "image": "img/chupon_fuerte.png"
+        },
+        {
+          "title": "El resto, libre",
+          "desc": "Dejalo crecer como quiera",
+          "image": "img/determinada_planta.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_06",
+      "start": 24.34,
+      "dur": 14.92,
+      "kind": "raw",
+      "src": "img/cosecha_sana.png",
+      "anchor": "empujón en la cosecha",
+      "hue": "cold",
+      "kicker": "Un buen empujón en la cosecha",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "p3_07",
+      "start": 39.26,
+      "dur": 3.6,
+      "kind": "quote",
+      "image": "img/determinada_planta.png",
+      "anchor": "una poda ligera",
+      "eyebrow": "Determinado",
+      "text": "Poda *ligera*, solo abajo. Es suficiente.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 80
+    },
+    {
+      "id": "p3_08",
+      "start": 42.86,
+      "dur": 9.92,
+      "kind": "raw",
+      "src": "img/indeterminada_planta.png",
+      "anchor": "ahora vamos al indeterminado",
+      "hue": "cold",
+      "kicker": "El indeterminado: el trabajo grande",
+      "zoom": [
+        1.04,
+        1.18
+      ],
+      "pan": [
+        0,
+        -60
+      ]
+    },
+    {
+      "id": "p3_09",
+      "start": 52.78,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "img/selva_jungla.png",
+      "anchor": "se vuelve una selva",
+      "hue": "red",
+      "kicker": "Abandonada se vuelve una selva",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        50,
+        20
+      ],
+      "gen": {
+        "type": "image",
+        "name": "selva_jungla",
+        "prompt": "Realistic handheld 16:9 documentary photo of a massively overgrown unpruned indeterminate tomato plant two and a half meters tall, a wild jungle of tangled vines and dense foliage, dark humid center, sprawling out of control in a backyard garden, soft overcast daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_10",
+      "start": 57.28,
+      "dur": 4.02,
+      "kind": "stat",
+      "anchor": "200 chupones",
+      "value": 200,
+      "suffix": " chupones",
+      "eyebrow": "La selva",
+      "label": "cada uno quiere ser su propia planta",
+      "accent": "danger",
+      "hue": "red"
+    },
+    {
+      "id": "p3_11",
+      "start": 61.3,
+      "dur": 8.02,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/marana_centro.png",
+      "anchor": "el centro oscuro",
+      "title": "Condiciones para la enfermedad",
+      "chips": [
+        "Centro oscuro",
+        "Húmedo",
+        "Sin aire"
+      ],
+      "hue": "red"
+    },
+    {
+      "id": "p3_12",
+      "start": 69.32,
+      "dur": 6.92,
+      "kind": "quote",
+      "image": "img/tomate_pocos.png",
+      "anchor": "repartió su fuerza",
+      "eyebrow": "Y la fruta",
+      "text": "Chica: repartió su fuerza en *demasiados* puntos.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 74
+    },
+    {
+      "id": "p3_13",
+      "start": 76.24,
+      "dur": 8.16,
+      "kind": "diagram",
+      "anchor": "cuántos tallos principales",
+      "eyebrow": "El principio: elegí cuántos tallos",
+      "hue": "amber",
+      "accent": "amber",
+      "slides": [
+        {
+          "image": "img/dg_guias.png",
+          "title": "1, 2 o 3 guías",
+          "gen": {
+            "type": "image",
+            "name": "dg_guias",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Dejá COMPLETAMENTE LIBRE la esquina superior derecha para un avatar. Tres ilustraciones simples de plantas de tomate lado a lado comparando sistemas de conducción: '1 GUÍA' (un solo tallo, fruta más grande), '2 GUÍAS' (dos tallos, equilibrio, marcado como el recomendado), '3 GUÍAS' (tres tallos, más cantidad fruta más chica). Número grande, título breve, texto mínimo en español. Se entiende en 1 segundo. Estética premium editorial, lámina botánica artesanal, clara."
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3_14",
+      "start": 84.4,
+      "dur": 10.92,
+      "kind": "raw",
+      "src": "img/una_guia.png",
+      "anchor": "una sola guía",
+      "hue": "cold",
+      "kicker": "1 guía: un solo tallo",
+      "zoom": [
+        1.06,
+        1.18
+      ],
+      "pan": [
+        0,
+        -50
+      ],
+      "gen": {
+        "type": "image",
+        "name": "una_guia",
+        "prompt": "Realistic handheld 16:9 documentary photo of a tomato plant pruned to a single main stem tied vertically to a tall stake, clean and tidy, all suckers removed, greenhouse style, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_15",
+      "start": 95.32,
+      "dur": 12.58,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/una_guia.png",
+      "anchor": "los tomates individuales más grandes",
+      "title": "1 guía",
+      "chips": [
+        "Fruta más grande",
+        "Fácil de cuidar",
+        "Cosecha total menor"
+      ],
+      "hue": "amber"
+    },
+    {
+      "id": "p3_16",
+      "start": 107.9,
+      "dur": 21.46,
+      "kind": "raw",
+      "src": "img/dos_guias.png",
+      "anchor": "dos guías",
+      "hue": "cold",
+      "kicker": "2 guías: dos tallos (lo recomendado)",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "dos_guias",
+        "prompt": "Realistic handheld 16:9 documentary photo of a tomato plant pruned to two main stems tied to stakes forming a V shape, tidy, in a backyard garden, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_17",
+      "start": 129.36,
+      "dur": 2.2,
+      "kind": "quote",
+      "image": "img/dos_guias.png",
+      "anchor": "casi todos los años",
+      "eyebrow": "Lo que la mayoría hace",
+      "text": "Es lo que *yo* hago casi todos los años.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80
+    },
+    {
+      "id": "p3_18",
+      "start": 131.12,
+      "dur": 11.64,
+      "kind": "raw",
+      "src": "img/tres_guias.png",
+      "anchor": "tres guías",
+      "hue": "amber",
+      "kicker": "3 guías: para jaulas y espacio",
+      "zoom": [
+        1.06,
+        1.2
+      ],
+      "pan": [
+        50,
+        20
+      ],
+      "gen": {
+        "type": "image",
+        "name": "tres_guias",
+        "prompt": "Realistic handheld 16:9 documentary photo of a large tomato plant grown with three main stems in a strong wire cage in a spacious backyard garden, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_19",
+      "start": 142.76,
+      "dur": 4.44,
+      "kind": "quote",
+      "image": "img/dos_guias.png",
+      "anchor": "elige tu número",
+      "eyebrow": "La regla",
+      "text": "Elegí tu número y *mantenete* en él.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 84
+    },
+    {
+      "id": "p3_20",
+      "start": 147.2,
+      "dur": 21.62,
+      "kind": "raw",
+      "src": "img/caminar_hilera.png",
+      "anchor": "caminas tu hilera",
+      "hue": "cold",
+      "kicker": "Una vez por semana",
+      "zoom": [
+        1.04,
+        1.16
+      ],
+      "pan": [
+        60,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "caminar_hilera",
+        "prompt": "Realistic handheld 16:9 documentary photo of an older gardener walking down a row of staked tomato plants in his garden inspecting them, morning light, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_21",
+      "start": 168.82,
+      "dur": 11.2,
+      "kind": "raw",
+      "src": "vid/quitar_brotes.mp4",
+      "anchor": "los quitas con los dedos",
+      "hue": "amber",
+      "kicker": "Chiquitos: con los dedos",
+      "zoom": [
+        1.1,
+        1.24
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "p3_22",
+      "start": 180.02,
+      "dur": 11.94,
+      "kind": "raw",
+      "src": "img/tijeras_planta.png",
+      "anchor": "se cortan con tijera limpia",
+      "hue": "amber",
+      "kicker": "Grandes y leñosos: tijera",
+      "zoom": [
+        1.08,
+        1.22
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "p3_23",
+      "start": 191.96,
+      "dur": 4.76,
+      "kind": "raw",
+      "src": "img/limpiar_tijera.png",
+      "anchor": "alcohol o en vinagre",
+      "hue": "cold",
+      "kicker": "Limpiá entre planta y planta",
+      "zoom": [
+        1.06,
+        1.2
+      ],
+      "pan": [
+        40,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "limpiar_tijera",
+        "prompt": "Realistic handheld 16:9 documentary close-up of weathered hands wiping the blades of small pruning shears with a cloth soaked in alcohol, in a garden, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_24",
+      "start": 196.72,
+      "dur": 4.54,
+      "kind": "impact",
+      "image": "img/limpiar_tijera.png",
+      "anchor": "el error número uno",
+      "setup": "El error número uno que veo",
+      "impact": "TIJERA SUCIA",
+      "impactAccent": "danger",
+      "hitAt": 3,
+      "boom": 1
+    },
+    {
+      "id": "p3_25",
+      "start": 201.26,
+      "dur": 9.7,
+      "kind": "annotated",
+      "image": "img/manchas_hoja.png",
+      "anchor": "de una planta a otra",
+      "eyebrow": "Cómo se contagia",
+      "caption": "La enfermedad viaja en la tijera",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 50,
+          "w": 22,
+          "h": 22,
+          "label": "Contagio"
+        }
+      ]
+    },
+    {
+      "id": "p3_26",
+      "start": 210.96,
+      "dur": 2.96,
+      "kind": "quote",
+      "image": "img/limpiar_tijera.png",
+      "anchor": "te ahorra la huerta",
+      "eyebrow": "Un trapito con alcohol",
+      "text": "Eso es todo. Te ahorra la *huerta entera*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 82
+    },
+    {
+      "id": "p3_27",
+      "start": 213.92,
+      "dur": 14.62,
+      "kind": "raw",
+      "src": "img/poda_manana.png",
+      "anchor": "en un día seco y soleado",
+      "hue": "amber",
+      "kicker": "Podá de mañana, día seco",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        50,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "poda_manana",
+        "prompt": "Realistic handheld 16:9 documentary photo of weathered hands pruning a tomato plant in bright early morning sunlight with dew, clear dry day, garden, muted warm colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_28",
+      "start": 228.54,
+      "dur": 6.98,
+      "kind": "quote",
+      "image": "img/manchas_hoja.png",
+      "anchor": "repartir el tizón",
+      "eyebrow": "Nunca con humedad",
+      "text": "Podar mojado = *repartir el tizón* por toda la huerta.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 70
+    },
+    {
+      "id": "p3_29",
+      "start": 235.52,
+      "dur": 5.38,
+      "kind": "raw",
+      "src": "vid/quitar_hojas.mp4",
+      "anchor": "quítale las hojas de abajo",
+      "hue": "cold",
+      "kicker": "Quitá las hojas de abajo",
+      "zoom": [
+        1.1,
+        1.22
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "p3_30",
+      "start": 240.9,
+      "dur": 10.44,
+      "kind": "raw",
+      "src": "img/quitar_hojas.png",
+      "anchor": "tocando el suelo",
+      "hue": "cold",
+      "kicker": "Las que tocan el suelo",
+      "zoom": [
+        1.06,
+        1.18
+      ],
+      "pan": [
+        0,
+        40
+      ]
+    },
+    {
+      "id": "p3_31",
+      "start": 251.34,
+      "dur": 3.66,
+      "kind": "raw",
+      "src": "vid/arbusto_verde.mp4",
+      "anchor": "respira mejor con la falda",
+      "hue": "cold",
+      "kicker": "La falda despejada",
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        -40
+      ]
+    },
+    {
+      "id": "p3_32",
+      "start": 255,
+      "dur": 35.08,
+      "kind": "raw",
+      "src": "vid/corte_final.mp4",
+      "anchor": "el corte final",
+      "hue": "amber",
+      "kicker": "El despunte: el corte final",
+      "zoom": [
+        1.06,
+        1.18
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "p3_33",
+      "start": 290.08,
+      "dur": 25.6,
+      "kind": "raw",
+      "src": "img/helada_planta.png",
+      "anchor": "la primera helada está",
+      "hue": "cold",
+      "kicker": "La helada se acerca",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        0,
+        40
+      ]
+    },
+    {
+      "id": "p3_34",
+      "start": 315.68,
+      "dur": 11.48,
+      "kind": "quote",
+      "image": "img/marana_centro.png",
+      "anchor": "fuerza robada",
+      "eyebrow": "El crecimiento tardío",
+      "text": "Es fuerza *robada* a los tomates que ya tenés.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 74
+    },
+    {
+      "id": "p3_35",
+      "start": 327.16,
+      "dur": 4.68,
+      "kind": "raw",
+      "src": "vid/cortar_punta.mp4",
+      "anchor": "se le llama despuntar",
+      "hue": "amber",
+      "kicker": "Cortarle la punta = despuntar",
+      "zoom": [
+        1.08,
+        1.24
+      ],
+      "pan": [
+        0,
+        -60
+      ]
+    },
+    {
+      "id": "p3_36",
+      "start": 331.84,
+      "dur": 19.79,
+      "kind": "stat",
+      "anchor": "tres o cuatro semanas antes",
+      "value": 4,
+      "suffix": " semanas",
+      "eyebrow": "El timing",
+      "label": "antes de la primera helada",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "p3_37",
+      "start": 351.63,
+      "dur": 16,
+      "kind": "quote",
+      "image": "img/corte_final.png",
+      "anchor": "la temporada se acabó",
+      "eyebrow": "Le decís a la planta",
+      "text": "La temporada se acabó. *Madurá* lo que tenés.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 78
+    },
+    {
+      "id": "p3_38",
+      "start": 367.63,
+      "dur": 11.78,
+      "kind": "raw",
+      "src": "img/tomate_madurando.png",
+      "anchor": "rosados y después rojos",
+      "hue": "cold",
+      "kicker": "Se ponen rosados y rojos",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        50,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "tomate_madurando",
+        "prompt": "Realistic handheld 16:9 documentary macro of a cluster of tomatoes on the vine in various stages of ripening from green to pink to red, late season light, muted warm colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "p3_39",
+      "start": 379.41,
+      "dur": 6.96,
+      "kind": "stat",
+      "anchor": "20 o 30 tomates extra",
+      "value": 30,
+      "suffix": " extra",
+      "eyebrow": "El despunte rinde",
+      "label": "tomates que se habrían perdido",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "p3_40",
+      "start": 386.37,
+      "dur": 2.2,
+      "kind": "quote",
+      "image": "img/cosecha_sana.png",
+      "anchor": "vale mucho más de lo que creerías",
+      "eyebrow": "El corte final",
+      "text": "Fuerte, tardío y *vale oro*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 88
+    }
+  ]
+}
