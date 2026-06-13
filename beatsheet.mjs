@@ -77,7 +77,9 @@ if (!fs.existsSync(bsArg)) {
 }
 const bs = JSON.parse(fs.readFileSync(bsArg, "utf8"));
 const VIDEO = bs.video || path.basename(bsArg).replace(/\.json$/, "");
-const AVATAR = bs.avatar || "avatar.mp4";
+// avatar OPCIONAL: si el beatsheet no trae avatar (video b-roll sin presentador),
+// los diagramas se emiten SIN avatar → AvatarPresentation muestra su placeholder neutro.
+const AVATAR = bs.avatar || "";
 const beats = bs.beats || [];
 
 // ── 1+2) extraer assets a generar (dedup por nombre) ─────────────────────────
@@ -195,7 +197,7 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
-        ` avatar=${j(AVATAR)} avatarFrom={sec(${b.start})}` +
+        (AVATAR ? ` avatar=${j(AVATAR)} avatarFrom={sec(${b.start})}` : ``) +
         ` slides={${j(cleanSlides(b.slides))}} />`
       );
     case "quote":
@@ -380,7 +382,7 @@ for (const b of beats) {
 }
 const palTok = { A: "COLORS.accent", G: "COLORS.good", D: "COLORS.danger", B: "COLORS.cold" };
 const themeImports = [];
-if (kinds.has("diagram")) themeImports.push("sec");
+if (kinds.has("diagram") && AVATAR) themeImports.push("sec");
 if (usedPal.size) themeImports.push("COLORS");
 const imports = [`import { ReactNode } from "react";`];
 if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
