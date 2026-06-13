@@ -388,7 +388,7 @@
       "setup": "Una verdad incómoda",
       "impact": "TE CONVIENE PODAR",
       "impactAccent": "danger",
-      "hitAt": 3,
+      "hitAt": 1.2199999999999998,
       "boom": 1,
       "gen": {
         "type": "image",
@@ -450,7 +450,7 @@
       "setup": "Esto es lo que quiero que hagas",
       "impact": "ESTA SEMANA",
       "impactAccent": "good",
-      "hitAt": 3,
+      "hitAt": 1.38,
       "boom": 1
     },
     {
