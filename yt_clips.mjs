@@ -52,10 +52,11 @@ for (const item of list) {
   const [start, end] = section;
   const dur = Math.max(1, end - start);
 
-  // 1) descargar el primer resultado de búsqueda (cap 720p, mp4)
+  // 1) descargar el primer resultado de búsqueda. Pedimos el mejor VIDEO hasta 1080p
+  // (solo video, sin audio → no necesita merge con ffmpeg; el audio va por la narración).
   const dl = run(YT, [
     `ytsearch1:${query}`,
-    "-f", "mp4[height<=720]/best[height<=720]/best",
+    "-f", "bv*[height<=1080][ext=mp4]/bv*[height<=1080]/b[height<=1080][ext=mp4]/b[height<=1080]/best",
     "--no-playlist", "--no-warnings", "-o", tmp,
   ]);
   if (!dl || !fs.existsSync(tmp)) { console.error(`✗ ${name}: falló la descarga`); continue; }
