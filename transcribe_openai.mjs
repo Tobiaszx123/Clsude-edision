@@ -46,10 +46,14 @@ const captions = words.map((w) => ({
   timestampMs: Math.round(((w.start + w.end) / 2) * 1000),
   confidence: null,
 }));
-fs.writeFileSync(path.join(process.cwd(), "public", "captions.json"), JSON.stringify(captions, null, 2));
-fs.writeFileSync(path.join(process.cwd(), "transcript.txt"), (data.text || "").trim());
+// argv[3] = slug de salida opcional → public/captions_<slug>.json + transcript_<slug>.txt
+const slug = process.argv[3];
+const capOut = slug ? path.join(process.cwd(), "public", `captions_${slug}.json`) : path.join(process.cwd(), "public", "captions.json");
+const txtOut = slug ? path.join(process.cwd(), `transcript_${slug}.txt`) : path.join(process.cwd(), "transcript.txt");
+fs.writeFileSync(capOut, JSON.stringify(captions, null, 2));
+fs.writeFileSync(txtOut, (data.text || "").trim());
 
 const dur = words.length ? words[words.length - 1].end : 0;
-console.log(`\n=== LISTO === ${captions.length} palabras · ${(dur/60).toFixed(1)} min · public/captions.json + transcript.txt`);
+console.log(`\n=== LISTO === ${captions.length} palabras · ${(dur/60).toFixed(1)} min · ${capOut} + ${txtOut}`);
 console.log("\n=== TRANSCRIPT (primeros 1500 chars) ===\n");
 console.log((data.text || "").trim().slice(0, 1500));
