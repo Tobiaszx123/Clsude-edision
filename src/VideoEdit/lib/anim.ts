@@ -56,6 +56,22 @@ export const kenBurns = (
     easing: Easing.inOut(Easing.quad),
   });
 
+// Pan/travel offset in px over a scene's life. Lets each shot MOVE in a different
+// direction (left→right, up→down, diagonal) instead of every shot zooming the same
+// way. Returns the {x,y} translate at the current frame (0 at start → pan at end).
+export const panOffset = (
+  frame: number,
+  durationInFrames: number,
+  pan: [number, number] = [0, 0],
+) => {
+  const t = interpolate(frame, [0, durationInFrames], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.inOut(Easing.quad),
+  });
+  return { x: pan[0] * t, y: pan[1] * t };
+};
+
 // Staggered item reveal (~1s apart per Rule 11A). Returns a spring 0..1 for item i.
 export const stagger = (
   frame: number,

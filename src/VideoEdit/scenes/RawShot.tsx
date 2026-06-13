@@ -14,6 +14,7 @@ export const RawShot: React.FC<{
   darken?: number; // keep low: this is RAW. default 0.08
   blur?: number;
   zoom?: [number, number];
+  pan?: [number, number]; // travel de cámara en px (dx,dy) → variá la dirección por toma
   kicker?: string; // optional small top-left tag; omit for fully raw
   accent?: string;
 }> = ({
@@ -23,6 +24,7 @@ export const RawShot: React.FC<{
   darken = 0.08,
   blur = 0,
   zoom = [1.04, 1.12],
+  pan = [0, 0],
   kicker,
   accent = COLORS.accent,
 }) => {
@@ -38,6 +40,7 @@ export const RawShot: React.FC<{
       imageBlur={blur}
       imageDarken={darken}
       zoom={zoom}
+      pan={pan}
       noReveal
       contentStyle={{ alignItems: "flex-start", justifyContent: "flex-start" }}
     >

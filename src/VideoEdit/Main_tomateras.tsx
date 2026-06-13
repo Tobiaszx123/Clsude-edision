@@ -11,22 +11,38 @@ import { BOLD } from "./scenes/Bold";
 
 export const TOTAL_FRAMES_TOMATERAS = sec(214.6); // narración completa ~3:34
 
-// Cronograma del avatar (start en segundos). full=personal, cornerTR=PiP sobre b-roll,
-// hidden=solo se oye (durante los textos de impacto a pantalla completa).
+// Cronograma del avatar (start en segundos), alineado a la timeline sincronizada del
+// beatsheet. VARÍA mucho las posiciones (4 esquinas + left/right + full + hidden) y el
+// TAMAÑO (scale) para que no se vuelva predecible. hidden solo en beats que mandan a
+// pantalla completa: impactos, quote, journey, diagramas y listas full-card.
 const AV: AvatarWindow[] = [
-  { start: 0, mode: "full" }, // hook — Timoteo presenta
-  { start: 7, mode: "cornerTR" }, // arranca la b-roll
-  { start: 13, mode: "hidden" }, // impacto "una docena / debería dar 50"
-  { start: 19, mode: "cornerTR" },
-  { start: 43, mode: "hidden" }, // impacto "¿tantas hojas?"
-  { start: 50, mode: "full" }, // la frase clave "QUITARLE" — personal
-  { start: 60, mode: "cornerTR" },
-  { start: 116, mode: "hidden" }, // impacto "de 15 a 30 kilos"
-  { start: 126, mode: "cornerTR" },
-  { start: 134, mode: "full" }, // herencia "mi madre lo sabía" — personal
-  { start: 155, mode: "hidden" }, // impacto "hoy te lo explico"
-  { start: 165, mode: "cornerTR" },
-  { start: 200, mode: "full" }, // cierre "40 años" — personal
+  { start: 0, mode: "full" }, // t01 hook — Timoteo presenta
+  { start: 14.86, mode: "cornerBL", scale: 1.05 }, // t02 clip buscar
+  { start: 18.3, mode: "cornerTR", scale: 0.85 }, // t03
+  { start: 20.8, mode: "cornerTR", scale: 1.0 }, // t04 bars (cifras) — avatar presente
+  { start: 28.44, mode: "cornerTR", scale: 0.9 }, // t05 annotated (manchas)
+  { start: 44.28, mode: "cornerBR", scale: 1.1 }, // t06
+  { start: 51.08, mode: "cornerTR", scale: 1.0 }, // t07 bubbles (izq)
+  { start: 55.52, mode: "hidden" }, // t08 impacto "¿tantas hojas?"
+  { start: 65.82, mode: "hidden" }, // t09 quote "quitarle"
+  { start: 73.32, mode: "cornerTL", scale: 1.1 }, // t10 clip arbusto
+  { start: 84.58, mode: "hidden" }, // t11 JOURNEY inmersivo
+  { start: 96.28, mode: "cornerTR", scale: 1.0 }, // t12 bubbles (izq)
+  { start: 107.78, mode: "cornerBR", scale: 0.9 }, // t13 process (3 podas)
+  { start: 112.22, mode: "cornerBR", scale: 1.1 }, // t13b clip hojas
+  { start: 117.68, mode: "cornerTR", scale: 1.05 }, // t13c clip punta
+  { start: 128.04, mode: "cornerTR", scale: 1.0 }, // t14 bars 15→30
+  { start: 134.16, mode: "cornerTL", scale: 0.95 }, // t15 infocard (izq)
+  { start: 142.36, mode: "full" }, // t16 "mi madre lo sabía" — personal
+  { start: 146.28, mode: "cornerBL", scale: 1.0 }, // t17 stat 100 años
+  { start: 155.8, mode: "hidden" }, // t18 impacto "hoy te lo explico"
+  { start: 159.42, mode: "hidden" }, // t19 DIAGRAMA (trae su propio avatar)
+  { start: 166.76, mode: "hidden" }, // t20 splitlist (regla de oro)
+  { start: 171.1, mode: "cornerTL", scale: 1.1 }, // t21 clip corte final
+  { start: 182.88, mode: "full" }, // t22 "40 años podando" — personal
+  { start: 191.84, mode: "hidden" }, // t23 splitlist (la cuenta honesta)
+  { start: 197.22, mode: "cornerTL", scale: 1.0 }, // t24 infocard (der)
+  { start: 206.28, mode: "cornerTR", scale: 0.9 }, // t25 cierre clip cosecha
 ];
 
 export const MainTomateras: React.FC = () => {

@@ -54,6 +54,8 @@ export const BigImpact: React.FC<{
       imageDarken={0.42}
       zoom={[1.08, 1.2]}
       noReveal
+      staticContent
+      scrim={align === "center" ? "center" : "left"}
       contentStyle={{
         alignItems: align === "center" ? "center" : "flex-start",
         justifyContent: "center",
@@ -110,6 +112,8 @@ export const FloatingBubbles: React.FC<{
       imageDarken={0.3}
       zoom={[1.05, 1.16]}
       noReveal
+      staticContent
+      scrim={side}
       contentStyle={{ alignItems: side === "left" ? "flex-start" : "flex-end", justifyContent: "center", padding: "0 90px" }}
     >
       <div style={{ display: "flex", flexDirection: "column", gap: 22, alignItems: side === "left" ? "flex-start" : "flex-end" }}>
@@ -164,6 +168,8 @@ export const InfoCard: React.FC<{
       imageDarken={0.22}
       zoom={[1.04, 1.14]}
       noReveal
+      staticContent
+      scrim={side}
       contentStyle={{ alignItems: side === "left" ? "flex-start" : "flex-end", justifyContent: "center", padding: "0 80px" }}
     >
       <div

@@ -14,12 +14,24 @@ import { COLORS } from "../theme";
 //   · "hidden"   → fuera de vista (solo se oye), el b-roll manda a pantalla completa
 // Las transiciones entre modos hacen fade-in-place + lerp de geometría.
 
-export type AvatarMode = "full" | "right" | "left" | "cornerTR" | "hidden";
-export type AvatarWindow = { start: number; mode: AvatarMode }; // start en SEGUNDOS
+export type AvatarMode =
+  | "full"
+  | "right"
+  | "left"
+  | "cornerTR"
+  | "cornerTL"
+  | "cornerBR"
+  | "cornerBL"
+  | "hidden";
+// start en SEGUNDOS; scale = multiplicador de TAMAÑO del PiP de esquina (1 = base, varía la escala)
+export type AvatarWindow = { start: number; mode: AvatarMode; scale?: number };
 
 const W = 1920;
 const H = 1080;
 const TRANS = 16; // frames de transición entre modos
+const CW = 384; // ancho base del PiP de esquina
+const CH = 512; // alto base del PiP de esquina
+const M = 54; // margen de esquina
 
 type Geom = { x: number; y: number; w: number; h: number; r: number; op: number; chrome: number };
 
@@ -27,10 +39,26 @@ const G: Record<Exclude<AvatarMode, "hidden">, Geom> = {
   full: { x: 0, y: 0, w: W, h: H, r: 0, op: 1, chrome: 0 },
   right: { x: W - 760 - 70, y: 40, w: 760, h: 1000, r: 30, op: 1, chrome: 1 },
   left: { x: 70, y: 40, w: 760, h: 1000, r: 30, op: 1, chrome: 1 },
-  cornerTR: { x: W - 384 - 54, y: 54, w: 384, h: 512, r: 32, op: 1, chrome: 1 },
+  cornerTR: { x: W - CW - M, y: M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerTL: { x: M, y: M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerBR: { x: W - CW - M, y: H - CH - M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerBL: { x: M, y: H - CH - M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
 };
 
-const geomOf = (m: AvatarMode): Geom => (m === "hidden" ? G.cornerTR : G[m]);
+// aplica el scale del PiP manteniendo la esquina anclada (no se sale de cuadro)
+const scaleGeom = (g: Geom, s: number, mode: AvatarMode): Geom => {
+  if (s === 1 || mode === "full" || mode === "right" || mode === "left") return g;
+  const w = g.w * s;
+  const h = g.h * s;
+  const right = mode === "cornerTR" || mode === "cornerBR";
+  const bottom = mode === "cornerBL" || mode === "cornerBR";
+  const x = right ? W - w - M : M;
+  const y = bottom ? H - h - M : M;
+  return { ...g, x, y, w, h };
+};
+
+const geomOf = (m: AvatarMode, s = 1): Geom =>
+  m === "hidden" ? G.cornerTR : scaleGeom(G[m], s, m);
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
 export const AvatarLayer: React.FC<{
@@ -58,11 +86,13 @@ export const AvatarLayer: React.FC<{
   let i = 0;
   for (let k = 0; k < windows.length; k++) if (t >= starts[k]) i = k;
   const curMode = windows[i].mode;
+  const curScale = windows[i].scale ?? 1;
   const prevMode = i > 0 ? windows[i - 1].mode : "hidden";
+  const prevScale = i > 0 ? (windows[i - 1].scale ?? 1) : 1;
 
   // geometrías "from" y "to" para fade-in-place (oculto = misma caja con op 0)
-  const toGeom: Geom = curMode === "hidden" ? { ...geomOf(prevMode), op: 0 } : geomOf(curMode);
-  const fromGeom: Geom = prevMode === "hidden" ? { ...geomOf(curMode), op: 0 } : geomOf(prevMode);
+  const toGeom: Geom = curMode === "hidden" ? { ...geomOf(prevMode, prevScale), op: 0 } : geomOf(curMode, curScale);
+  const fromGeom: Geom = prevMode === "hidden" ? { ...geomOf(curMode, curScale), op: 0 } : geomOf(prevMode, prevScale);
 
   const p = interpolate(t - starts[i], [0, TRANS], [0, 1], {
     extrapolateLeft: "clamp",

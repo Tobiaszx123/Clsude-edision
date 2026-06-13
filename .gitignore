@@ -9,6 +9,7 @@ public/sfx/*
 public/*.wav
 public/*.mp4
 whisper.cpp/
+yt-dlp.exe
 out/
 *.log
 img_index*.json

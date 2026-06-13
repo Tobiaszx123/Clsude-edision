@@ -2,7 +2,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { FONT_STACK } from "../theme";
 import { TechBackground } from "./TechBackground";
 import { ImageBackdrop, PlainBackdrop } from "./Backdrops";
-import { useReveal, kenBurns } from "../lib/anim";
+import { useReveal, kenBurns, panOffset } from "../lib/anim";
 
 // Opaque full-screen scene wrapper. Covers the avatar, paints the background,
 // and guarantees constant motion: a permanent Ken-Burns camera zoom (Rule 10A)
@@ -26,6 +26,9 @@ export const SceneFrame: React.FC<{
   imageDarken?: number;
   imageTint?: string;
   noReveal?: boolean; // RawShot: HARD-CUT, sin fade/blur de entrada NI salida (regla del nicho)
+  pan?: [number, number]; // travel del FONDO en px (dx,dy) de inicio a fin → cámara que se desplaza
+  staticContent?: boolean; // el texto NO hereda el Ken-Burns (queda clavado, no se descoloca con el zoom)
+  scrim?: "left" | "right" | "bottom" | "center" | "none"; // scrim oscuro detrás del texto para contraste
 }> = ({
   durationInFrames,
   children,
@@ -41,6 +44,9 @@ export const SceneFrame: React.FC<{
   imageDarken,
   imageTint,
   noReveal = false,
+  pan = [0, 0],
+  staticContent = false,
+  scrim = "none",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -51,15 +57,25 @@ export const SceneFrame: React.FC<{
   const scale = noReveal ? 1 : reveal.scale;
   const blur = noReveal ? 0 : reveal.blur;
   const cam = kenBurns(frame, durationInFrames, zoom[0], zoom[1]);
+  const pn = panOffset(frame, durationInFrames, pan);
 
   // parallax 2.5D: deriva de perspectiva muy sutil → la foto se siente con profundidad
   const pRotY = Math.sin(frame / 115) * 1.1;
   const pRotX = Math.cos(frame / 137) * 0.7;
 
+  // scrim de contraste detrás del texto (side-aware) → las tarjetas/píldoras siempre
+  // se leen, aunque la foto sea clara. Va entre el fondo y el contenido.
+  const scrimBg: Record<string, string> = {
+    left: "linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 38%, rgba(0,0,0,0) 62%)",
+    right: "linear-gradient(270deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 38%, rgba(0,0,0,0) 62%)",
+    bottom: "linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 32%, rgba(0,0,0,0) 60%)",
+    center: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 70%)",
+  };
+
   return (
     <AbsoluteFill style={{ fontFamily: FONT_STACK, opacity }}>
       {/* background gets its own slightly stronger parallax zoom + perspective for depth */}
-      <AbsoluteFill style={{ transform: `perspective(1800px) rotateY(${pRotY}deg) rotateX(${pRotX}deg) scale(${cam * 1.06})`, transformOrigin: "center center" }}>
+      <AbsoluteFill style={{ transform: `perspective(1800px) rotateY(${pRotY}deg) rotateX(${pRotX}deg) translate(${pn.x}px, ${pn.y}px) scale(${cam * 1.06})`, transformOrigin: "center center" }}>
         {bg === "image" && image ? (
           <ImageBackdrop
             src={image}
@@ -79,9 +95,16 @@ export const SceneFrame: React.FC<{
         )}
       </AbsoluteFill>
 
+      {/* scrim de contraste detrás del texto (no se mueve con el zoom) */}
+      {scrim !== "none" && (
+        <AbsoluteFill style={{ background: scrimBg[scrim], pointerEvents: "none" }} />
+      )}
+
       <AbsoluteFill
         style={{
-          transform: `scale(${scale * cam})`,
+          // staticContent: el texto NO hereda el Ken-Burns (cam) → queda clavado y no
+          // se descoloca/recorta cuando la foto se agranda. RawShot deja cam (no tiene panel).
+          transform: `scale(${staticContent ? scale : scale * cam})`,
           filter: blur > 0.3 ? `blur(${blur}px)` : undefined,
           alignItems: "center",
           justifyContent: "center",

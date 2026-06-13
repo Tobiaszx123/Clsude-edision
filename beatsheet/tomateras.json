@@ -1,55 +1,645 @@
 {
   "video": "tomateras",
-  "avatar": "video1_opt.mp4",
-  "_nota": "Video 1: poda de tomateras (3:34). Estilo bold amarillo/marrón/negro + b-roll deAPI. Avatar (video 1) va de fondo/esquina (se cablea en Main). Timings aprox, se afinan en Studio.",
+  "avatar": "tomateras_opt.mp4",
+  "_nota": "Video 1: poda de tomateras (~3:34). Look bold amarillo/marrón/negro + b-roll deAPI + clips LTX/YouTube. 'anchor' = frase textual de la narración donde entra el beat → sync_beats.mjs fija start/dur reales desde captions.json (duraciones desparejas). 'pan' = travel de cámara (varía la dirección por toma). Diagramas dg_* = gpt-image (gen_images), resto = deAPI/FLUX.",
   "beats": [
-    { "id": "t01", "start": 0.0, "dur": 7.0, "kind": "raw", "src": "img/tomatera_grande.png", "hue": "amber", "kicker": "Tu tomatera, hermosa", "zoom": [1.05, 1.18],
-      "gen": { "type": "image", "name": "tomatera_grande", "prompt": "Realistic handheld 16:9 documentary photo of a tall lush green tomato plant in a backyard home garden, taller than a person, tied to a wooden stake, healthy leaves, soft overcast daylight, muted natural colors, slightly tilted handheld angle, practical documentary look, low-res YouTube screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic lighting, oversaturated, cartoon, CGI, 3D render, watermark, logo, text." } },
-    { "id": "t02", "start": 7.0, "dur": 6.0, "kind": "raw", "src": "img/buscar_tomates.png", "kicker": "Pero casi no hay tomates", "zoom": [1.06, 1.2],
-      "gen": { "type": "image", "name": "buscar_tomates", "prompt": "Realistic handheld 16:9 documentary close-up of weathered hands parting the leaves of a tomato plant searching, a few small green unripe tomatoes hidden inside the shade, soft daylight, muted colors, handheld angle, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t03", "start": 13.0, "dur": 6.0, "kind": "impact2", "image": "img/tomate_pocos.png", "lines": ["UNA DOCENA", "DEBERÍA DAR 50"], "align": "center",
-      "gen": { "type": "image", "name": "tomate_pocos", "prompt": "Realistic handheld 16:9 documentary macro of just a few small green unripe tomatoes hidden in the shaded leafy center of a tomato plant, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t04", "start": 19.0, "dur": 8.0, "kind": "raw", "src": "img/manchas_hoja.png", "hue": "red", "kicker": "Manchas: tizón temprano", "zoom": [1.1, 1.28],
-      "gen": { "type": "image", "name": "manchas_hoja", "prompt": "Realistic handheld 16:9 documentary extreme macro of lower tomato leaves with brown circular spots ringed by yellow halos (early blight leaf spot disease), soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t05", "start": 27.0, "dur": 8.0, "kind": "raw", "src": "img/rascandose.png", "kicker": "¿Qué hice mal?", "zoom": [1.04, 1.16],
-      "gen": { "type": "image", "name": "rascandose", "prompt": "Realistic handheld 16:9 documentary photo of an older gardener standing next to a big leafy tomato plant scratching the back of his head, puzzled confused expression, backyard garden, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, distorted hands, watermark, logo, text." } },
-    { "id": "t06", "start": 35.0, "dur": 8.0, "kind": "bubbles", "image": "img/huerta_junio.png", "bubbles": ["Buena tierra", "Buena semilla", "Agua a tiempo", "Buena estaca"], "side": "left",
-      "gen": { "type": "image", "name": "huerta_junio", "prompt": "Realistic handheld 16:9 documentary photo of a tidy healthy home vegetable garden in early summer with young staked tomato plants, morning light, muted natural colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t07", "start": 43.0, "dur": 7.0, "kind": "impact2", "image": "img/tomatera_hojas.png", "lines": ["¿TANTAS HOJAS?", "¿TAN POCOS TOMATES?"], "align": "left", "hue": "amber",
-      "gen": { "type": "image", "name": "tomatera_hojas", "prompt": "Realistic handheld 16:9 documentary photo of a very leafy bushy overgrown tomato plant, dense green foliage, almost no visible fruit, backyard garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t08", "start": 50.0, "dur": 10.0, "kind": "quote", "image": "img/tierra_base.png", "eyebrow": "La respuesta suena al revés", "text": "Necesitabas *quitarle* cosas. No darle más.", "accent": "danger", "hue": "amber", "fontSize": 86,
-      "gen": { "type": "image", "name": "tierra_base", "prompt": "Realistic handheld 16:9 documentary close-up of dark rich garden soil at the base of a tomato plant stem, mulch, soft daylight, muted earthy colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t09", "start": 60.0, "dur": 10.0, "kind": "raw", "src": "img/arbusto_verde.png", "kicker": "Dejada a su aire", "zoom": [1.05, 1.2],
-      "gen": { "type": "image", "name": "arbusto_verde", "prompt": "Realistic handheld 16:9 documentary photo of a wild unpruned bushy tomato plant sprawling in all directions, tangle of branches and leaves, backyard garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t10", "start": 70.0, "dur": 10.0, "kind": "raw", "src": "img/marana_centro.png", "kicker": "Fruta escondida, sin sol", "zoom": [1.18, 1.04],
-      "gen": { "type": "image", "name": "marana_centro", "prompt": "Realistic handheld 16:9 documentary macro of a dense tangle of tomato foliage in the shaded center of the plant, one hidden green tomato in the shade, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t11", "start": 80.0, "dur": 12.0, "kind": "bubbles", "image": "img/planta_sobrevive.png", "bubbles": ["Crece para todos lados", "Piensa en reproducirse", "No en darte fruta a ti"], "side": "left", "hue": "cold",
-      "gen": { "type": "image", "name": "planta_sobrevive", "prompt": "Realistic handheld 16:9 documentary photo of a sprawling tomato plant with many side shoots growing in every direction, vigorous green growth, backyard garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t12", "start": 92.0, "dur": 8.0, "kind": "raw", "src": "img/quitar_brotes.png", "hue": "amber", "kicker": "1) Quita los brotes laterales", "zoom": [1.12, 1.3],
-      "gen": { "type": "image", "name": "quitar_brotes", "prompt": "Realistic handheld 16:9 documentary extreme macro of weathered fingers pinching out a small sucker shoot from the V joint between the main stem and a branch of a tomato plant, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, extra fingers, watermark, logo, text." } },
-    { "id": "t13", "start": 100.0, "dur": 8.0, "kind": "raw", "src": "img/quitar_hojas.png", "hue": "amber", "kicker": "2) Quita las hojas de abajo", "zoom": [1.08, 1.24],
-      "gen": { "type": "image", "name": "quitar_hojas", "prompt": "Realistic handheld 16:9 documentary close-up of weathered hands removing the lower yellowing leaves of a tomato plant near the soil, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t14", "start": 108.0, "dur": 8.0, "kind": "raw", "src": "img/cortar_punta.png", "hue": "amber", "kicker": "3) Corta la punta al final", "zoom": [1.1, 1.26],
-      "gen": { "type": "image", "name": "cortar_punta", "prompt": "Realistic handheld 16:9 documentary close-up of weathered hands using small pruning shears to cut the top growing tip of a tall tomato plant, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t15", "start": 116.0, "dur": 10.0, "kind": "impact2", "image": "img/tomates_rojos.png", "lines": ["DE 15 KILOS", "A 30 KILOS"], "align": "center", "hue": "amber",
-      "gen": { "type": "image", "name": "tomates_rojos", "prompt": "Realistic handheld 16:9 documentary photo of a healthy pruned tomato plant heavy with many ripe red tomatoes, backyard garden, soft daylight, muted natural colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t16", "start": 126.0, "dur": 8.0, "kind": "infocard", "image": "img/cosecha_canasto.png", "title": "Misma planta, el doble", "items": [{ "text": "El doble de tomates" }, { "text": "Maduran más temprano" }, { "text": "Mucha menos enfermedad" }], "side": "left",
-      "gen": { "type": "image", "name": "cosecha_canasto", "prompt": "Realistic handheld 16:9 documentary photo of weathered hands holding a wooden basket full of ripe red tomatoes, home garden background, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t17", "start": 134.0, "dur": 10.0, "kind": "raw", "src": "img/mujer_campo.png", "kicker": "El saber de siempre", "zoom": [1.05, 1.18],
-      "gen": { "type": "image", "name": "mujer_campo", "prompt": "Realistic handheld 16:9 documentary photo of an elderly country woman carefully pruning a tomato plant in a rustic home garden, weathered hands, headscarf, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, distorted hands, watermark, logo, text." } },
-    { "id": "t18", "start": 144.0, "dur": 11.0, "kind": "quote", "image": "img/manos_rama.png", "eyebrow": "Lo supieron siempre", "text": "Cada mujer de campo lo supo durante *100 años*.", "accent": "good", "hue": "amber", "fontSize": 84,
-      "gen": { "type": "image", "name": "manos_rama", "prompt": "Realistic handheld 16:9 documentary macro of weathered old hands gently holding a tomato branch with small green tomatoes, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t19", "start": 155.0, "dur": 10.0, "kind": "impact2", "image": "img/dos_tomateras.png", "lines": ["HOY TE LO", "EXPLICO ENTERO"], "align": "left", "hue": "amber",
-      "gen": { "type": "image", "name": "dos_tomateras", "prompt": "Realistic handheld 16:9 documentary photo of two tomato plants side by side in a garden, one wild and bushy, the other neatly pruned and tidy, comparison, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t20", "start": 165.0, "dur": 13.0, "kind": "infocard", "image": "img/tomatera_tutor.png", "title": "Lo que vas a aprender", "items": [{ "text": "Los 2 tipos de tomatera" }, { "text": "Cómo podar cada uno" }, { "text": "Qué cortar y qué NO" }, { "text": "A qué hora hacerlo" }], "side": "left",
-      "gen": { "type": "image", "name": "tomatera_tutor", "prompt": "Realistic handheld 16:9 documentary photo of a neatly staked tomato plant tied to a tall wooden tutor in a tidy home garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t21", "start": 178.0, "dur": 10.0, "kind": "bubbles", "image": "img/tijeras_planta.png", "bubbles": ["¿Qué se corta?", "¿Qué jamás se toca?", "¿A qué hora del día?"], "side": "left", "hue": "red",
-      "gen": { "type": "image", "name": "tijeras_planta", "prompt": "Realistic handheld 16:9 documentary close-up of a hand holding small garden pruning shears next to a tomato plant stem, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t22", "start": 188.0, "dur": 12.0, "kind": "raw", "src": "img/corte_final.png", "hue": "amber", "kicker": "El último corte de la temporada", "zoom": [1.06, 1.2],
-      "gen": { "type": "image", "name": "corte_final", "prompt": "Realistic handheld 16:9 documentary photo of a late-season tomato plant with clusters of green tomatoes some starting to turn red, cooler autumn light, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } },
-    { "id": "t23", "start": 200.0, "dur": 8.0, "kind": "raw", "src": "img/manos_podando.png", "kicker": "40 años podando así", "zoom": [1.08, 1.22],
-      "gen": { "type": "image", "name": "manos_podando", "prompt": "Realistic handheld 16:9 documentary close-up of weathered experienced hands carefully pruning a tomato plant, removing a sucker, soft daylight, muted earthy colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text." } },
-    { "id": "t24", "start": 208.0, "dur": 6.5, "kind": "quote", "image": "img/cosecha_sana.png", "eyebrow": "La cuenta honesta", "text": "Más fruta, plantas más sanas, cosecha más *larga*.", "accent": "good", "hue": "amber", "fontSize": 80,
-      "gen": { "type": "image", "name": "cosecha_sana", "prompt": "Realistic handheld 16:9 documentary photo of a healthy well-pruned tomato plant full of even ripe red tomatoes in a tidy home garden, warm soft daylight, muted natural colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text." } }
+    {
+      "id": "t01",
+      "start": 0,
+      "dur": 14.86,
+      "kind": "raw",
+      "src": "img/tomatera_grande.png",
+      "anchor": "tu tomatera",
+      "hue": "amber",
+      "kicker": "Tu tomatera, hermosa",
+      "zoom": [
+        1.04,
+        1.16
+      ],
+      "pan": [
+        0,
+        -50
+      ],
+      "gen": {
+        "type": "image",
+        "name": "tomatera_grande",
+        "prompt": "Realistic handheld 16:9 documentary photo of a tall lush green tomato plant in a backyard home garden, taller than a person, tied to a wooden stake, healthy leaves, soft overcast daylight, muted natural colors, slightly tilted handheld angle, practical documentary look, low-res YouTube screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic lighting, oversaturated, cartoon, CGI, 3D render, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t02",
+      "start": 14.86,
+      "dur": 3.44,
+      "kind": "raw",
+      "src": "vid/buscar_tomates.mp4",
+      "anchor": "y casi no hay",
+      "kicker": "Pero casi no hay tomates",
+      "zoom": [
+        1.06,
+        1.14
+      ],
+      "pan": [
+        70,
+        0
+      ],
+      "gen": {
+        "type": "clip",
+        "image": "buscar_tomates",
+        "frames": 110,
+        "prompt": "weathered hands gently parting the green leaves of a tomato plant searching inside, leaves moving softly, a few small green tomatoes revealed in the shade, subtle natural motion, handheld documentary look."
+      }
+    },
+    {
+      "id": "t03",
+      "start": 18.3,
+      "dur": 2.5,
+      "kind": "raw",
+      "src": "img/tomate_pocos.png",
+      "anchor": "escondidos en la sombra",
+      "kicker": "Chiquitos, en la sombra",
+      "zoom": [
+        1.18,
+        1.05
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "tomate_pocos",
+        "prompt": "Realistic handheld 16:9 documentary macro of just a few small green unripe tomatoes hidden in the shaded leafy center of a tomato plant, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t04",
+      "start": 20.8,
+      "dur": 7.64,
+      "kind": "bars",
+      "anchor": "una docena",
+      "title": "Lo que da vs lo que debería",
+      "unit": "tomates",
+      "hue": "amber",
+      "accent": "amber",
+      "bars": [
+        {
+          "label": "Tu mata hoy",
+          "value": 12,
+          "display": "≈12",
+          "tone": "danger"
+        },
+        {
+          "label": "Debería dar",
+          "value": 50,
+          "display": "50",
+          "tone": "good",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "t05",
+      "start": 28.44,
+      "dur": 15.84,
+      "kind": "annotated",
+      "image": "img/manchas_hoja.png",
+      "anchor": "manchitas",
+      "eyebrow": "Tizón temprano",
+      "caption": "La señal en las hojas de abajo",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 38,
+          "y": 46,
+          "w": 16,
+          "h": 16,
+          "label": "Círculo café"
+        },
+        {
+          "kind": "arrow",
+          "x": 64,
+          "y": 34,
+          "fromX": 82,
+          "fromY": 22,
+          "label": "Halo amarillo"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "manchas_hoja",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of lower tomato leaves with brown circular spots ringed by yellow halos (early blight leaf spot disease), soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t06",
+      "start": 44.28,
+      "dur": 6.8,
+      "kind": "raw",
+      "src": "img/rascandose.png",
+      "anchor": "rascándote la cabeza",
+      "kicker": "¿Qué hice mal?",
+      "zoom": [
+        1.05,
+        1.13
+      ],
+      "pan": [
+        -60,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "rascandose",
+        "prompt": "Realistic handheld 16:9 documentary photo of an older gardener standing next to a big leafy tomato plant scratching the back of his head, puzzled confused expression, backyard garden, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t07",
+      "start": 51.08,
+      "dur": 4.44,
+      "kind": "bubbles",
+      "image": "img/huerta_junio.png",
+      "anchor": "buena tierra",
+      "bubbles": [
+        "Buena tierra",
+        "Buena semilla",
+        "Agua a tiempo",
+        "Buena estaca"
+      ],
+      "side": "left",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "huerta_junio",
+        "prompt": "Realistic handheld 16:9 documentary photo of a tidy healthy home vegetable garden in early summer with young staked tomato plants, morning light, muted natural colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t08",
+      "start": 55.52,
+      "dur": 10.3,
+      "kind": "impact2",
+      "image": "img/tomatera_hojas.png",
+      "anchor": "tantas hojas",
+      "lines": [
+        "¿TANTAS HOJAS?",
+        "¿TAN POCOS TOMATES?"
+      ],
+      "align": "left",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "tomatera_hojas",
+        "prompt": "Realistic handheld 16:9 documentary photo of a very leafy bushy overgrown tomato plant, dense green foliage, almost no visible fruit, backyard garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t09",
+      "start": 65.82,
+      "dur": 7.5,
+      "kind": "quote",
+      "image": "img/tierra_base.png",
+      "anchor": "necesitabas quitarle",
+      "eyebrow": "La respuesta suena al revés",
+      "text": "Necesitabas *quitarle* cosas. No darle más.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 86,
+      "gen": {
+        "type": "image",
+        "name": "tierra_base",
+        "prompt": "Realistic handheld 16:9 documentary close-up of dark rich garden soil at the base of a tomato plant stem, mulch, soft daylight, muted earthy colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t10",
+      "start": 73.32,
+      "dur": 11.26,
+      "kind": "raw",
+      "src": "vid/arbusto_verde.mp4",
+      "anchor": "dejada a su aire",
+      "kicker": "Dejada a su aire",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        40,
+        30
+      ],
+      "gen": {
+        "type": "clip",
+        "image": "arbusto_verde",
+        "frames": 110,
+        "prompt": "a wild unpruned bushy tomato plant sprawling in all directions, leaves and branches swaying gently in a light breeze, natural soft motion, backyard garden, handheld documentary look."
+      }
+    },
+    {
+      "id": "t11",
+      "start": 84.58,
+      "dur": 11.7,
+      "kind": "journey",
+      "anchor": "maraña de hojas",
+      "eyebrow": "Una mata a su aire",
+      "title": "Por qué casi no hay fruta",
+      "accent": "amber",
+      "worldImage": "img/arbusto_verde.png",
+      "waypoints": [
+        {
+          "x": 18,
+          "y": 30,
+          "z": 0,
+          "image": "img/marana_centro.png",
+          "num": "1",
+          "label": "Maraña de hojas",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 52,
+          "y": 58,
+          "z": 1,
+          "image": "img/planta_sobrevive.png",
+          "num": "2",
+          "label": "Ramitas a todos lados",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 82,
+          "y": 36,
+          "z": 0,
+          "image": "img/tomate_pocos.png",
+          "num": "3",
+          "label": "Fruta sin sol",
+          "dwell": 3.2,
+          "travel": 1.6
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "marana_centro",
+        "prompt": "Realistic handheld 16:9 documentary macro of a dense tangle of tomato foliage in the shaded center of the plant, one hidden green tomato in the shade, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t12",
+      "start": 96.28,
+      "dur": 11.5,
+      "kind": "bubbles",
+      "image": "img/planta_sobrevive.png",
+      "anchor": "está pensando en sobrevivir",
+      "bubbles": [
+        "Crece para todos lados",
+        "Piensa en reproducirse",
+        "No en darte fruta a ti"
+      ],
+      "side": "left",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "planta_sobrevive",
+        "prompt": "Realistic handheld 16:9 documentary photo of a sprawling tomato plant with many side shoots growing in every direction, vigorous green growth, backyard garden, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t13",
+      "start": 107.78,
+      "dur": 4.44,
+      "kind": "process",
+      "anchor": "le quita los brotes",
+      "eyebrow": "El saber antiguo",
+      "title": "Las 3 podas que importan",
+      "accent": "amber",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Quitá los brotes laterales",
+          "desc": "Antes de que se vuelvan ramas que compiten",
+          "image": "img/quitar_brotes.png"
+        },
+        {
+          "title": "Quitá las hojas de abajo",
+          "desc": "Para que la tierra no salpique la enfermedad",
+          "image": "img/quitar_hojas.png"
+        },
+        {
+          "title": "Cortá la punta al final",
+          "desc": "La última fuerza, a madurar la fruta",
+          "image": "img/cortar_punta.png"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "quitar_brotes",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of weathered fingers pinching out a small sucker shoot from the V joint between the main stem and a branch of a tomato plant, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, extra fingers, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t13b",
+      "start": 112.22,
+      "dur": 5.46,
+      "kind": "raw",
+      "src": "vid/quitar_hojas.mp4",
+      "anchor": "las hojas de abajo",
+      "hue": "amber",
+      "kicker": "Las hojas de abajo",
+      "zoom": [
+        1.1,
+        1.22
+      ],
+      "pan": [
+        0,
+        40
+      ],
+      "gen": {
+        "type": "clip",
+        "image": "quitar_hojas",
+        "frames": 100,
+        "prompt": "weathered hands removing the lower yellowing leaves of a tomato plant near the soil, leaf bending and detaching, gentle natural motion, handheld documentary look."
+      }
+    },
+    {
+      "id": "t13c",
+      "start": 117.68,
+      "dur": 10.36,
+      "kind": "raw",
+      "src": "vid/cortar_punta.mp4",
+      "anchor": "le corta la punta",
+      "hue": "amber",
+      "kicker": "El corte de la punta",
+      "zoom": [
+        1.08,
+        1.24
+      ],
+      "pan": [
+        0,
+        -60
+      ],
+      "gen": {
+        "type": "clip",
+        "image": "cortar_punta",
+        "frames": 100,
+        "prompt": "weathered hands using small pruning shears to cut the top growing tip of a tall tomato plant, blades closing, tip falling, gentle natural motion, handheld documentary look."
+      }
+    },
+    {
+      "id": "t14",
+      "start": 128.04,
+      "dur": 6.12,
+      "kind": "bars",
+      "anchor": "convierte una planta",
+      "title": "Misma planta, el doble",
+      "unit": "kilos",
+      "hue": "amber",
+      "accent": "amber",
+      "bars": [
+        {
+          "label": "Sin podar",
+          "value": 15,
+          "display": "15 kg",
+          "tone": "danger"
+        },
+        {
+          "label": "Podada",
+          "value": 30,
+          "display": "30 kg",
+          "tone": "good",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "t15",
+      "start": 134.16,
+      "dur": 8.2,
+      "kind": "infocard",
+      "image": "img/cosecha_canasto.png",
+      "anchor": "el doble de tomates",
+      "title": "Misma planta, el doble",
+      "items": [
+        {
+          "text": "El doble de tomates"
+        },
+        {
+          "text": "Maduran más temprano"
+        },
+        {
+          "text": "Mucha menos enfermedad"
+        }
+      ],
+      "side": "left",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "cosecha_canasto",
+        "frames": 90,
+        "prompt": "weathered hands holding a wooden basket full of ripe red tomatoes, basket gently settling, subtle natural motion, home garden background, handheld documentary look."
+      }
+    },
+    {
+      "id": "t16",
+      "start": 142.36,
+      "dur": 3.92,
+      "kind": "raw",
+      "src": "img/mujer_campo.png",
+      "anchor": "mi madre lo sabía",
+      "kicker": "El saber de siempre",
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        50,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "mujer_campo",
+        "prompt": "Realistic handheld 16:9 documentary photo of an elderly country woman carefully pruning a tomato plant in a rustic home garden, weathered hands, headscarf, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t17",
+      "start": 146.28,
+      "dur": 9.52,
+      "kind": "stat",
+      "anchor": "cada mujer de campo",
+      "value": 100,
+      "suffix": " años",
+      "eyebrow": "El saber de la huerta",
+      "label": "Lo supieron siempre",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "t18",
+      "start": 155.8,
+      "dur": 3.62,
+      "kind": "impact2",
+      "image": "img/dos_tomateras.png",
+      "anchor": "hoy te lo voy",
+      "lines": [
+        "HOY TE LO",
+        "EXPLICO ENTERO"
+      ],
+      "align": "left",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "dos_tomateras",
+        "prompt": "Realistic handheld 16:9 documentary photo of two tomato plants side by side in a garden, one wild and bushy, the other neatly pruned and tidy, comparison, soft daylight, muted colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t19",
+      "start": 159.42,
+      "dur": 7.34,
+      "kind": "diagram",
+      "anchor": "cómo saber cuál",
+      "eyebrow": "Los 2 tipos de tomatera",
+      "hue": "amber",
+      "accent": "amber",
+      "slides": [
+        {
+          "image": "img/dg_tipos_tomatera.png",
+          "title": "Determinada vs Indeterminada",
+          "gen": {
+            "type": "image",
+            "name": "dg_tipos_tomatera",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano pero muy profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado. Dejá COMPLETAMENTE LIBRE la esquina superior derecha (limpia, sin texto ni dibujos) para colocar luego un avatar. Dos tarjetas grandes lado a lado comparando dos tipos de planta de tomate: a la izquierda 'DETERMINADA' (planta compacta y baja tipo arbusto que da todo de una vez), a la derecha 'INDETERMINADA' (planta alta y larga atada a un tutor que da fruta toda la temporada). Ilustración simple de cada planta, número grande, título breve y texto mínimo en español. Flechas elegantes. Se entiende en 1 segundo. Estética premium editorial, clara, artesanal."
+          }
+        },
+        {
+          "image": "img/dg_cual_tienes.png",
+          "title": "Cómo saber cuál tenés",
+          "gen": {
+            "type": "image",
+            "name": "dg_cual_tienes",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Dejá COMPLETAMENTE LIBRE la esquina superior derecha para un avatar. Una guía simple de 3 pasos en tarjetas suaves para saber si tu tomatera es determinada o indeterminada: 1) mirá la etiqueta del plantín, 2) ¿deja de crecer a cierta altura? = determinada, 3) ¿sigue creciendo y creciendo? = indeterminada. Número grande, título breve, ilustración simple, texto mínimo en español. Flechas elegantes que guían el ojo. Estética premium editorial, clara, artesanal, fácil de leer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "t20",
+      "start": 166.76,
+      "dur": 4.34,
+      "kind": "splitlist",
+      "anchor": "qué se corta",
+      "title": "La regla de oro",
+      "items": [
+        "Cortar: brotes laterales y hojas de abajo",
+        "Cortar: la punta al final",
+        "JAMÁS tocar: el tallo principal con fruta"
+      ],
+      "palette": "G",
+      "reframe": true
+    },
+    {
+      "id": "t21",
+      "start": 171.1,
+      "dur": 11.78,
+      "kind": "raw",
+      "src": "vid/corte_final.mp4",
+      "anchor": "último corte",
+      "hue": "amber",
+      "kicker": "El último corte de la temporada",
+      "zoom": [
+        1.06,
+        1.18
+      ],
+      "pan": [
+        -50,
+        20
+      ],
+      "gen": {
+        "type": "clip",
+        "image": "corte_final",
+        "frames": 110,
+        "prompt": "a late-season tomato plant with clusters of green tomatoes some turning red, gently swaying, hand entering frame with shears, cooler autumn light, natural motion, handheld documentary look."
+      }
+    },
+    {
+      "id": "t22",
+      "start": 182.88,
+      "dur": 8.96,
+      "kind": "raw",
+      "src": "img/manos_podando.png",
+      "anchor": "he podado tomates",
+      "kicker": "40 años podando así",
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "pan": [
+        0,
+        50
+      ],
+      "gen": {
+        "type": "image",
+        "name": "manos_podando",
+        "prompt": "Realistic handheld 16:9 documentary close-up of weathered experienced hands carefully pruning a tomato plant, removing a sucker, soft daylight, muted earthy colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t23",
+      "start": 191.84,
+      "dur": 5.38,
+      "kind": "splitlist",
+      "anchor": "máxima cosecha",
+      "title": "La cuenta honesta",
+      "items": [
+        "El récord de una sola planta para el periódico",
+        "El tomate gigante de concurso",
+        "Reventar la mata por un número"
+      ],
+      "palette": "D",
+      "cross": true
+    },
+    {
+      "id": "t24",
+      "start": 197.22,
+      "dur": 9.06,
+      "kind": "infocard",
+      "image": "img/cosecha_sana.png",
+      "anchor": "más fruta",
+      "title": "Lo que de verdad buscamos",
+      "items": [
+        {
+          "text": "Más fruta por planta"
+        },
+        {
+          "text": "Plantas más sanas"
+        },
+        {
+          "text": "Una cosecha más larga"
+        }
+      ],
+      "side": "right",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "cosecha_sana",
+        "prompt": "Realistic handheld 16:9 documentary photo of a healthy well-pruned tomato plant full of even ripe red tomatoes in a tidy home garden, warm soft daylight, muted natural colors, documentary look, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "t25",
+      "start": 206.28,
+      "dur": 8.32,
+      "kind": "raw",
+      "src": "vid/yt_cosecha_roja.mp4",
+      "anchor": "una cosecha más grande",
+      "kicker": "Cosecha pareja y sana",
+      "zoom": [
+        1.04,
+        1.12
+      ],
+      "pan": [
+        60,
+        0
+      ]
+    }
   ]
 }
