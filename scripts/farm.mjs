@@ -34,12 +34,34 @@ for (const f of [avatar, wav]) if (!fs.existsSync(f)) { console.error("falta:", 
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}_opt.mp4`, `${slug}.wav`];
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
-if (pref) {
+const bsPath = `beatsheet/${slug}.json`;
+if (fs.existsSync(bsPath)) {
+  // ★ PRECISO: empaqueta SOLO los assets que el beatsheet de este video referencia
+  // (+ su _blur.jpg). Evita meter los assets de TODOS los videos → tarball chico
+  // (el bundle "img/vid enteros" superaba el límite de 2GB de los release assets).
+  const bs = JSON.parse(fs.readFileSync(bsPath, "utf8"));
+  const refs = new Set();
+  for (const b of bs.beats || []) {
+    if (b.src) refs.add(b.src);
+    if (b.image) refs.add(b.image);
+    for (const s of b.slides || []) if (s.image) refs.add(s.image);
+    for (const s of b.steps || []) if (s.image) refs.add(s.image);
+    if (b.worldImage) refs.add(b.worldImage);
+    for (const w of b.waypoints || []) if (w.image) refs.add(w.image);
+  }
+  for (const r of refs) {
+    if (fs.existsSync(`public/${r}`)) items.push(r);
+    if (r.endsWith(".png")) {
+      const blur = r.replace(/\.png$/, "_blur.jpg");
+      if (fs.existsSync(`public/${blur}`)) items.push(blur);
+    }
+  }
+  console.log(`assets del beatsheet: ${refs.size} referenciados`);
+} else if (pref) {
   // solo lo de este video + diagramas (gpt-image, prefijo dg_)
   const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith("dg_"));
   const vid = fs.existsSync("public/vid") ? fs.readdirSync("public/vid").filter((f) => f.startsWith(pref)) : [];
   items.push(...img.map((f) => `img/${f}`), ...vid.map((f) => `vid/${f}`));
-  // footage REAL: fotos de archivo (public/real/*) + video de stock (public/broll/*)
   if (fs.existsSync("public/real"))
     items.push(...fs.readdirSync("public/real").filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)).map((f) => `real/${f}`));
   if (fs.existsSync("public/broll"))
