@@ -1,0 +1,701 @@
+{
+  "video": "sandia1",
+  "avatar": "sandia1_opt.mp4",
+  "_nota": "Video SANDÍA parte 1 (~6:11): hook (sandía decepcionante), secreto del supermercado, y señales 1-4 (mancha del campo, abejas, círculo, zarcillo). CLIP-HEAVY: YouTube 1080p para tomas genéricas/acción, deAPI solo para macros precisos, diagramas para overview. anchors→sync.",
+  "beats": [
+    {
+      "id": "s1_01",
+      "start": 9.14,
+      "dur": 8.82,
+      "kind": "raw",
+      "src": "vid/yt_cortar_sandia.mp4",
+      "anchor": "hundes el cuchillo",
+      "hue": "red",
+      "kicker": "Hundís el cuchillo...",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "s1_02",
+      "start": 17.96,
+      "dur": 9.4,
+      "kind": "raw",
+      "src": "img/sandia_palida.png",
+      "anchor": "está pálida",
+      "hue": "cold",
+      "kicker": "Pálida, casi blanca",
+      "zoom": [
+        1.18,
+        1.04
+      ],
+      "pan": [
+        40,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "sandia_palida",
+        "prompt": "Realistic handheld 16:9 documentary macro of a cut-open watermelon with pale pinkish-white unripe flesh near the rind, dull and dry looking, on a kitchen table, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_03",
+      "start": 27.36,
+      "dur": 15.88,
+      "kind": "quote",
+      "image": "img/sandia_palida.png",
+      "anchor": "no sabe a nada",
+      "eyebrow": "Y la probás",
+      "text": "No sabe a nada. A *agua*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 86
+    },
+    {
+      "id": "s1_03b",
+      "start": 43.24,
+      "dur": 4.4,
+      "kind": "raw",
+      "src": "img/sandia_fea.png",
+      "anchor": "la mas linda",
+      "hue": "red",
+      "kicker": "La más linda del cajón",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "s1_03c",
+      "start": 47.64,
+      "dur": 4.22,
+      "kind": "quote",
+      "image": "img/sandia_palida.png",
+      "anchor": "lo que nadie te dice",
+      "eyebrow": "Y acá está",
+      "text": "No fue mala suerte.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 84
+    },
+    {
+      "id": "s1_04",
+      "start": 51.86,
+      "dur": 9.02,
+      "kind": "impact",
+      "image": "img/sandia_palida.png",
+      "anchor": "elegiste mal",
+      "setup": "No fue mala suerte",
+      "impact": "ELEGISTE MAL",
+      "impactAccent": "danger",
+      "hitAt": 2,
+      "boom": 1
+    },
+    {
+      "id": "s1_05",
+      "start": 60.88,
+      "dur": 5.84,
+      "kind": "quote",
+      "image": "img/sandia_fea.png",
+      "anchor": "se ve fea",
+      "eyebrow": "La verdad",
+      "text": "La sandía dulce casi siempre es la que se ve *fea*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 74,
+      "gen": {
+        "type": "image",
+        "name": "sandia_fea",
+        "prompt": "Realistic handheld 16:9 documentary photo of a watermelon with a dull rind, brown rough scars and a big creamy yellow ground spot, sitting in a wooden crate at a market, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_06",
+      "start": 66.72,
+      "dur": 8.68,
+      "kind": "headline",
+      "anchor": "leer una sandía",
+      "eyebrow": "Hoy te enseño",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/sandia_fea.png",
+      "tokens": [
+        {
+          "t": "A "
+        },
+        {
+          "t": "leer",
+          "hl": true
+        },
+        {
+          "t": " una sandía. No a adivinar."
+        }
+      ]
+    },
+    {
+      "id": "s1_07",
+      "start": 75.4,
+      "dur": 3.22,
+      "kind": "stat",
+      "anchor": "siete señales",
+      "value": 7,
+      "suffix": " señales",
+      "eyebrow": "La sandía te habla",
+      "label": "te lo grita por fuera",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "s1_08",
+      "start": 78.62,
+      "dur": 10.42,
+      "kind": "raw",
+      "src": "vid/yt_mercado_sandias.mp4",
+      "anchor": "mi abuelo me las enseñó",
+      "hue": "amber",
+      "kicker": "Me las enseñó mi abuelo",
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        50,
+        0
+      ]
+    },
+    {
+      "id": "s1_09",
+      "start": 89.04,
+      "dur": 10.46,
+      "kind": "quote",
+      "image": "img/supermercado_sandias.png",
+      "anchor": "el supermercado preferiría",
+      "eyebrow": "Algo que el súper esconde",
+      "text": "No le conviene que sepas *elegir*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 78,
+      "gen": {
+        "type": "image",
+        "name": "supermercado_sandias",
+        "prompt": "Realistic handheld 16:9 documentary photo of a supermarket display of watermelons stacked upright tightly together in a large bin, fluorescent store lighting, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, fake brand text, watermark, logo."
+      }
+    },
+    {
+      "id": "s1_10",
+      "start": 99.5,
+      "dur": 9.12,
+      "kind": "annotated",
+      "image": "img/supermercado_sandias.png",
+      "anchor": "paradas apretadas",
+      "eyebrow": "Por eso las paran",
+      "caption": "Para que NO veas la mancha",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 60,
+          "w": 24,
+          "h": 24,
+          "label": "Mancha tapada"
+        }
+      ]
+    },
+    {
+      "id": "s1_11",
+      "start": 108.62,
+      "dur": 16.12,
+      "kind": "diagram",
+      "anchor": "vamos por las siete señales",
+      "eyebrow": "Las 7 señales",
+      "hue": "amber",
+      "accent": "amber",
+      "slides": [
+        {
+          "image": "img/dg_7senales.png",
+          "title": "De la más importante a la última",
+          "gen": {
+            "type": "image",
+            "name": "dg_7senales",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Dejá COMPLETAMENTE LIBRE la esquina superior derecha para un avatar. Una lámina con 7 señales numeradas para elegir una sandía dulce, cada una con un ícono simple y dos palabras: 1 Mancha amarilla, 2 Marcas marrones (abejas), 3 Círculo chico, 4 Zarcillo seco, 5 Sonido hueco, 6 Pesada, 7 Cáscara mate. Ilustración de una sandía en el centro. Texto mínimo en español. Se entiende en 1 segundo. Estética premium editorial, lámina artesanal, clara."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1_12",
+      "start": 124.74,
+      "dur": 7.18,
+      "kind": "rule",
+      "anchor": "la primera señal",
+      "number": "01",
+      "label": "La más importante",
+      "title": "La mancha del campo",
+      "hue": "amber"
+    },
+    {
+      "id": "s1_13",
+      "start": 131.92,
+      "dur": 2.26,
+      "kind": "raw",
+      "src": "vid/yt_dar_vuelta_sandia.mp4",
+      "anchor": "da vuelta la sandía",
+      "hue": "amber",
+      "kicker": "Dala vuelta",
+      "zoom": [
+        1.06,
+        1.18
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "s1_13b",
+      "start": 134.18,
+      "dur": 14.12,
+      "kind": "raw",
+      "src": "img/mancha_amarilla.png",
+      "anchor": "apoyada en la tierra",
+      "hue": "amber",
+      "kicker": "El lado que tocó la tierra",
+      "zoom": [
+        1.2,
+        1.05
+      ],
+      "pan": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "s1_13c",
+      "start": 148.3,
+      "dur": 5.58,
+      "kind": "quote",
+      "image": "img/mancha_blanca.png",
+      "anchor": "la cortaron antes de tiempo",
+      "eyebrow": "Si es blanca",
+      "text": "La arrancaron *verde*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 80
+    },
+    {
+      "id": "s1_14",
+      "start": 153.88,
+      "dur": 8.4,
+      "kind": "annotated",
+      "image": "img/mancha_amarilla.png",
+      "anchor": "como mantequilla",
+      "eyebrow": "Mancha amarilla cremosa",
+      "caption": "Maduró al sol = DULCE",
+      "hue": "cold",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 55,
+          "w": 30,
+          "h": 26,
+          "label": "Amarillo manteca"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "mancha_amarilla",
+        "prompt": "Realistic handheld 16:9 documentary macro of the underside of a watermelon showing a large creamy buttery yellow ground spot where it rested on the soil, held in hands, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_15",
+      "start": 162.28,
+      "dur": 7,
+      "kind": "quote",
+      "image": "img/mancha_amarilla.png",
+      "anchor": "esa es dulce",
+      "eyebrow": "Cuanto más cremosa",
+      "text": "Más maduró. Más *dulce*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 88
+    },
+    {
+      "id": "s1_16",
+      "start": 169.28,
+      "dur": 15.9,
+      "kind": "annotated",
+      "image": "img/mancha_blanca.png",
+      "anchor": "es blanca o blanca verdosa",
+      "eyebrow": "Mancha blanca",
+      "caption": "La arrancaron verde → soltala",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 55,
+          "w": 28,
+          "h": 24,
+          "label": "Blanca = verde"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "mancha_blanca",
+        "prompt": "Realistic handheld 16:9 documentary macro of the underside of a watermelon showing a pale white greenish ground spot almost the same color as the rind, held in hands, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_17",
+      "start": 185.18,
+      "dur": 20.52,
+      "kind": "impact",
+      "image": "img/sandia_palida.png",
+      "anchor": "no madura más",
+      "setup": "Ojo con esto",
+      "impact": "NO MADURA TRAS CORTARLA",
+      "impactAccent": "danger",
+      "hitAt": 2,
+      "boom": 1
+    },
+    {
+      "id": "s1_17b",
+      "start": 205.7,
+      "dur": 12.3,
+      "kind": "raw",
+      "src": "img/supermercado_sandias.png",
+      "anchor": "la mancha para abajo",
+      "hue": "red",
+      "kicker": "La esconden hacia abajo",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "s1_18",
+      "start": 218,
+      "dur": 3.7,
+      "kind": "process",
+      "anchor": "busca la mancha y que sea amarilla",
+      "eyebrow": "Señal 1, en 2 pasos",
+      "title": "La mancha del campo",
+      "accent": "good",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Dala vuelta",
+          "desc": "Buscá el lado que tocó la tierra",
+          "image": "img/mancha_amarilla.png"
+        },
+        {
+          "title": "Que sea amarilla",
+          "desc": "Cremosa, como manteca",
+          "image": "img/mancha_amarilla.png"
+        }
+      ]
+    },
+    {
+      "id": "s1_17c",
+      "start": 221.7,
+      "dur": 2.88,
+      "kind": "quote",
+      "image": "img/mancha_amarilla.png",
+      "anchor": "eliges mejor que el",
+      "eyebrow": "Solo con eso",
+      "text": "Elegís mejor que el *90%*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 82
+    },
+    {
+      "id": "s1_19",
+      "start": 224.58,
+      "dur": 13.4,
+      "kind": "rule",
+      "anchor": "la segunda señal",
+      "number": "02",
+      "label": "La marca del tesoro",
+      "title": "Las marcas de las abejas",
+      "hue": "amber"
+    },
+    {
+      "id": "s1_20",
+      "start": 237.98,
+      "dur": 13.98,
+      "kind": "annotated",
+      "image": "img/marcas_abejas.png",
+      "anchor": "telaraña de costras",
+      "eyebrow": "Líneas marrones ásperas",
+      "caption": "No es fea: es dulce",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 50,
+          "y": 50,
+          "fromX": 72,
+          "fromY": 28,
+          "label": "Rastro de abejas"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "marcas_abejas",
+        "prompt": "Realistic handheld 16:9 documentary macro of a watermelon rind covered with rough brown corky web-like scars and lines (bee pollination scarring) over the green skin, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_20b",
+      "start": 251.96,
+      "dur": 3,
+      "kind": "quote",
+      "image": "img/marcas_abejas.png",
+      "anchor": "una historia dulce",
+      "eyebrow": "Esas marcas",
+      "text": "Cuentan una historia *dulce*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 84
+    },
+    {
+      "id": "s1_21",
+      "start": 254.96,
+      "dur": 26.68,
+      "kind": "diagram",
+      "anchor": "las cicatrices que dejaron las abejas",
+      "eyebrow": "Por qué la fea es dulce",
+      "hue": "cold",
+      "accent": "good",
+      "slides": [
+        {
+          "image": "img/dg_abejas.png",
+          "title": "Más abejas → más azúcar",
+          "gen": {
+            "type": "image",
+            "name": "dg_abejas",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Dejá COMPLETAMENTE LIBRE la esquina superior derecha para un avatar. Una secuencia simple con flechas: una flor de sandía visitada por muchas abejas → mejor polinización → más azúcar → marcas marrones en la cáscara. Ilustración botánica clara, texto mínimo en español. Se entiende en 1 segundo. Estética premium editorial, lámina artesanal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1_21b",
+      "start": 281.64,
+      "dur": 2.2,
+      "kind": "raw",
+      "src": "img/sandia_fea.png",
+      "anchor": "agarraba primero",
+      "hue": "amber",
+      "kicker": "La que el abuelo agarraba",
+      "zoom": [
+        1.05,
+        1.16
+      ],
+      "pan": [
+        30,
+        0
+      ]
+    },
+    {
+      "id": "s1_22",
+      "start": 282.72,
+      "dur": 3.16,
+      "kind": "impact",
+      "image": "img/marcas_abejas.png",
+      "anchor": "la fea es la dulce",
+      "setup": "Acordate",
+      "impact": "LA FEA ES LA DULCE",
+      "impactAccent": "good",
+      "hitAt": 2,
+      "boom": 1
+    },
+    {
+      "id": "s1_23",
+      "start": 285.88,
+      "dur": 13.52,
+      "kind": "rule",
+      "anchor": "el círculo de abajo",
+      "number": "03",
+      "label": "El ombligo",
+      "title": "El círculo de abajo",
+      "hue": "amber"
+    },
+    {
+      "id": "s1_24",
+      "start": 299.4,
+      "dur": 11.98,
+      "kind": "annotated",
+      "image": "img/circulo_chico.png",
+      "anchor": "si el círculo es chiquito",
+      "eyebrow": "Círculo chiquito",
+      "caption": "Más dulce y firme",
+      "hue": "cold",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 52,
+          "w": 12,
+          "h": 12,
+          "label": "Chiquito = mejor"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "circulo_chico",
+        "prompt": "Realistic handheld 16:9 documentary macro of the blossom end of a watermelon showing a small tight round scar (small blossom end), held in a hand, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_25",
+      "start": 311.38,
+      "dur": 10.16,
+      "kind": "annotated",
+      "image": "img/circulo_grande.png",
+      "anchor": "grande y ancho",
+      "eyebrow": "Círculo grande",
+      "caption": "Más aguada, más semillas",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 52,
+          "w": 26,
+          "h": 24,
+          "label": "Grande = aguada"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "circulo_grande",
+        "prompt": "Realistic handheld 16:9 documentary macro of the blossom end of a watermelon showing a large wide open round scar, held in a hand, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_26",
+      "start": 321.54,
+      "dur": 6.06,
+      "kind": "quote",
+      "image": "img/circulo_chico.png",
+      "anchor": "círculo chiquito, mejor",
+      "eyebrow": "La regla",
+      "text": "Círculo *chiquito*, mejor.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 88
+    },
+    {
+      "id": "s1_27",
+      "start": 327.6,
+      "dur": 14.6,
+      "kind": "rule",
+      "anchor": "el rabito enrollado",
+      "number": "04",
+      "label": "Casi nadie la conoce",
+      "title": "El zarcillo",
+      "hue": "amber"
+    },
+    {
+      "id": "s1_28",
+      "start": 342.2,
+      "dur": 6.32,
+      "kind": "annotated",
+      "image": "img/zarcillo_verde.png",
+      "anchor": "verde y fresco",
+      "eyebrow": "Zarcillo verde",
+      "caption": "Todavía le falta",
+      "hue": "cold",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 48,
+          "y": 48,
+          "fromX": 70,
+          "fromY": 26,
+          "label": "Verde = no lista"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "zarcillo_verde",
+        "prompt": "Realistic handheld 16:9 documentary macro of a green fresh curly tendril next to the stem of a watermelon on the vine, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_29",
+      "start": 348.52,
+      "dur": 14.24,
+      "kind": "annotated",
+      "image": "img/zarcillo_seco.png",
+      "anchor": "seco, marrón",
+      "eyebrow": "Zarcillo seco",
+      "caption": "En su punto",
+      "hue": "cold",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 48,
+          "y": 48,
+          "fromX": 70,
+          "fromY": 26,
+          "label": "Seco = lista"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "zarcillo_seco",
+        "prompt": "Realistic handheld 16:9 documentary macro of a dried brown curly tendril like a little dead wire next to the stem of a watermelon, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "s1_29b",
+      "start": 362.76,
+      "dur": 6.02,
+      "kind": "raw",
+      "src": "vid/yt_mercado_sandias.mp4",
+      "anchor": "compras en la feria",
+      "hue": "amber",
+      "kicker": "En la feria casi nunca falla",
+      "zoom": [
+        1.05,
+        1.14
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "s1_30",
+      "start": 368.78,
+      "dur": 2.22,
+      "kind": "impact",
+      "image": "img/zarcillo_seco.png",
+      "anchor": "zarcillo seco",
+      "setup": "Esta casi nunca falla",
+      "impact": "ZARCILLO SECO = LISTA",
+      "impactAccent": "good",
+      "hitAt": 2,
+      "boom": 1
+    }
+  ]
+}
