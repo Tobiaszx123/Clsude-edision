@@ -49,7 +49,11 @@
       "hue": "cold",
       "kicker": "Hormigas como en su casa",
       "start": 17.3,
-      "dur": 3.34
+      "dur": 3.34,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "p1_04",
@@ -64,7 +68,11 @@
         "prompt": "Realistic handheld 16:9 documentary macro of bell peppers on the plant bitten and damaged by pests, ruined fruit, garden, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, perfect peppers, cartoon, CGI, 3D, watermark, text."
       },
       "start": 20.64,
-      "dur": 7.06
+      "dur": 7.06,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "p1_05",
@@ -74,7 +82,15 @@
       "hue": "amber",
       "kicker": "Compraste el insecticida",
       "start": 27.7,
-      "dur": 10.62
+      "dur": 10.62,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "p1_06",
@@ -202,7 +218,15 @@
         "prompt": "Realistic handheld 16:9 extreme macro of fine white diatomaceous earth powder, silky talc-like texture, a fingertip touching it, soft natural light, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 105.34,
-      "dur": 11.22
+      "dur": 11.22,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "p1_13",
@@ -403,7 +427,15 @@
       "hue": "amber",
       "kicker": "Babosas que comen de noche",
       "start": 224.7,
-      "dur": 10.64
+      "dur": 10.64,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "p1_21",
@@ -459,16 +491,15 @@
       "id": "p1_24",
       "kind": "raw",
       "anchor": "lo espolvorea sobre la planta y la tierra cuando están secas",
-      "src": "img/espolvorear_seco.png",
+      "src": "img/el_espolvorea.png",
       "hue": "amber",
       "kicker": "Regla 1: siempre en seco",
-      "gen": {
-        "type": "image",
-        "name": "espolvorear_seco",
-        "prompt": "Realistic handheld 16:9 documentary frame of a hand dusting white powder over dry plant leaves and dry soil on a sunny day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, wet soil, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 282.3,
-      "dur": 6.82
+      "dur": 6.82,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "p1_25",
@@ -490,38 +521,17 @@
     },
     {
       "id": "p1_26",
-      "kind": "annotated",
+      "kind": "raw",
       "anchor": "haces un anillo de polvo alrededor de la base",
-      "image": "img/anillo_polvo.png",
-      "eyebrow": "Regla 2: capa fina + anillo",
-      "caption": "Un anillo en la base = muralla de vidrio",
       "hue": "amber",
-      "annotations": [
-        {
-          "kind": "circle",
-          "x": 0.5,
-          "y": 0.7,
-          "w": 0.45,
-          "h": 0.3,
-          "label": "Anillo alrededor del tallo",
-          "color": "good"
-        },
-        {
-          "kind": "arrow",
-          "x": 0.5,
-          "y": 0.4,
-          "fromX": 0.18,
-          "fromY": 0.2,
-          "label": "Capa fina, como nevadita"
-        }
-      ],
-      "gen": {
-        "type": "image",
-        "name": "anillo_polvo",
-        "prompt": "Realistic handheld 16:9 documentary frame of a thin ring of white powder dusted on the soil around the base of a plant stem, like a light snow ring, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, thick pile, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 305.24,
-      "dur": 16.88
+      "dur": 16.88,
+      "kicker": "Así lo hago yo",
+      "zoom": [
+        1.18,
+        1.05
+      ],
+      "src": "img/el_anillo_polvo.png"
     },
     {
       "id": "p1_27",
@@ -568,38 +578,44 @@
       "hue": "amber",
       "kicker": "Al atardecer, sin abejas",
       "start": 337.1,
-      "dur": 19.12
+      "dur": 19.12,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "p1_30",
       "kind": "raw",
       "anchor": "ponte un trapo o un pañuelo",
-      "src": "img/pañuelo_cara.png",
+      "src": "img/el_panuelo.png",
       "hue": "amber",
       "kicker": "Regla 4: pañuelo y sin viento",
-      "gen": {
-        "type": "image",
-        "name": "pañuelo_cara",
-        "prompt": "Realistic handheld 16:9 documentary frame of a gardener with a cloth bandana over nose and mouth dusting powder in the garden on a still day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 356.22,
-      "dur": 5.64
+      "dur": 5.64,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "p1_31",
       "kind": "callout",
       "anchor": "Pide siempre el degrado alimenticio",
-      "image": "img/bolsa_grado_alim.png",
+      "image": "img/el_muestra_bolsa.png",
       "figure": "★",
       "eyebrow": "Al comprar",
       "caption": "Pedí el de GRADO ALIMENTICIO (no el de piletas)",
       "accent": "good",
       "hue": "amber",
-      "gen": {
-        "type": "image",
-        "name": "bolsa_grado_alim",
-        "prompt": "Realistic handheld 16:9 documentary frame of a plain bag of food-grade diatomaceous earth held in hand at a farm supply store, plain packaging, store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brand, pool filter bag, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 361.86,
       "dur": 12.34
     },

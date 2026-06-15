@@ -1,7 +1,6 @@
 import { Video } from "@remotion/media";
 import { AbsoluteFill, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import { useAudioData, visualizeAudio } from "@remotion/media-utils";
-import { COLORS } from "../theme";
 
 // ── AVATAR LAYER ──────────────────────────────────────────────────────────────
 // Una ÚNICA instancia del video del presentador (estufa_opt.mp4) que abarca todo
@@ -66,7 +65,7 @@ export const AvatarLayer: React.FC<{
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
-}> = ({ src, windows, accent = COLORS.accent, wav }) => {
+}> = ({ src, windows, wav }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -148,11 +147,15 @@ export const AvatarLayer: React.FC<{
           borderRadius: r,
           overflow: "hidden",
           opacity: op,
+          // marco de WEBCAM neutro: borde blanco fino + sombra suave (sutilmente
+          // "respira" con la voz vía amp), SIN glow de color (el usuario pidió sacar
+          // el borde amarillo y que parezca un encuadre de webcam normal).
           boxShadow:
             chrome > 0.02
-              ? `0 ${30 * chrome}px ${80 * chrome}px rgba(0,0,0,${0.55 * chrome}), 0 0 0 ${(2 + amp * 2.5) * chrome}px ${accent}${Math.round((0.4 + amp * 0.5) * 255).toString(16).padStart(2, "0")}, 0 0 ${(10 + amp * 34) * chrome}px ${accent}${Math.round(amp * 160).toString(16).padStart(2, "0")}`
+              ? `0 ${(14 + amp * 8) * chrome}px ${44 * chrome}px rgba(0,0,0,${0.42 * chrome})`
               : "none",
-          border: chrome > 0.02 ? `1px solid rgba(255,255,255,${0.18 * chrome})` : "none",
+          border: chrome > 0.02 ? `${3 * chrome}px solid rgba(255,255,255,0.92)` : "none",
+          outline: chrome > 0.02 ? `1px solid rgba(0,0,0,0.18)` : "none",
           willChange: "left, top, width, height",
         }}
       >

@@ -18,16 +18,15 @@
       "id": "p2_02",
       "kind": "raw",
       "anchor": "un anillo de ceniza seca alrededor",
-      "src": "img/ceniza_anillo.png",
+      "src": "img/el_ceniza.png",
       "hue": "amber",
       "kicker": "Ceniza: muralla contra babosas",
-      "gen": {
-        "type": "image",
-        "name": "ceniza_anillo",
-        "prompt": "Realistic handheld 16:9 documentary frame of a ring of dry wood ash around the base of a garden plant, gray ash on soil, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 14.42,
-      "dur": 7.86
+      "dur": 7.86,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "p2_03",
@@ -60,7 +59,11 @@
         "prompt": "Realistic handheld 16:9 documentary macro of crushed eggshells ground almost to powder with small sharp pieces in a bowl, kitchen table, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 32.58,
-      "dur": 18.62
+      "dur": 18.62,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "p2_05",
@@ -93,7 +96,15 @@
         "prompt": "Realistic handheld 16:9 documentary macro of ground cinnamon powder being sprinkled over tiny young seedlings in a seed tray, natural daylight, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 60.18,
-      "dur": 14.08
+      "dur": 14.08,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "p2_07",
@@ -117,16 +128,19 @@
       "id": "p2_08",
       "kind": "raw",
       "anchor": "el café usado la borra",
-      "src": "img/borra_cafe.png",
+      "src": "img/el_borra_cafe.png",
       "hue": "amber",
       "kicker": "Borra de café: las plagas se alejan",
-      "gen": {
-        "type": "image",
-        "name": "borra_cafe",
-        "prompt": "Realistic handheld 16:9 documentary macro of used coffee grounds being scattered around the base of a garden plant, dark brown grounds on soil, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 80.26,
-      "dur": 12.61
+      "dur": 12.61,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "p2_09",
@@ -187,7 +201,15 @@
         "prompt": "Realistic handheld 16:9 documentary frame of a store clerk's hand offering a pesticide bottle across a garden store counter, shelves behind, store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brand, cartoon, CGI, 3D, watermark, text."
       },
       "start": 112.59,
-      "dur": 5.78
+      "dur": 5.78,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "p2_13",
@@ -298,7 +320,11 @@
         "prompt": "Realistic handheld 16:9 documentary frame of hands making a first thin ring of white powder around the base of the most pest-damaged plant on a dry day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 164.15,
-      "dur": 6.26
+      "dur": 6.26,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "p2_19",
@@ -334,7 +360,11 @@
         "prompt": "Realistic handheld 16:9 documentary frame of a homemade natural spray bottle next to garlic, chili and herbs on a kitchen table, DIY remedy, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 198.03,
-      "dur": 11.24
+      "dur": 11.24,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "p2_21",
@@ -359,17 +389,12 @@
       "id": "p2_22",
       "kind": "quote",
       "anchor": "Así lo hacían los viejos",
-      "image": "img/huerta_sana_final.png",
+      "image": "img/el_huerta_orgullo.png",
       "eyebrow": "Cuidá tu mesa",
       "text": "Cuidá tu huerta sin envenenar tu mesa. Así lo hacían *los viejos*.",
       "accent": "amber",
       "hue": "amber",
       "fontSize": 72,
-      "gen": {
-        "type": "image",
-        "name": "huerta_sana_final",
-        "prompt": "Realistic handheld 16:9 documentary frame of a clean thriving pesticide-free vegetable garden in warm afternoon light, healthy plants, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
-      },
       "start": 212.97,
       "dur": 2.2
     }

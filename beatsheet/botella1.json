@@ -30,7 +30,11 @@
       "hue": "cold",
       "kicker": "Hojas mustias, colgando",
       "start": 9.4,
-      "dur": 5.56
+      "dur": 5.56,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b1_03",
@@ -77,7 +81,11 @@
       "hue": "amber",
       "kicker": "Regaste todos los días",
       "start": 25.88,
-      "dur": 8.22
+      "dur": 8.22,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "b1_06",
@@ -180,7 +188,15 @@
       "hue": "blue",
       "kicker": "Con lo que tirás a la basura",
       "start": 60.56,
-      "dur": 6.1
+      "dur": 6.1,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "b1_10c",
@@ -228,7 +244,15 @@
       "hue": "amber",
       "kicker": "Mojás la tierra por arriba",
       "start": 94.04,
-      "dur": 5.04
+      "dur": 5.04,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "b1_13",
@@ -346,7 +370,15 @@
         "type": "image",
         "name": "raices_flojas_maceta",
         "prompt": "Realistic handheld 16:9 documentary a small plant lifted from a pot showing short weak shallow roots clinging near the surface, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
-      }
+      },
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "b1_16c",
@@ -374,7 +406,11 @@
       "hue": "cold",
       "kicker": "El día que faltás, se muere",
       "start": 147.66,
-      "dur": 2.2
+      "dur": 2.2,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b1_18",
@@ -425,7 +461,11 @@
       "hue": "amber",
       "kicker": "Raíces hondas, fuertes",
       "start": 157.76,
-      "dur": 8.66
+      "dur": 8.66,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "b1_19b",
@@ -569,16 +609,19 @@
       "id": "b1_25",
       "kind": "raw",
       "anchor": "Necesitas una botella de plástico",
-      "src": "img/botella_gaseosa.png",
+      "src": "img/el_muestra_botella.png",
       "hue": "amber",
       "kicker": "De 1.5 o 2 litros, mejor",
-      "gen": {
-        "type": "image",
-        "name": "botella_gaseosa",
-        "prompt": "Realistic handheld 16:9 documentary macro of a clean empty 2-liter plastic soda bottle on a rustic wooden workbench in a shed, weathered hand reaching for it, natural daylight from a window, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, clean product photo, cartoon, CGI, 3D, watermark, logo, text."
-      },
       "start": 228.26,
-      "dur": 9.22
+      "dur": 9.22,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "b1_26",
@@ -616,7 +659,21 @@
         "prompt": "Realistic handheld 16:9 documentary macro of hands rinsing the inside of a clear plastic bottle with water at an outdoor tap, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 237.48,
-      "dur": 13.22
+      "dur": 4.2
+    },
+    {
+      "id": "b1_el_perfora",
+      "kind": "raw",
+      "anchor": "con un clavo caliente",
+      "src": "img/el_perfora_botella.png",
+      "hue": "amber",
+      "kicker": "Le hago los agujeritos",
+      "zoom": [
+        1.18,
+        1.05
+      ],
+      "start": 241.68,
+      "dur": 9.02
     },
     {
       "id": "b1_27",
@@ -707,11 +764,37 @@
       "id": "b1_31",
       "kind": "raw",
       "anchor": "Ahora la entierras",
-      "src": "vid/yt_cavar_pozo.mp4",
+      "src": "img/el_entierra_botella.png",
       "hue": "amber",
       "kicker": "Cavás al lado, a un palmo",
       "start": 294.56,
-      "dur": 9.46
+      "dur": 3.1,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "b1_el_cava",
+      "kind": "raw",
+      "anchor": "Cavas un pozo al lado de la planta",
+      "src": "img/el_cava_pozo.png",
+      "hue": "amber",
+      "kicker": "Cavo al lado, a un palmo",
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ],
+      "start": 297.66,
+      "dur": 6.36
     },
     {
       "id": "b1_32",
@@ -790,17 +873,29 @@
         "prompt": "Realistic handheld 16:9 documentary extreme macro of a plastic bottle cap with a single tiny pinhole pierced in the center, fingers holding it, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, big hole, cartoon, CGI, 3D, watermark, text."
       },
       "start": 341.74,
-      "dur": 9.82
+      "dur": 9.82,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "b1_35",
       "kind": "raw",
       "anchor": "Llénala de agua y la botella empieza su trabajo",
-      "src": "vid/yt_llenar_botella.mp4",
+      "src": "img/el_llena_botella.png",
       "hue": "amber",
       "kicker": "Llenala y listo",
       "start": 351.56,
-      "dur": 3.42
+      "dur": 3.42,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b1_36",

@@ -89,7 +89,11 @@
       "hue": "blue",
       "kicker": "Te vas tranquilo",
       "start": 17,
-      "dur": 6.18
+      "dur": 6.18,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b2_05",
@@ -122,7 +126,11 @@
         "prompt": "Realistic handheld 16:9 documentary macro of a strong plant pulled to show long deep robust roots reaching far down into dark moist soil, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, shallow roots, cartoon, CGI, 3D, watermark, text."
       },
       "start": 25.04,
-      "dur": 8.02
+      "dur": 8.02,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "b2_07",
@@ -164,7 +172,15 @@
         "prompt": "Realistic handheld 16:9 documentary macro of healthy dry tomato leaves in good condition, no spots, dry foliage in soft daylight, muted greens, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, disease, cartoon, CGI, 3D, watermark, text."
       },
       "start": 35.98,
-      "dur": 4.26
+      "dur": 4.26,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "b2_09",
@@ -238,7 +254,15 @@
         "prompt": "Realistic handheld 16:9 documentary macro of a hand pouring dark liquid fertilizer (compost tea) into a plastic bottle funnel over garden soil, brownish water, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, clean product, cartoon, CGI, 3D, watermark, text."
       },
       "start": 64.18,
-      "dur": 7.1
+      "dur": 7.1,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "b2_13",
@@ -253,7 +277,15 @@
         "prompt": "Realistic handheld 16:9 documentary macro of a weathered hand holding a fistful of dark crumbly compost over a bucket of water, garden background, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 71.28,
-      "dur": 9.36
+      "dur": 9.36,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "b2_14",
@@ -286,7 +318,11 @@
         "prompt": "Realistic handheld 16:9 documentary frame of a large tomato plant heavy with ripe fruit, a big 2-liter bottle buried beside it, vegetable garden, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 86.3,
-      "dur": 5.66
+      "dur": 5.66,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b2_16",
@@ -314,7 +350,11 @@
       "hue": "blue",
       "kicker": "Las macetas son las que más sufren",
       "start": 95.18,
-      "dur": 5.24
+      "dur": 5.24,
+      "zoom": [
+        1.18,
+        1.05
+      ]
     },
     {
       "id": "b2_18",
@@ -348,7 +388,15 @@
         "prompt": "Realistic handheld 16:9 documentary macro of a plastic bottle wrapped in an old cloth rag being buried in very dry soil, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 112.34,
-      "dur": 5.38
+      "dur": 5.38,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
     },
     {
       "id": "b2_20",
@@ -422,7 +470,15 @@
       "hue": "red",
       "kicker": "Todo lo que te venden",
       "start": 164.06,
-      "dur": 10.78
+      "dur": 10.78,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
     },
     {
       "id": "b2_25",
@@ -490,7 +546,15 @@
         "prompt": "Realistic handheld 16:9 documentary frame of an elderly farmer's weathered hands tending a small vegetable garden at golden hour, vintage rural feel, natural warm daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text, face closeup."
       },
       "start": 197.72,
-      "dur": 3.76
+      "dur": 3.76,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
     },
     {
       "id": "b2_29",
@@ -556,7 +620,11 @@
         "prompt": "Realistic handheld 16:9 documentary macro of rich dark black crumbly compost soil falling through weathered hands, healthy garden background, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
       },
       "start": 235.12,
-      "dur": 17.16
+      "dur": 17.16,
+      "zoom": [
+        1.05,
+        1.18
+      ]
     },
     {
       "id": "b2_32",
@@ -581,19 +649,14 @@
       "id": "b2_33",
       "kind": "quote",
       "anchor": "Así lo hacían los de antes",
-      "image": "img/abuelo_huerta2.png",
+      "image": "img/el_huerta_orgullo.png",
       "eyebrow": "Y mirá cómo dejan de sufrir",
       "text": "Así lo hacían *los de antes*.",
       "accent": "amber",
       "hue": "amber",
       "fontSize": 88,
       "start": 258.82,
-      "dur": 2.2,
-      "gen": {
-        "type": "image",
-        "name": "abuelo_huerta2",
-        "prompt": "Realistic handheld 16:9 documentary an elderly gardener's hands gently pressing soil around a healthy plant at golden hour, vintage rural, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
-      }
+      "dur": 2.2
     }
   ]
 }
