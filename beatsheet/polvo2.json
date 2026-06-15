@@ -197,7 +197,7 @@
       "setup": "La respuesta de siempre:",
       "impact": "no hay plata en lo que DURA",
       "impactAccent": "danger",
-      "hitAt": 2.5,
+      "hitAt": 1,
       "boom": 2,
       "hue": "red",
       "gen": {
