@@ -105,8 +105,12 @@ export const AvatarLayer: React.FC<{
   const w = lerp(fromGeom.w, toGeom.w, p);
   const h = lerp(fromGeom.h, toGeom.h, p);
   const r = lerp(fromGeom.r, toGeom.r, p);
-  const op = lerp(fromGeom.op, toGeom.op, p);
-  const chrome = lerp(fromGeom.chrome, toGeom.chrome, p);
+  // OPACIDAD BINARIA (corte duro): nunca semitransparente. El fade-in-place hacía
+  // que en cada transición hidden↔esquina el avatar cruzara op 0→1 y se viera
+  // "transparente"/fantasma sobre el b-roll. Ahora aparece/desaparece de golpe;
+  // entre modos VISIBLES la posición sí se desliza suave (op se mantiene en 1).
+  const op = curMode === "hidden" ? 0 : 1;
+  const chrome = curMode === "hidden" ? 0 : 1;
 
   // float sutil solo cuando NO está full (cuanto más chico, más flota)
   const smallness = 1 - w / W;

@@ -1,0 +1,659 @@
+{
+  "video": "polvo1",
+  "avatar": "polvo1_opt.mp4",
+  "_nota": "Video POLVO parte 1 (~6:24): hook (plaga + culpa del veneno) → qué es la tierra de diatomeas (mar antiguo) → cómo mata (vidrio microscópico, física, sin resistencia) → a qué mata (plaga que camina) → cómo usarla bien (reglas: seco, capa fina+anillo, cuidar abejas, máscara, grado alimenticio). Clip-heavy: yt + deAPI macros + dg_* diagramas. CADA cue su imagen única. anchors→sync.",
+  "beats": [
+    {
+      "id": "p1_01",
+      "kind": "impact",
+      "anchor": "se te cayó el alma",
+      "image": "img/hojas_agujeros.png",
+      "setup": "Saliste con el café a ver la huerta...",
+      "impact": "y se te cayó el alma",
+      "impactAccent": "danger",
+      "hitAt": 3,
+      "boom": 2,
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hojas_agujeros",
+        "prompt": "Realistic handheld 16:9 documentary macro of vegetable plant leaves full of holes, chewed into lace by pests, damaged foliage, morning garden light, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, healthy leaves, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 5.16,
+      "dur": 5.8
+    },
+    {
+      "id": "p1_02",
+      "kind": "raw",
+      "anchor": "el tallo del tomate cubierto de pulgones",
+      "src": "img/pulgones_tallo.png",
+      "hue": "cold",
+      "kicker": "Pulgones chupándole la vida",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "gen": {
+        "type": "image",
+        "name": "pulgones_tallo",
+        "prompt": "Realistic handheld 16:9 extreme documentary macro of a tomato stem covered in tiny green aphids packed together, garden background blurred, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 10.96,
+      "dur": 6.34
+    },
+    {
+      "id": "p1_03",
+      "kind": "raw",
+      "anchor": "una fila de hormigas subiendo",
+      "src": "vid/yt_fila_hormigas.mp4",
+      "hue": "cold",
+      "kicker": "Hormigas como en su casa",
+      "start": 17.3,
+      "dur": 3.34
+    },
+    {
+      "id": "p1_04",
+      "kind": "raw",
+      "anchor": "los pimientos que estabas esperando",
+      "src": "img/pimientos_mordidos.png",
+      "hue": "cold",
+      "kicker": "Arruinados en una noche",
+      "gen": {
+        "type": "image",
+        "name": "pimientos_mordidos",
+        "prompt": "Realistic handheld 16:9 documentary macro of bell peppers on the plant bitten and damaged by pests, ruined fruit, garden, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, perfect peppers, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 20.64,
+      "dur": 7.06
+    },
+    {
+      "id": "p1_05",
+      "kind": "raw",
+      "anchor": "Fuiste y compraste el veneno",
+      "src": "vid/yt_rociar_insecticida.mp4",
+      "hue": "amber",
+      "kicker": "Compraste el insecticida",
+      "start": 27.7,
+      "dur": 10.62
+    },
+    {
+      "id": "p1_06",
+      "kind": "impact",
+      "anchor": "volvieron peor",
+      "image": "img/plaga_volvio.png",
+      "setup": "Por una semana pareció que ganaste...",
+      "impact": "pero volvieron PEOR",
+      "impactAccent": "danger",
+      "hitAt": 2.5,
+      "boom": 2,
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "plaga_volvio",
+        "prompt": "Realistic handheld 16:9 documentary macro of a plant leaf heavily reinfested with pests again, worse damage, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 38.32,
+      "dur": 12.36
+    },
+    {
+      "id": "p1_07",
+      "kind": "quote",
+      "anchor": "rociando veneno en el patio donde juegan mis nietos",
+      "image": "img/frasco_veneno.png",
+      "eyebrow": "Lo que te incomoda",
+      "text": "Veneno donde juegan tus *nietos*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 84,
+      "gen": {
+        "type": "image",
+        "name": "frasco_veneno",
+        "prompt": "Realistic handheld 16:9 documentary close-up of a weathered hand holding a generic plastic pesticide bottle over a vegetable garden, worried mood, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brand label, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 50.68,
+      "dur": 4.98
+    },
+    {
+      "id": "p1_08",
+      "kind": "headline",
+      "anchor": "Hoy te voy a enseñar otra cosa",
+      "eyebrow": "Hoy",
+      "tokens": [
+        {
+          "t": "Otra cosa: "
+        },
+        {
+          "t": "un polvo",
+          "hl": true
+        }
+      ],
+      "bg": "image",
+      "image": "img/polvo_blanco_mano.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "polvo_blanco_mano",
+        "prompt": "Realistic handheld 16:9 documentary macro of a fine white powder in an open weathered palm over a garden, soft talc-like texture, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 55.66,
+      "dur": 7.54
+    },
+    {
+      "id": "p1_09",
+      "kind": "chips",
+      "anchor": "ni a tus animales ni a la tierra ni a tus nietos",
+      "bg": "image",
+      "image": "img/nietos_huerta.png",
+      "title": "No le hace daño a",
+      "chips": [
+        "vos",
+        "tus animales",
+        "la tierra",
+        "tus nietos"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "nietos_huerta",
+        "prompt": "Realistic handheld 16:9 documentary frame of grandchildren playing in a backyard vegetable garden with a grandparent, warm everyday scene, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text, close-up faces."
+      },
+      "start": 63.2,
+      "dur": 14.12
+    },
+    {
+      "id": "p1_10",
+      "kind": "quote",
+      "anchor": "la industria del veneno preferiría",
+      "image": "img/estante_venenos.png",
+      "eyebrow": "Por qué no lo sabés",
+      "text": "La industria del veneno preferiría que *no existiera*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 70,
+      "gen": {
+        "type": "image",
+        "name": "estante_venenos",
+        "prompt": "Realistic handheld 16:9 documentary frame of a garden store shelf full of pesticide bottles and sprays, rows of products, store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brands, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 77.32,
+      "dur": 23.46
+    },
+    {
+      "id": "p1_11",
+      "kind": "rule",
+      "anchor": "Se llama tierra de diatomeas",
+      "number": "01",
+      "label": "Qué es",
+      "title": "Tierra de diatomeas",
+      "hue": "blue",
+      "start": 100.78,
+      "dur": 4.56
+    },
+    {
+      "id": "p1_12",
+      "kind": "raw",
+      "anchor": "un polvo blanco suave al tacto",
+      "src": "img/polvo_textura.png",
+      "hue": "blue",
+      "kicker": "Suave como talco",
+      "gen": {
+        "type": "image",
+        "name": "polvo_textura",
+        "prompt": "Realistic handheld 16:9 extreme macro of fine white diatomaceous earth powder, silky talc-like texture, a fingertip touching it, soft natural light, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 105.34,
+      "dur": 11.22
+    },
+    {
+      "id": "p1_13",
+      "kind": "diagram",
+      "anchor": "vivían unas algas microscópicas",
+      "eyebrow": "De dónde sale",
+      "hue": "blue",
+      "accent": "cold",
+      "slides": [
+        {
+          "image": "img/dg_diatomeas.png",
+          "title": "Algas con caparazón de vidrio",
+          "gen": {
+            "type": "image",
+            "name": "dg_diatomeas",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos verde oliva y azul eucalipto apagado. Muestra unas algas microscópicas (diatomeas) con caparazones geométricos de vidrio, bellamente dibujadas como lámina de naturalista antiguo. Texto en español: 'DIATOMEAS: ALGAS DE CAPARAZÓN DE VIDRIO'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage scientific archival illustration, aged paper texture."
+          }
+        },
+        {
+          "image": "img/dg_yacimiento.png",
+          "title": "Capas en el fondo del mar",
+          "gen": {
+            "type": "image",
+            "name": "dg_yacimiento",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos azul eucalipto y terracota. Corte del fondo de un mar antiguo donde caparazones de diatomeas se acumulan capa sobre capa durante millones de años hasta formar un yacimiento blanco. Texto en español: 'CAPA SOBRE CAPA, MILLONES DE AÑOS'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage geology archival illustration, aged paper texture."
+          }
+        }
+      ],
+      "start": 116.56,
+      "dur": 10.32
+    },
+    {
+      "id": "p1_14",
+      "kind": "journey",
+      "anchor": "capa sobre capa durante millones de años",
+      "eyebrow": "Polvo de un mar antiguo",
+      "title": "Del mar antiguo a tu mano",
+      "worldImage": "img/dg_mar_antiguo.png",
+      "accent": "cold",
+      "waypoints": [
+        {
+          "x": 0.18,
+          "y": 0.3,
+          "z": 0,
+          "num": "1",
+          "label": "Mares de hace millones de años",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.45,
+          "y": 0.6,
+          "z": 0.2,
+          "num": "2",
+          "label": "Las diatomeas mueren y caen",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.7,
+          "y": 0.72,
+          "z": 0,
+          "num": "3",
+          "label": "Capas que se vuelven roca",
+          "dwell": 3,
+          "travel": 1.6
+        },
+        {
+          "x": 0.85,
+          "y": 0.4,
+          "z": 0.1,
+          "num": "4",
+          "label": "Se muele: polvo blanco",
+          "dwell": 3,
+          "travel": 1.6
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "dg_mar_antiguo",
+        "prompt": "Crear una lámina horizontal 16:9 estilo ilustración a mano de un mar antiguo en corte transversal, editorial premium. Fondo marfil/pergamino claro textura papel envejecido, líneas marrón oscuro tipo grabado, acentos azul eucalipto y terracota apagado. Un océano prehistórico con su lecho profundo, sin texto, mucho espacio respirable, estética de atlas naturalista antiguo. Negative prompt: modern, bright colors, text, labels, cartoon, CGI, 3D, watermark."
+      },
+      "start": 126.88,
+      "dur": 23.3
+    },
+    {
+      "id": "p1_15",
+      "kind": "diagram",
+      "anchor": "cada partícula es un pedacito de vidrio",
+      "eyebrow": "Cómo mata",
+      "hue": "amber",
+      "accent": "danger",
+      "slides": [
+        {
+          "image": "img/dg_vidrio_micro.png",
+          "title": "Bajo el microscopio: vidrio con filos",
+          "gen": {
+            "type": "image",
+            "name": "dg_vidrio_micro",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos terracota y verde oliva. Muestra una lupa/microscopio revelando que el polvo suave está hecho de partículas de vidrio con bordes y puntas afiladas como cuchillos diminutos. Texto en español: 'TALCO PARA VOS, VIDRIO PARA EL BICHO'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage scientific archival illustration, aged paper texture."
+          }
+        },
+        {
+          "image": "img/dg_deshidrata.png",
+          "title": "Le raya la cera y se deshidrata",
+          "gen": {
+            "type": "image",
+            "name": "dg_deshidrata",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos terracota. Muestra un insecto de cuerpo blando cuya cubierta cerosa es rayada por los filos del polvo y pierde su agua hasta secarse. Flechas mostrando la humedad escapando. Texto en español: 'PIERDE EL AGUA Y SE SECA'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage entomology archival illustration, aged paper texture."
+          }
+        }
+      ],
+      "start": 150.18,
+      "dur": 36.88
+    },
+    {
+      "id": "p1_16",
+      "kind": "quote",
+      "anchor": "Lo mata la pura física",
+      "image": "img/bicho_seco.png",
+      "eyebrow": "Sin una gota de veneno",
+      "text": "Lo mata la pura *física*.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 92,
+      "gen": {
+        "type": "image",
+        "name": "bicho_seco",
+        "prompt": "Realistic handheld 16:9 extreme documentary macro of a dried dead soft-body insect on soil dusted with fine white powder, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 187.06,
+      "dur": 7.38
+    },
+    {
+      "id": "p1_17",
+      "kind": "bars",
+      "anchor": "las plagas nunca se pueden volver resistentes",
+      "eyebrow": "Veneno vs polvo",
+      "title": "¿Se vuelven resistentes?",
+      "accent": "good",
+      "hue": "amber",
+      "bars": [
+        {
+          "label": "Veneno químico",
+          "value": 8,
+          "display": "Sí: cada año más fuerte",
+          "tone": "danger"
+        },
+        {
+          "label": "Polvo (vidrio)",
+          "value": 1,
+          "display": "Nunca",
+          "tone": "good",
+          "winner": true
+        }
+      ],
+      "start": 194.44,
+      "dur": 10.86
+    },
+    {
+      "id": "p1_18",
+      "kind": "quote",
+      "anchor": "contra el vidrio no hay resistencia",
+      "image": "img/polvo_planta.png",
+      "eyebrow": "Un filo es un filo",
+      "text": "Funcionó hace 100 años. Funciona *hoy*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80,
+      "gen": {
+        "type": "image",
+        "name": "polvo_planta",
+        "prompt": "Realistic handheld 16:9 documentary macro of fine white powder being dusted over a green plant leaf, light dusting like snow, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 205.3,
+      "dur": 13.24
+    },
+    {
+      "id": "p1_19",
+      "kind": "splitlist",
+      "anchor": "A las hormigas que para muchos son la peor pesadilla",
+      "title": "A quién mata (plaga que camina)",
+      "items": [
+        "Hormigas",
+        "Pulgones",
+        "Babosas y caracoles",
+        "Escarabajos, tijeretas, cochinillas"
+      ],
+      "palette": "G",
+      "start": 218.54,
+      "dur": 6.16
+    },
+    {
+      "id": "p1_20",
+      "kind": "raw",
+      "anchor": "A las babosas y los caracoles",
+      "src": "vid/yt_babosa_hoja.mp4",
+      "hue": "amber",
+      "kicker": "Babosas que comen de noche",
+      "start": 224.7,
+      "dur": 10.64
+    },
+    {
+      "id": "p1_21",
+      "kind": "chips",
+      "anchor": "también acaba con pulgas garrapatas",
+      "bg": "image",
+      "image": "img/polvo_casa.png",
+      "title": "Y en la casa",
+      "chips": [
+        "pulgas",
+        "garrapatas",
+        "cucarachas"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "polvo_casa",
+        "prompt": "Realistic handheld 16:9 documentary frame of white powder dusted along a baseboard near where a pet sleeps indoors, home setting, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 235.34,
+      "dur": 10.96
+    },
+    {
+      "id": "p1_22",
+      "kind": "quote",
+      "anchor": "es matar a la mosca que vuela",
+      "image": "img/mosca_vuela.png",
+      "eyebrow": "Honestidad",
+      "text": "No mata a la que *vuela*. Sí a la que *camina*.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 74,
+      "gen": {
+        "type": "image",
+        "name": "mosca_vuela",
+        "prompt": "Realistic handheld 16:9 documentary macro of a fly in mid-air near a plant leaf, slightly blurred motion, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "dur": 13.52,
+      "start": 246.3
+    },
+    {
+      "id": "p1_23",
+      "kind": "rule",
+      "anchor": "Cómo se usa bien",
+      "number": "02",
+      "label": "Reglas sagradas",
+      "title": "Cómo usarla bien",
+      "hue": "amber",
+      "start": 259.82,
+      "dur": 22.48
+    },
+    {
+      "id": "p1_24",
+      "kind": "raw",
+      "anchor": "lo espolvorea sobre la planta y la tierra cuando están secas",
+      "src": "img/espolvorear_seco.png",
+      "hue": "amber",
+      "kicker": "Regla 1: siempre en seco",
+      "gen": {
+        "type": "image",
+        "name": "espolvorear_seco",
+        "prompt": "Realistic handheld 16:9 documentary frame of a hand dusting white powder over dry plant leaves and dry soil on a sunny day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, wet soil, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 282.3,
+      "dur": 6.82
+    },
+    {
+      "id": "p1_25",
+      "kind": "quote",
+      "anchor": "Seco mata mojado no",
+      "image": "img/gotas_lluvia_hoja.png",
+      "eyebrow": "Y tras la lluvia, repetí",
+      "text": "*Seco* mata. *Mojado* no.",
+      "accent": "cold",
+      "hue": "amber",
+      "fontSize": 96,
+      "gen": {
+        "type": "image",
+        "name": "gotas_lluvia_hoja",
+        "prompt": "Realistic handheld 16:9 documentary macro of rain droplets on a green plant leaf after rain, garden, natural overcast light, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 289.12,
+      "dur": 16.12
+    },
+    {
+      "id": "p1_26",
+      "kind": "annotated",
+      "anchor": "haces un anillo de polvo alrededor de la base",
+      "image": "img/anillo_polvo.png",
+      "eyebrow": "Regla 2: capa fina + anillo",
+      "caption": "Un anillo en la base = muralla de vidrio",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.45,
+          "h": 0.3,
+          "label": "Anillo alrededor del tallo",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.4,
+          "fromX": 0.18,
+          "fromY": 0.2,
+          "label": "Capa fina, como nevadita"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "anillo_polvo",
+        "prompt": "Realistic handheld 16:9 documentary frame of a thin ring of white powder dusted on the soil around the base of a plant stem, like a light snow ring, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, thick pile, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 305.24,
+      "dur": 16.88
+    },
+    {
+      "id": "p1_27",
+      "kind": "impact",
+      "anchor": "puede matar a la abejita",
+      "image": "img/abeja_flor.png",
+      "setup": "Regla 3, de conciencia:",
+      "impact": "CUIDÁ a las abejas",
+      "impactAccent": "good",
+      "hitAt": 2.5,
+      "boom": 1,
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "abeja_flor",
+        "prompt": "Realistic handheld 16:9 documentary macro of a honeybee on an open garden flower collecting pollen, soft natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 322.12,
+      "dur": 7.18
+    },
+    {
+      "id": "p1_28",
+      "kind": "quote",
+      "anchor": "nunca lo espolvorees sobre las flores abiertas",
+      "image": "img/flor_abierta.png",
+      "eyebrow": "Nunca en las flores",
+      "text": "En las hojas y la tierra. *Nunca* en las flores.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 72,
+      "gen": {
+        "type": "image",
+        "name": "flor_abierta",
+        "prompt": "Realistic handheld 16:9 documentary macro of an open vegetable garden flower (tomato or squash blossom) in soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 329.3,
+      "dur": 7.8
+    },
+    {
+      "id": "p1_29",
+      "kind": "raw",
+      "anchor": "hazlo al atardecer",
+      "src": "vid/yt_huerta_atardecer.mp4",
+      "hue": "amber",
+      "kicker": "Al atardecer, sin abejas",
+      "start": 337.1,
+      "dur": 19.12
+    },
+    {
+      "id": "p1_30",
+      "kind": "raw",
+      "anchor": "ponte un trapo o un pañuelo",
+      "src": "img/pañuelo_cara.png",
+      "hue": "amber",
+      "kicker": "Regla 4: pañuelo y sin viento",
+      "gen": {
+        "type": "image",
+        "name": "pañuelo_cara",
+        "prompt": "Realistic handheld 16:9 documentary frame of a gardener with a cloth bandana over nose and mouth dusting powder in the garden on a still day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 356.22,
+      "dur": 5.64
+    },
+    {
+      "id": "p1_31",
+      "kind": "callout",
+      "anchor": "Pide siempre el degrado alimenticio",
+      "image": "img/bolsa_grado_alim.png",
+      "figure": "★",
+      "eyebrow": "Al comprar",
+      "caption": "Pedí el de GRADO ALIMENTICIO (no el de piletas)",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "bolsa_grado_alim",
+        "prompt": "Realistic handheld 16:9 documentary frame of a plain bag of food-grade diatomaceous earth held in hand at a farm supply store, plain packaging, store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brand, pool filter bag, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 361.86,
+      "dur": 12.34
+    },
+    {
+      "id": "p1_32",
+      "kind": "checklist",
+      "anchor": "Lo consigues en la agropecuaria",
+      "title": "Las reglas, en orden",
+      "eyebrow": "Repaso",
+      "accent": "good",
+      "hue": "amber",
+      "image": "img/polvo_planta.png",
+      "items": [
+        {
+          "text": "Aplicar SECO; repetir tras lluvia o riego",
+          "state": "done"
+        },
+        {
+          "text": "Capa fina + anillo en la base",
+          "state": "done"
+        },
+        {
+          "text": "Nunca en flores; al atardecer, cuidá las abejas",
+          "state": "done"
+        },
+        {
+          "text": "Pañuelo en la cara, sin viento",
+          "state": "done"
+        },
+        {
+          "text": "Comprá GRADO ALIMENTICIO",
+          "state": "doing"
+        }
+      ],
+      "start": 374.2,
+      "dur": 8.18
+    },
+    {
+      "id": "p1_33",
+      "kind": "quote",
+      "anchor": "sin envenenar ni un solo tomate",
+      "image": "img/tomate_limpio.png",
+      "eyebrow": "El resultado",
+      "text": "Te limpia la huerta, sin envenenar *ni un tomate*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 76,
+      "gen": {
+        "type": "image",
+        "name": "tomate_limpio",
+        "prompt": "Realistic handheld 16:9 documentary macro of a clean healthy ripe tomato on the plant in a thriving garden, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 382.38,
+      "dur": 2.62
+    }
+  ]
+}

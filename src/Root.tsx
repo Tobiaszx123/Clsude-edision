@@ -8,6 +8,9 @@ import { MainParte4, TOTAL_FRAMES_PARTE4 } from "./VideoEdit/Main_parte4";
 import { MainSandia1, TOTAL_FRAMES_SANDIA1 } from "./VideoEdit/Main_sandia1";
 import { MainSandia2, TOTAL_FRAMES_SANDIA2 } from "./VideoEdit/Main_sandia2";
 import { MainBotella1, TOTAL_FRAMES_BOTELLA1 } from "./VideoEdit/Main_botella1";
+import { MainBotella2, TOTAL_FRAMES_BOTELLA2 } from "./VideoEdit/Main_botella2";
+import { MainPolvo1, TOTAL_FRAMES_POLVO1 } from "./VideoEdit/Main_polvo1";
+import { MainPolvo2, TOTAL_FRAMES_POLVO2 } from "./VideoEdit/Main_polvo2";
 
 // ── Root ─────────────────────────────────────────────────────────────────────
 // Videos del usuario (La Huerta de Timoteo).
@@ -74,6 +77,30 @@ export const RemotionRoot: React.FC = () => {
         id="Botella1"
         component={MainBotella1}
         durationInFrames={TOTAL_FRAMES_BOTELLA1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Botella2"
+        component={MainBotella2}
+        durationInFrames={TOTAL_FRAMES_BOTELLA2}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Polvo1"
+        component={MainPolvo1}
+        durationInFrames={TOTAL_FRAMES_POLVO1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Polvo2"
+        component={MainPolvo2}
+        durationInFrames={TOTAL_FRAMES_POLVO2}
         fps={30}
         width={1920}
         height={1080}
