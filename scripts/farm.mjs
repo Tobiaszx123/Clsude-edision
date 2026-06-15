@@ -84,7 +84,8 @@ fs.rmSync(tar);
 
 // 3) disparar el workflow
 console.log("disparando render.yml ...");
-sh(`gh workflow run render.yml -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}`);
+const refArg = process.env.REF ? ` --ref ${process.env.REF}` : "";
+sh(`gh workflow run render.yml${refArg} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}`);
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
