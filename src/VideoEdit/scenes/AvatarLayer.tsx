@@ -1,5 +1,4 @@
-import { Video } from "@remotion/media";
-import { AbsoluteFill, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
+import { AbsoluteFill, Audio, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import { useAudioData, visualizeAudio } from "@remotion/media-utils";
 
 // ── AVATAR LAYER ──────────────────────────────────────────────────────────────
@@ -125,18 +124,19 @@ export const AvatarLayer: React.FC<{
   const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
 
   if (op < 0.001) {
-    // invisible: igual hay que renderizar el Video para que SUENE la narración
+    // invisible: NO renderizamos video (antes el <Video> off-screen a veces salía
+    // vacío/negro en el render distribuido). La narración la da SIEMPRE la pista de
+    // audio del wav, independiente del video.
     return (
       <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <div style={{ position: "absolute", left: -9999, top: 0, width: 384, height: 512, overflow: "hidden" }}>
-          <Video src={staticFile(src)} style={{ width: 683, height: 384 }} />
-        </div>
+        <Audio src={staticFile(wavSrc)} />
       </AbsoluteFill>
     );
   }
 
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <Audio src={staticFile(wavSrc)} />
       <div
         style={{
           position: "absolute",
@@ -159,8 +159,9 @@ export const AvatarLayer: React.FC<{
           willChange: "left, top, width, height",
         }}
       >
-        <Video
+        <OffthreadVideo
           src={staticFile(src)}
+          muted
           style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
         />
         {/* viñeta interna suave cuando es recuadro */}
