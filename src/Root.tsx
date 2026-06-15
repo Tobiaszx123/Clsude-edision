@@ -7,6 +7,7 @@ import { MainParte3, TOTAL_FRAMES_PARTE3 } from "./VideoEdit/Main_parte3";
 import { MainParte4, TOTAL_FRAMES_PARTE4 } from "./VideoEdit/Main_parte4";
 import { MainSandia1, TOTAL_FRAMES_SANDIA1 } from "./VideoEdit/Main_sandia1";
 import { MainSandia2, TOTAL_FRAMES_SANDIA2 } from "./VideoEdit/Main_sandia2";
+import { MainBotella1, TOTAL_FRAMES_BOTELLA1 } from "./VideoEdit/Main_botella1";
 
 // ── Root ─────────────────────────────────────────────────────────────────────
 // Videos del usuario (La Huerta de Timoteo).
@@ -65,6 +66,14 @@ export const RemotionRoot: React.FC = () => {
         id="Sandia2"
         component={MainSandia2}
         durationInFrames={TOTAL_FRAMES_SANDIA2}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Botella1"
+        component={MainBotella1}
+        durationInFrames={TOTAL_FRAMES_BOTELLA1}
         fps={30}
         width={1920}
         height={1080}
