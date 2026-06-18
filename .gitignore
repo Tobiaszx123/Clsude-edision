@@ -14,3 +14,4 @@ out/
 *.log
 img_index*.json
 vid_index*.json
+public/*.mp3
