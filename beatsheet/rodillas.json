@@ -1,41 +1,332 @@
 {
   "video": "rodillas",
-  "avatar": "timoteo_3s.mp4",
-  "_nota": "SECCION 1 (apertura). v2: sin temblor, +zoom en las tomas, +tarjetas flotantes (floatcard) en títulos/explicaciones, +variedad. Reusa las imágenes ya generadas (no genera nuevas).",
+  "avatar": "",
+  "_nota": "PRUEBA v2: apertura ~95s del video de rodillas (remedio casero para el dolor). B-roll puro (sin talking-head). Aplica el pipeline mejorado: anchors→sync_beats (captions_rodillas.json), cámara variada (pan), 12 tipos de componente, 1 clip real de YouTube. Estilo earthy del canal (no el bold de tomateras).",
   "beats": [
-    { "id": "h1", "start": 0.0, "dur": 8.0, "kind": "impact", "image": "img/hook_masaje.png", "impact": "7 NOCHES", "impactAccent": "good", "hitAt": 1.4, "boom": 1,
-      "gen": { "type": "image", "name": "hook_masaje", "prompt": "Realistic handheld 16:9 documentary close-up of an older man's weathered hands rubbing dark herbal oil onto his bare knee at night, a small dark amber glass jar on the wooden nightstand beside, warm dim bedside lamp light. Natural soft light, muted earthy colors, realistic imperfect handheld angle, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, oversaturated colors, cartoon, CGI, 3D render, distorted hands, extra fingers, blurry, watermark, logo, text overlay." } },
-
-    { "id": "b02", "start": 8.0, "dur": 6.0, "kind": "floatcard", "image": "img/consulta.png", "kicker": "20 años de consultas", "title": "Lo que ningún reumatólogo me dijo", "side": "left", "hue": "cold", "accent": "amber" },
-
-    { "id": "b03", "start": 14.0, "dur": 7.0, "kind": "headline", "tokens": [ { "t": "El dolor de rodillas " }, { "t": "NO es inevitable", "danger": true } ], "eyebrow": "Lo primero que tenés que saber", "bg": "image", "image": "img/rodilla_dolor.png" },
-
-    { "id": "b04", "start": 21.0, "dur": 7.0, "kind": "chips", "bg": "image", "image": "img/rodilla_inflamada.png", "title": "La causa real", "chips": [ "Inflamación", "Mala circulación", "Tejido sin nutrir" ], "hue": "red" },
-
-    { "id": "b05", "start": 28.0, "dur": 8.0, "kind": "raw", "src": "img/timoteo_rodilla.png", "kicker": "A los 48 empezó", "zoom": [1.06, 1.24] },
-
-    { "id": "b06", "start": 36.0, "dur": 4.0, "kind": "raw", "src": "img/escaleras.png", "zoom": [1.08, 1.30] },
-
-    { "id": "b07", "start": 40.0, "dur": 4.0, "kind": "raw", "src": "img/silla.png", "zoom": [1.22, 1.05] },
-
-    { "id": "b08", "start": 44.0, "dur": 6.0, "kind": "raw", "src": "img/primeros_pasos.png", "kicker": "Los primeros pasos del día", "zoom": [1.05, 1.20] },
-
-    { "id": "b09", "start": 50.0, "dur": 8.0, "kind": "floatcard", "image": "img/pastillas.png", "kicker": "El médico", "title": "«Antiinflamatorios y reposo»", "body": "Diclofenaco. Funcionaba mientras lo tomaba.", "side": "right", "hue": "cold", "accent": "danger" },
-
-    { "id": "b10", "start": 58.0, "dur": 7.0, "kind": "raw", "src": "img/gastritis.png", "kicker": "Ahora también el estómago", "zoom": [1.06, 1.22] },
-
-    { "id": "b11", "start": 65.0, "dur": 8.0, "kind": "raw", "src": "vid/huerta_viento.mp4", "hue": "amber", "kicker": "El vecino de la huerta" },
-
-    { "id": "b12", "start": 73.0, "dur": 7.0, "kind": "raw", "src": "img/aurelio_malezas.png", "zoom": [1.20, 1.04] },
-
-    { "id": "b13", "start": 80.0, "dur": 7.0, "kind": "raw", "src": "img/charla_cerca.png", "zoom": [1.05, 1.20] },
-
-    { "id": "b14", "start": 87.0, "dur": 7.0, "kind": "raw", "src": "vid/frasco_mov.mp4", "hue": "amber", "kicker": "Un frasco de vidrio oscuro" },
-
-    { "id": "q1", "start": 94.0, "dur": 6.0, "kind": "quote", "image": "img/frasco_noche.png", "eyebrow": "Me dijo", "text": "Frótate esto. *Siete noches*.", "accent": "good", "hue": "cold", "fontSize": 98 },
-
-    { "id": "q2", "start": 100.0, "dur": 9.0, "kind": "quote", "image": "img/sangre_rodilla.png", "eyebrow": "Y algo que no olvidé", "text": "El problema no está en la rodilla. Está en la *sangre que no llega*.", "accent": "danger", "hue": "cold", "fontSize": 78 },
-
-    { "id": "b15", "start": 109.0, "dur": 9.0, "kind": "floatcard", "image": "img/ingredientes_mesa.png", "kicker": "Hoy te lo enseño", "title": "El preparado, la ciencia y la rutina de 7 noches", "body": "Todo lo que cambia ese dolor que llevás meses cargando.", "side": "left", "hue": "amber", "accent": "good" }
+    {
+      "id": "r01",
+      "start": 0,
+      "dur": 8.26,
+      "kind": "impact",
+      "image": "img/manos_rodilla_crema.png",
+      "anchor": "frota esto",
+      "setup": "Frota esto en tus rodillas antes de dormir",
+      "impact": "EN 7 DÍAS",
+      "impactAccent": "good",
+      "hitAt": 3,
+      "boom": 1,
+      "gen": {
+        "type": "image",
+        "name": "manos_rodilla_crema",
+        "prompt": "Realistic handheld 16:9 documentary close-up of an older man's weathered hands rubbing a homemade herbal cream onto his bare knee, sitting on a bed at night, warm dim bedside lamp light, muted natural colors, slightly tilted handheld angle, practical documentary look, low-res YouTube screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic lighting, oversaturated, cartoon, CGI, 3D render, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r02",
+      "start": 8.26,
+      "dur": 4.74,
+      "kind": "stat",
+      "anchor": "ningún reumatólogo",
+      "value": 20,
+      "suffix": " años",
+      "eyebrow": "Lo que nadie me dijo",
+      "label": "yendo a consultas médicas",
+      "accent": "cold",
+      "hue": "cold"
+    },
+    {
+      "id": "r03",
+      "start": 13,
+      "dur": 10.28,
+      "kind": "splitlist",
+      "anchor": "no es inevitable",
+      "title": "El dolor de rodillas...",
+      "items": [
+        "No es inevitable",
+        "No es el precio de la edad",
+        "No es una condena de por vida"
+      ],
+      "palette": "D",
+      "cross": true
+    },
+    {
+      "id": "r04",
+      "start": 23.28,
+      "dur": 4.62,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/rodilla_inflamada.png",
+      "anchor": "es inflamación",
+      "title": "Entonces, ¿qué es?",
+      "chips": [
+        "Inflamación",
+        "Falta de circulación",
+        "Tejido sin nutrición"
+      ],
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "rodilla_inflamada",
+        "prompt": "Realistic handheld 16:9 documentary extreme close-up of an older person's swollen reddened knee joint, slight inflammation visible on the skin, sitting in a plain room, soft natural daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r05",
+      "start": 27.9,
+      "dur": 7.36,
+      "kind": "diagram",
+      "anchor": "lo que necesita para mantenerse",
+      "eyebrow": "Qué pasa dentro de la rodilla",
+      "hue": "red",
+      "accent": "danger",
+      "slides": [
+        {
+          "image": "img/dg_rodilla_dolor.png",
+          "title": "Inflamación y mala circulación",
+          "gen": {
+            "type": "image",
+            "name": "dg_rodilla_dolor",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano pero muy profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado. Dejá COMPLETAMENTE LIBRE la esquina superior derecha (limpia, sin texto ni dibujos) para un avatar. Un corte anatómico simple y elegante de una rodilla humana en el centro mostrando 3 problemas con tarjetas suaves y números grandes: 1) INFLAMACIÓN (zona enrojecida), 2) FALTA DE CIRCULACIÓN (vasos sanguíneos estrechos), 3) TEJIDO SIN NUTRICIÓN (cartílago debilitado). Ilustración refinada tipo lámina médica artesanal, texto mínimo en español, flechas elegantes que guían el ojo. Se entiende en 1 segundo. Estética premium editorial, clara, artesanal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "r06",
+      "start": 35.26,
+      "dur": 3.48,
+      "kind": "stat",
+      "anchor": "a los 48",
+      "value": 48,
+      "suffix": " años",
+      "eyebrow": "Me pasó a mí",
+      "label": "empecé a sentir las rodillas",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "r07",
+      "start": 38.74,
+      "dur": 9.94,
+      "kind": "process",
+      "anchor": "primero al bajar escaleras",
+      "eyebrow": "Cómo fue avanzando",
+      "title": "Primero poco, después siempre",
+      "accent": "amber",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Al bajar escaleras",
+          "desc": "La primera señal, fácil de ignorar",
+          "image": "img/bajar_escaleras.png"
+        },
+        {
+          "title": "Al levantarme de la silla",
+          "desc": "Cada vez que me paraba",
+          "image": "img/levantarse_silla.png"
+        },
+        {
+          "title": "Los primeros pasos del día",
+          "desc": "Antes de que el cuerpo despierte",
+          "image": "img/pasos_manana.png"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "bajar_escaleras",
+        "prompt": "Realistic handheld 16:9 documentary photo of an older man carefully going down a staircase at home holding the railing, slight grimace, soft indoor daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r08",
+      "start": 48.68,
+      "dur": 3.78,
+      "kind": "raw",
+      "src": "img/consulta_medico.png",
+      "anchor": "fui al médico",
+      "hue": "cold",
+      "kicker": "Fui al médico",
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        60,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "consulta_medico",
+        "prompt": "Realistic handheld 16:9 documentary photo of an older man sitting across a desk from a doctor in a plain clinic office, doctor in white coat writing, neutral fluorescent lighting, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r09",
+      "start": 52.46,
+      "dur": 7.86,
+      "kind": "checklist",
+      "anchor": "antiinflamatorios cuando",
+      "title": "Lo que me dijo",
+      "eyebrow": "La receta de siempre",
+      "hue": "cold",
+      "accent": "cold",
+      "items": [
+        {
+          "text": "Antiinflamatorios cuando duela",
+          "state": "doing"
+        },
+        {
+          "text": "Reposo cuando sea necesario",
+          "state": "doing"
+        },
+        {
+          "text": "Y al final... la operación",
+          "state": "todo",
+          "note": "si sigue avanzando"
+        }
+      ]
+    },
+    {
+      "id": "r10",
+      "start": 60.32,
+      "dur": 3.02,
+      "kind": "raw",
+      "src": "img/diclofenaco_caja.png",
+      "anchor": "me recetó diclofenaco",
+      "hue": "red",
+      "kicker": "Diclofenaco",
+      "zoom": [
+        1.2,
+        1.05
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "diclofenaco_caja",
+        "prompt": "Realistic handheld 16:9 documentary macro of a weathered hand holding a generic white and blue box of anti-inflammatory pills and a blister pack on a kitchen table, plain home background, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, fake brand names, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r11",
+      "start": 63.34,
+      "dur": 6.26,
+      "kind": "quote",
+      "image": "img/diclofenaco_caja.png",
+      "anchor": "funcionaba mientras",
+      "eyebrow": "El problema",
+      "text": "Funcionaba mientras lo tomaba. Lo dejaba y el dolor *volvía*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 78
+    },
+    {
+      "id": "r12",
+      "start": 69.6,
+      "dur": 4.4,
+      "kind": "annotated",
+      "image": "img/estomago_dolor.png",
+      "anchor": "lastimar el estómago",
+      "eyebrow": "El efecto secundario",
+      "caption": "El remedio me dio gastritis",
+      "hue": "red",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 54,
+          "w": 20,
+          "h": 20,
+          "label": "Gastritis"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "estomago_dolor",
+        "prompt": "Realistic handheld 16:9 documentary photo of an older man sitting on a couch with a pained expression holding his stomach with both hands, plain living room, soft daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical face, distorted hands, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r13",
+      "start": 74,
+      "dur": 3,
+      "kind": "headline",
+      "anchor": "el dolor de estómago por el remedio",
+      "eyebrow": "El círculo",
+      "hue": "red",
+      "bg": "image",
+      "image": "img/estomago_dolor.png",
+      "tokens": [
+        {
+          "t": "Dolor de rodilla"
+        },
+        {
+          "t": "+"
+        },
+        {
+          "t": "dolor de estómago",
+          "danger": true
+        },
+        {
+          "t": "por el remedio"
+        }
+      ]
+    },
+    {
+      "id": "r14",
+      "start": 77,
+      "dur": 3.92,
+      "kind": "raw",
+      "src": "img/gente_mayor.png",
+      "anchor": "ese círculo",
+      "hue": "cold",
+      "kicker": "Mucha gente lo conoce",
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "pan": [
+        -50,
+        0
+      ],
+      "gen": {
+        "type": "image",
+        "name": "gente_mayor",
+        "prompt": "Realistic handheld 16:9 documentary photo of a group of older people sitting on a park bench, one rubbing his knee, everyday casual scene, soft overcast daylight, muted colors, documentary look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, perfect symmetrical faces, watermark, logo, text."
+      }
+    },
+    {
+      "id": "r15",
+      "start": 80.92,
+      "dur": 4.42,
+      "kind": "raw",
+      "src": "vid/yt_vecino_huerta.mp4",
+      "anchor": "un vecino viejo",
+      "hue": "amber",
+      "kicker": "Un vecino, 72 años",
+      "zoom": [
+        1.04,
+        1.12
+      ],
+      "pan": [
+        40,
+        20
+      ]
+    },
+    {
+      "id": "r16",
+      "start": 85.34,
+      "dur": 9.66,
+      "kind": "stat",
+      "anchor": "todavía se agachaba",
+      "value": 72,
+      "suffix": " años",
+      "eyebrow": "El vecino de la huerta",
+      "label": "y se agachaba sin quejarse",
+      "accent": "good",
+      "hue": "amber"
+    }
   ]
 }
