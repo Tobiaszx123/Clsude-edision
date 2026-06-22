@@ -8,7 +8,7 @@ import {
 } from "@remotion/install-whisper-cpp";
 
 const to = path.join(process.cwd(), "whisper.cpp");
-const MODEL = "medium"; // multilingual — good Spanish accuracy
+const MODEL = "large-v3"; // multilingual — good Spanish accuracy
 
 console.log("Installing whisper.cpp...");
 await installWhisperCpp({ to, version: "1.5.5" });
