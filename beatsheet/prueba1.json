@@ -12,7 +12,7 @@
     { "id": "p02", "start": 6.3, "dur": 4.0, "kind": "raw", "src": "vid/yt_amarrar_tomate.mp4",
       "hue": "amber", "kicker": "La cuidaste todo el verano" },
 
-    { "id": "p03", "start": 10.3, "dur": 5.0, "kind": "raw", "src": "img/p1_buscar_tomates.png",
+    { "id": "p03", "start": 10.3, "dur": 5.0, "kind": "raw", "src": "vid/yt_buscar_tomate.mp4",
       "hue": "cold", "kicker": "¿Y los tomates?",
       "gen": { "type": "image", "name": "p1_buscar_tomates",
         "prompt": "Realistic handheld 16:9 documentary macro of weathered hands parting dense green tomato plant leaves searching, only foliage and stems visible, very few tomatoes, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, lots of ripe tomatoes, cartoon, CGI, 3D, watermark, text." } },
@@ -46,7 +46,7 @@
             "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra hojas de tomate manchadas marchitándose y un tomate verde que no madura, con una flecha que indica la pérdida del fruto. Texto en español: 'Se come las hojas y mata al fruto'. Minimalista, clara, estética botánica vintage premium, papel envejecido." } }
       ] },
 
-    { "id": "p08", "start": 40.8, "dur": 3.0, "kind": "raw", "src": "img/p1_fruto_verde_enfermo.png",
+    { "id": "p08", "start": 40.8, "dur": 3.0, "kind": "raw", "src": "vid/yt_tomate_enfermo.mp4",
       "hue": "cold", "kicker": "Mata al fruto antes de madurar",
       "gen": { "type": "image", "name": "p1_fruto_verde_enfermo",
         "prompt": "Realistic handheld 16:9 documentary macro of a green unripe tomato on the vine with brown blight lesions, dry damaged leaves around it, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, perfect ripe tomato, cartoon, CGI, 3D, watermark, text." } },
@@ -75,7 +75,7 @@
     { "id": "p14", "start": 70.0, "dur": 3.0, "kind": "quote",
       "eyebrow": "Quedáte conmigo", "text": "Esto lo *cambia* todo.", "accent": "good", "hue": "amber" },
 
-    { "id": "p15", "start": 73.0, "dur": 7.0, "kind": "raw", "src": "img/p1_arbusto_salvaje.png",
+    { "id": "p15", "start": 73.0, "dur": 7.0, "kind": "raw", "src": "vid/yt_planta_salvaje.mp4",
       "hue": "cold", "kicker": "Dejada a su aire",
       "gen": { "type": "image", "name": "p1_arbusto_salvaje",
         "prompt": "Realistic handheld 16:9 documentary frame of a wild overgrown untrimmed tomato plant, a messy tangle of many leafy side branches sprawling in all directions, few hidden fruits, backyard garden, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, neat pruned plant, cartoon, CGI, 3D, watermark, text." } },
