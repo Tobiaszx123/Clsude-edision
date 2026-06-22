@@ -33,7 +33,7 @@
       "start": 13.08,
       "dur": 2.9,
       "kind": "raw",
-      "src": "vid/yt_buscar_tomate.mp4",
+      "src": "img/p1_buscar_tomates.png",
       "hue": "cold",
       "kicker": "¿Y los tomates?",
       "gen": {
@@ -251,7 +251,7 @@
       "start": 73.02,
       "dur": 9.54,
       "kind": "raw",
-      "src": "vid/yt_planta_salvaje.mp4",
+      "src": "img/p1_arbusto_salvaje.png",
       "hue": "cold",
       "kicker": "Dejada a su aire",
       "gen": {
@@ -265,9 +265,14 @@
       "start": 82.56,
       "dur": 7.4,
       "kind": "raw",
-      "src": "vid/yt_brotes_laterales.mp4",
+      "src": "img/p1_ramitas_laterales.png",
       "hue": "cold",
-      "kicker": "100 ramitas que compiten"
+      "kicker": "100 ramitas que compiten",
+      "gen": {
+        "type": "image",
+        "name": "p1_ramitas_laterales",
+        "prompt": "Realistic handheld 16:9 documentary close-up of a tomato plant with MANY leafy side shoots and suckers growing in all directions between the main stem and branches, dense bushy tangle, backyard garden, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, text, labels, cartoon, CGI, 3D, watermark."
+      }
     },
     {
       "id": "p17",
