@@ -2,7 +2,7 @@
 // corner (4 esquinas) + media pantalla (right/left sobre b-roll) + 1 full + OCULTO
 // en los cutaways del presentador (imágenes el_*). Emite src/VideoEdit/av_<slug>.gen.ts
 import fs from "fs";
-const VIDEOS = ["prueba1"];
+const VIDEOS = ["botella1"];
 const isEl = (b) => /img\/el_/.test(b.src||"") || /img\/el_/.test(b.image||"");
 // avatar SOLO en momentos hablados (quote/chips); en stat/diagrama/etc va oculto (voz en off).
 const VIS = new Set(["quote","chips"]);
