@@ -40,7 +40,7 @@
       "id": "b1_03",
       "kind": "raw",
       "anchor": "el tomate que tenías tan lindo",
-      "src": "img/tomate_doblado.png",
+      "src": "vid/yt_tomate_marchito.mp4",
       "hue": "cold",
       "kicker": "Doblado sobre sí mismo",
       "zoom": [
@@ -361,7 +361,7 @@
       "id": "b1_16b",
       "kind": "raw",
       "anchor": "Suben a buscar esa humedad superficial",
-      "src": "img/raices_flojas_maceta.png",
+      "src": "vid/yt_raices_maceta.mp4",
       "hue": "amber",
       "kicker": "Raíces que suben, no bajan",
       "start": 121.78,
@@ -507,7 +507,7 @@
       "id": "b1_21",
       "kind": "raw",
       "anchor": "Hace miles de años en las tierras secas",
-      "src": "img/olla_barro_enterrada.png",
+      "src": "vid/yt_olla_barro.mp4",
       "hue": "blue",
       "kicker": "Hace miles de años",
       "zoom": [

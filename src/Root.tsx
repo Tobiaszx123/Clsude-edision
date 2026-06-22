@@ -11,12 +11,31 @@ import { MainBotella1, TOTAL_FRAMES_BOTELLA1 } from "./VideoEdit/Main_botella1";
 import { MainBotella2, TOTAL_FRAMES_BOTELLA2 } from "./VideoEdit/Main_botella2";
 import { MainPolvo1, TOTAL_FRAMES_POLVO1 } from "./VideoEdit/Main_polvo1";
 import { MainPolvo2, TOTAL_FRAMES_POLVO2 } from "./VideoEdit/Main_polvo2";
+import { MainPrueba1, TOTAL_FRAMES_PRUEBA1 } from "./VideoEdit/Main_prueba1";
+import { Thumbnail, ThumbProps } from "./Thumbnail";
 
 // ── Root ─────────────────────────────────────────────────────────────────────
 // Videos del usuario (La Huerta de Timoteo).
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="Prueba1"
+        component={MainPrueba1}
+        durationInFrames={TOTAL_FRAMES_PRUEBA1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Thumb"
+        component={Thumbnail}
+        durationInFrames={1}
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={{ bg: "", title: "LA BOTELLA DE $1", highlight: "QUE LO CAMBIA TODO", textSide: "left" } as ThumbProps}
+      />
       <Composition
         id="Tomateras"
         component={MainTomateras}

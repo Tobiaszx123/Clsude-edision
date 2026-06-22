@@ -1,0 +1,112 @@
+{
+  "video": "prueba1",
+  "avatar": "prueba1_opt.mp4",
+  "_nota": "Prueba: poda de tomateras. Narración real 0-125.5s (whisper alucinó el resto).",
+  "beats": [
+    { "id": "p01", "start": 0.0, "dur": 6.3, "kind": "impact",
+      "image": "img/p1_tomatera_frondosa.png", "setup": "Enorme, verde, más alta que tus hijos.",
+      "impact": "Y casi sin tomates.", "impactAccent": "danger", "hitAt": 4.0,
+      "gen": { "type": "image", "name": "p1_tomatera_frondosa",
+        "prompt": "Realistic handheld 16:9 documentary video frame of a huge lush green tomato plant in a backyard garden, very tall, dense leafy foliage, tied to a wooden stake, natural soft outdoor daylight slightly overcast, muted natural colors, realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic lighting, oversaturated, cartoon, CGI, 3D render, watermark, logo, text." } },
+
+    { "id": "p02", "start": 6.3, "dur": 3.5, "kind": "raw", "src": "vid/yt_amarrar_tomate.mp4",
+      "hue": "amber", "kicker": "La cuidaste todo el verano" },
+
+    { "id": "p03", "start": 9.8, "dur": 5.2, "kind": "raw", "src": "img/p1_buscar_tomates.png",
+      "hue": "cold", "kicker": "¿Y los tomates?",
+      "gen": { "type": "image", "name": "p1_buscar_tomates",
+        "prompt": "Realistic handheld 16:9 documentary macro of weathered hands parting dense green tomato plant leaves searching, only foliage and stems visible, very few tomatoes, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, lots of ripe tomatoes, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p04", "start": 15.0, "dur": 4.8, "kind": "raw", "src": "img/p1_tomates_chicos.png",
+      "hue": "cold", "kicker": "Pocos, verdes, escondidos",
+      "gen": { "type": "image", "name": "p1_tomates_chicos",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a few small green unripe tomatoes hidden in the shaded center of a leafy tomato plant, dim shade, natural daylight filtering through leaves, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, big red tomatoes, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p05", "start": 19.8, "dur": 5.1, "kind": "stat", "value": 50,
+      "eyebrow": "Una mata sana debería darte", "label": "...y apenas tenés una docena",
+      "suffix": " tomates", "accent": "danger", "hue": "amber" },
+
+    { "id": "p06", "start": 24.9, "dur": 4.8, "kind": "annotated", "image": "img/p1_hoja_manchas.png",
+      "eyebrow": "La señal", "caption": "Manchas en las hojas de abajo",
+      "annotations": [
+        { "kind": "circle", "x": 0.4, "y": 0.45, "w": 0.2, "h": 0.2, "label": "Círculos cafés" },
+        { "kind": "arrow", "x": 0.66, "y": 0.32, "fromX": 0.86, "fromY": 0.18, "label": "Halo amarillo" }
+      ], "hue": "amber",
+      "gen": { "type": "image", "name": "p1_hoja_manchas",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a lower tomato plant leaf with brown circular spots surrounded by a yellow halo, early blight leaf disease, slightly wilted, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, healthy leaf, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p07", "start": 29.7, "dur": 9.1, "kind": "diagram",
+      "eyebrow": "El tizón sube desde la tierra", "hue": "amber", "accent": "danger",
+      "slides": [
+        { "image": "img/d_tizon_1.png", "title": "Sube desde la tierra",
+          "gen": { "type": "image", "name": "d_tizon_1",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado. Dejá LIBRE la esquina superior derecha. Muestra una planta de tomate con flechas que suben desde la tierra hacia las hojas de abajo (esporas de hongo subiendo con el salpicado de la lluvia). Texto en español: 'La enfermedad sube de la tierra'. Minimalista, muy clara, pocos elementos, estética botánica vintage premium, papel envejecido." } },
+        { "image": "img/d_tizon_2.png", "title": "Se come las hojas y mata al fruto",
+          "gen": { "type": "image", "name": "d_tizon_2",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra hojas de tomate manchadas marchitándose y un tomate verde que no madura, con una flecha que indica la pérdida del fruto. Texto en español: 'Se come las hojas y mata al fruto'. Minimalista, clara, estética botánica vintage premium, papel envejecido." } }
+      ] },
+
+    { "id": "p08", "start": 38.8, "dur": 4.0, "kind": "raw", "src": "img/p1_fruto_verde_enfermo.png",
+      "hue": "cold", "kicker": "Mata al fruto antes de madurar",
+      "gen": { "type": "image", "name": "p1_fruto_verde_enfermo",
+        "prompt": "Realistic handheld 16:9 documentary macro of a green unripe tomato on the vine with brown blight lesions, dry damaged leaves around it, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, perfect ripe tomato, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p09", "start": 42.8, "dur": 5.2, "kind": "chips", "bg": "image", "image": "img/p1_manos_tierra.png",
+      "title": "Hiciste todo bien", "chips": ["Buena tierra", "Buena semilla", "Agua a tiempo", "Buena estaca"], "hue": "amber",
+      "gen": { "type": "image", "name": "p1_manos_tierra",
+        "prompt": "Realistic handheld 16:9 documentary photo of weathered farmer hands holding dark rich garden soil with a young tomato seedling, natural soft outdoor daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p10", "start": 48.0, "dur": 5.0, "kind": "quote",
+      "eyebrow": "La pregunta", "text": "¿Por qué tantas *hojas* y tan pocos *tomates*?", "accent": "amber", "hue": "cold" },
+
+    { "id": "p11", "start": 53.0, "dur": 4.4, "kind": "quote",
+      "eyebrow": "Si fuiste cuidadoso", "text": "¿Por qué se mete la *enfermedad*?", "accent": "danger", "hue": "cold" },
+
+    { "id": "p12", "start": 57.4, "dur": 7.4, "kind": "quote",
+      "eyebrow": "La respuesta", "text": "Suena al *revés* de todo lo que te enseñaron.", "accent": "amber", "hue": "cold" },
+
+    { "id": "p13", "start": 64.8, "dur": 5.9, "kind": "headline",
+      "eyebrow": "El saber antiguo", "bg": "black", "hue": "amber",
+      "tokens": [ {"t": "Necesitabas"}, {"t": "QUITARLE", "hl": true}, {"t": "cosas,"}, {"t": "no"}, {"t": "DARLE", "danger": true}, {"t": "más."} ] },
+
+    { "id": "p14", "start": 70.7, "dur": 4.5, "kind": "quote",
+      "eyebrow": "Quedáte conmigo", "text": "Esto lo *cambia* todo.", "accent": "good", "hue": "amber" },
+
+    { "id": "p15", "start": 75.2, "dur": 5.0, "kind": "raw", "src": "img/p1_arbusto_salvaje.png",
+      "hue": "cold", "kicker": "Dejada a su aire",
+      "gen": { "type": "image", "name": "p1_arbusto_salvaje",
+        "prompt": "Realistic handheld 16:9 documentary frame of a wild overgrown untrimmed tomato plant, a messy tangle of many leafy side branches sprawling in all directions, few hidden fruits, backyard garden, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, neat pruned plant, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p16", "start": 80.2, "dur": 5.2, "kind": "raw", "src": "vid/yt_brotes_laterales.mp4",
+      "hue": "cold", "kicker": "100 ramitas que compiten" },
+
+    { "id": "p17", "start": 85.4, "dur": 9.1, "kind": "raw", "src": "img/p1_fruta_sombra.png",
+      "hue": "cold", "kicker": "Donde el sol no llega",
+      "gen": { "type": "image", "name": "p1_fruta_sombra",
+        "prompt": "Realistic handheld 16:9 documentary macro of small tomatoes buried deep in the dense shaded interior of an overgrown tomato plant, very little light reaching them, natural daylight blocked by leaves, muted dim colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, bright sunny fruit, cartoon, CGI, 3D, watermark, text." } },
+
+    { "id": "p18", "start": 94.5, "dur": 9.5, "kind": "diagram",
+      "eyebrow": "La planta piensa en sobrevivir", "hue": "amber", "accent": "accent",
+      "slides": [
+        { "image": "img/d_planta_1.png", "title": "Crece para todos lados",
+          "gen": { "type": "image", "name": "d_planta_1",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Una planta de tomate con flechas saliendo en TODAS las direcciones (hojas, brotes, raíces) mostrando energía dispersa. Texto en español: 'Crece para sobrevivir, no para darte fruta'. Minimalista, clara, estética botánica vintage premium, papel envejecido." } },
+        { "image": "img/d_planta_2.png", "title": "Vos concentrás su fuerza",
+          "gen": { "type": "image", "name": "d_planta_2",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Comparación: a la izquierda una planta dispersa con poca fruta, a la derecha una planta podada con la energía concentrada en racimos de tomates grandes. Texto en español: 'Concentrar la fuerza = más fruta'. Minimalista, clara, estética botánica vintage premium, papel envejecido." } }
+      ] },
+
+    { "id": "p19", "start": 104.0, "dur": 19.0, "kind": "process",
+      "eyebrow": "El saber antiguo", "title": "Tres cortes", "accent": "good", "hue": "amber",
+      "steps": [
+        { "title": "Quitá los brotes laterales", "desc": "Antes de que se vuelvan ramas que compiten", "image": "img/p1_brote_lateral.png" },
+        { "title": "Quitá las hojas de abajo", "desc": "Antes de que la tierra le salpique la enfermedad", "image": "img/p1_hojas_abajo.png" },
+        { "title": "Cortá la punta al final", "desc": "Su última fuerza va a madurar la fruta", "image": "img/p1_cortar_punta.png" }
+      ] },
+
+    { "id": "p20", "start": 123.0, "dur": 2.6, "kind": "raw", "src": "img/p1_tomates_rojos.png",
+      "hue": "amber", "kicker": "El doble de tomates",
+      "gen": { "type": "image", "name": "p1_tomates_rojos",
+        "prompt": "Realistic handheld 16:9 documentary photo of a wooden basket overflowing with many ripe red tomatoes freshly harvested, sunny backyard garden, natural warm daylight, muted natural colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text." } }
+  ]
+}

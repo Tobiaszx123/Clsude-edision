@@ -1,16 +1,17 @@
-// Main_botella1.tsx — ventanas de avatar en ./av_botella1.gen (generado), look webcam + cutaways del presentador.
+// Main_prueba1.tsx — video de prueba (poda de tomateras). Avatar Higgsfield + clips reales
+// de YouTube + subtítulos. Ventanas de avatar en ./av_prueba1.gen, cues en ./cues_prueba1.gen.
 import { AbsoluteFill, Sequence } from "remotion";
-import { CUES } from "./cues_botella1.gen";
+import { CUES } from "./cues_prueba1.gen";
 import { sec, COLORS } from "./theme";
 import { CinematicWrap } from "./components/CinematicWrap";
 import { AvatarLayer } from "./scenes/AvatarLayer";
-import { AV } from "./av_botella1.gen";
+import { AV } from "./av_prueba1.gen";
 import { Captions } from "./scenes/Captions";
 
 const LAST = CUES.reduce((m, c) => Math.max(m, c.start + c.dur), 0);
-export const TOTAL_FRAMES_BOTELLA1 = sec(LAST + 0.5);
+export const TOTAL_FRAMES_PRUEBA1 = sec(LAST + 0.5);
 
-export const MainBotella1: React.FC = () => {
+export const MainPrueba1: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bg0 }}>
       <CinematicWrap handheld={0}>
@@ -20,8 +21,8 @@ export const MainBotella1: React.FC = () => {
           </Sequence>
         ))}
       </CinematicWrap>
-      <AvatarLayer src="botella1_opt.mp4" windows={AV} />
-      <Captions src="captions_botella1.json" />
+      <AvatarLayer src="prueba1_opt.mp4" windows={AV} />
+      <Captions src="captions_prueba1.json" />
     </AbsoluteFill>
   );
 };

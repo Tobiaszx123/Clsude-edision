@@ -2,7 +2,7 @@
 // corner (4 esquinas) + media pantalla (right/left sobre b-roll) + 1 full + OCULTO
 // en los cutaways del presentador (imágenes el_*). Emite src/VideoEdit/av_<slug>.gen.ts
 import fs from "fs";
-const VIDEOS = ["botella1","botella2","polvo1","polvo2"];
+const VIDEOS = ["prueba1"];
 const isEl = (b) => /img\/el_/.test(b.src||"") || /img\/el_/.test(b.image||"");
 const VIS = new Set(["raw","stat","quote","chips"]);
 const rawCycle = [["cornerTR",1.0],["right",1.0],["cornerBL",1.05],["left",1.0],["cornerTL",0.95],["cornerBR",1.05]];

@@ -1,0 +1,5 @@
+{ "items": [
+  { "id": "yt_tomate_marchito", "query": "wilting tomato plant drooping dry leaves garden", "keywords": ["wilt","tomato","dry","droop","leaves","plant"], "n": 1, "lang": "en" },
+  { "id": "yt_raices_maceta", "query": "plant roots pulled out of pot rootball close up", "keywords": ["roots","pot","rootball","plant","soil"], "n": 1, "lang": "en" },
+  { "id": "yt_olla_barro", "query": "olla clay pot irrigation buried in garden soil", "keywords": ["olla","clay","pot","buried","irrigation","water"], "n": 1, "lang": "en" }
+]}

@@ -115,13 +115,12 @@ export const AvatarLayer: React.FC<{
   const floatY = Math.sin(frame / 26) * 6 * smallness;
   const floatX = Math.cos(frame / 31) * 4 * smallness;
 
-  // cover-sizing del video 16:9 dentro de la caja (sesgo a la cara)
-  const ratio = 16 / 9;
+  // ZOOM sutil "vivo"; el ENCUADRE lo hace object-fit:cover → el video LLENA SIEMPRE
+  // la caja sin importar la relación de aspecto. Esto elimina el bug del avatar que
+  // quedaba chico/letterboxed y "corrido" a un costado dentro del recuadro.
   const kb = 1 + 0.05 * smallness * (0.5 + 0.5 * Math.sin(frame / 90));
-  let coverW = Math.max(w, h * ratio) * kb;
-  let coverH = coverW / ratio;
-  const offX = (w - coverW) / 2;
-  const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
+  // sesgo vertical para mostrar la CARA (un poco más arriba cuanto más chica la caja)
+  const faceY = 30 - 8 * smallness; // %
 
   if (op < 0.001) {
     // invisible: NO renderizamos video (antes el <Video> off-screen a veces salía
@@ -162,7 +161,16 @@ export const AvatarLayer: React.FC<{
         <OffthreadVideo
           src={staticFile(src)}
           muted
-          style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: `50% ${faceY}%`,
+            transform: `scale(${kb})`,
+            transformOrigin: `50% ${faceY}%`,
+          }}
         />
         {/* viñeta interna suave cuando es recuadro */}
         {chrome > 0.02 && (
