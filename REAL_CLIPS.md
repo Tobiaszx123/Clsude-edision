@@ -51,3 +51,14 @@ edición, una RawShot apunta a `vid/<id>.mp4` igual que a un clip generado.
 - `--keep-src` no borra las descargas crudas (debug). Por defecto las borra (disco).
 - Marcas en `scripts/clips/util.mjs` → `WATERMARK_BRANDS` (agregá las que quieras vetar).
 - Pesos del score en `scripts/clips/run.mjs` → `scoreClip` (rel 0.55 / texto 0.25 / wm 0.20).
+
+## ★ ESTÁNDAR OBLIGATORIO POR VIDEO (jun 2026, pedido del usuario)
+Para CADA video (cada avatar que sube a `para editar`):
+1. **Transcribir su audio** (large-v3) → es el PASO 1, nunca saltear.
+2. **Generar SUS PROPIOS assets** (imágenes/diagramas) del tema del audio — NUNCA reusar de otro video.
+3. **Buscar SUS PROPIOS clips** con `run.mjs` (búsqueda fresca por video, no reusar descargas).
+4. **VERIFICAR VISUALMENTE cada clip** antes de usarlo: extraer 1 frame y confirmar que MUESTRA lo
+   que se narra (el pipeline puntúa por lo que se DICE en el origen, no por lo que se VE → hay que
+   chequear). Si ningún clip calza, usar la imagen generada (que sí calza por construcción).
+5. Cada asset debe corresponder EXACTAMENTE a lo que se dice en ese segundo. Si el audio es de la
+   botella, NADA de tomate de fondo. Coherencia audio↔imagen es lo primero.
