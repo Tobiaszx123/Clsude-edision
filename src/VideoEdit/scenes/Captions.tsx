@@ -69,17 +69,17 @@ export const Captions: React.FC<{ src: string; maxWords?: number; gapMs?: number
     <AbsoluteFill style={{ pointerEvents: "none", justifyContent: "flex-end", alignItems: "center" }}>
       <div
         style={{
-          marginBottom: "9%",
-          maxWidth: "82%",
+          marginBottom: "11%",
+          maxWidth: "80%",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
           columnGap: 18,
           rowGap: 2,
-          padding: "14px 32px",
-          borderRadius: 20,
-          background: "rgba(22,17,11,0.5)",
-          boxShadow: "0 10px 40px rgba(0,0,0,0.45)",
+          padding: "16px 36px",
+          borderRadius: 22,
+          background: "rgba(18,13,8,0.86)",
+          boxShadow: "0 12px 48px rgba(0,0,0,0.6)",
           transform: `translateY(${(1 - inP) * 26}px)`,
           opacity: inP,
         }}
@@ -94,8 +94,8 @@ export const Captions: React.FC<{ src: string; maxWords?: number; gapMs?: number
                 fontWeight: 700,
                 fontSize,
                 lineHeight: 1.1,
-                color: active ? "#FFFFFF" : "rgba(239,231,211,0.66)",
-                textShadow: "0 2px 9px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.95)",
+                color: active ? "#FFFFFF" : "rgba(244,238,222,0.92)",
+                textShadow: "0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,1)",
                 transform: active ? "scale(1.07)" : "scale(1)",
                 display: "inline-block",
                 // borde inferior acento solo en la palabra activa (sutil, brand)

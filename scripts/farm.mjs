@@ -94,5 +94,6 @@ const runId = out(`gh run list --workflow=render.yml --limit 1 --json databaseId
 console.log("corrida:", runId, "— siguiendo (esto tarda según los pedazos)...");
 try { sh(`gh run watch ${runId} --exit-status`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
 fs.mkdirSync("out", { recursive: true });
+fs.rmSync(`out/${slug}.mp4`, { force: true }); // gh run download falla si el archivo ya existe
 sh(`gh run download ${runId} -n final-${slug} -D out`);
 console.log(`\n✅ listo → out/${slug}.mp4`);

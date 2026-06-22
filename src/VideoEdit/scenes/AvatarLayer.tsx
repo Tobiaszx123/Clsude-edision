@@ -146,6 +146,7 @@ export const AvatarLayer: React.FC<{
           borderRadius: r,
           overflow: "hidden",
           opacity: op,
+          backgroundColor: "#1a1610", // fondo sólido: si un frame del video no decodifica, se ve oscuro, NUNCA transparente
           // marco de WEBCAM neutro: borde blanco fino + sombra suave (sutilmente
           // "respira" con la voz vía amp), SIN glow de color (el usuario pidió sacar
           // el borde amarillo y que parezca un encuadre de webcam normal).
