@@ -54,7 +54,7 @@ edición, una RawShot apunta a `vid/<id>.mp4` igual que a un clip generado.
 
 ## ★ ESTÁNDAR OBLIGATORIO POR VIDEO (jun 2026, pedido del usuario)
 Para CADA video (cada avatar que sube a `para editar`):
-1. **Transcribir su audio** (large-v3) → es el PASO 1, nunca saltear.
+1. **Transcribir su audio** (modelo `medium` — large-v3 CRASHEA en esta PC de 2 núcleos, exit 0xC0000142) → PASO 1, nunca saltear. Verificar que el texto coincida con el tema del audio (si crashea, queda el transcript viejo).
 2. **Generar SUS PROPIOS assets** (imágenes/diagramas) del tema del audio — NUNCA reusar de otro video.
 3. **Buscar SUS PROPIOS clips** con `run.mjs` (búsqueda fresca por video, no reusar descargas).
 4. **VERIFICAR VISUALMENTE cada clip** antes de usarlo: extraer 1 frame y confirmar que MUESTRA lo
