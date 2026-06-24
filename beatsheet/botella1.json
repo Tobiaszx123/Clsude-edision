@@ -1,0 +1,941 @@
+{
+  "video": "botella1",
+  "avatar": "botella1_opt.mp4",
+  "_nota": "Video BOTELLA parte 1 (~6:11): hook (plantas marchitas tras el finde) → por qué regás mal (evaporación + raíces flojas) → el secreto de los viejos (agua profunda) → historia de la olla de barro (China/N.África) → cómo hacer la botella enterrada paso a paso → payoff. Clip-heavy: yt clips para acción genérica, deAPI para macros, dg_* diagramas gpt-image-2. anchors→sync.",
+  "beats": [
+    {
+      "id": "b1_01",
+      "kind": "impact",
+      "anchor": "Te fuiste el fin de semana",
+      "image": "img/plantas_caidas.png",
+      "setup": "Te fuiste un fin de semana...",
+      "impact": "y volviste a ESTO",
+      "impactAccent": "danger",
+      "hitAt": 3,
+      "boom": 2,
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "plantas_caidas",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of wilted tomato plants in a backyard vegetable garden, leaves drooping and yellowing, some brown crispy edges, dry cracked soil at the base, hot summer afternoon, natural soft daylight slightly overcast, muted colors, realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, natural video compression, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, lush healthy plants, cartoon, CGI, 3D render, watermark, logo, text, perfect lighting."
+      },
+      "start": 0,
+      "dur": 9.4
+    },
+    {
+      "id": "b1_02",
+      "kind": "raw",
+      "anchor": "las encontraste caídas",
+      "src": "img/b1_planta_mustia.png",
+      "hue": "cold",
+      "kicker": "Hojas mustias, colgando",
+      "start": 9.4,
+      "dur": 5.56,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b1_03",
+      "kind": "raw",
+      "anchor": "el tomate que tenías tan lindo",
+      "src": "img/b1_planta_doblada.png",
+      "hue": "cold",
+      "kicker": "Doblado sobre sí mismo",
+      "zoom": [
+        1.04,
+        1.16
+      ],
+      "gen": {
+        "type": "image",
+        "name": "tomate_doblado",
+        "prompt": "Realistic handheld 16:9 documentary macro of a single wilted tomato plant stem bent over itself, soft drooping leaves, a small green tomato hanging, dry soil below, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, healthy plant, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 14.96,
+      "dur": 3.6
+    },
+    {
+      "id": "b1_04",
+      "kind": "quote",
+      "anchor": "esa puntada en el pecho",
+      "image": "img/tomate_doblado_macro.png",
+      "eyebrow": "Y duele",
+      "text": "Bastó un *fin de semana* de calor.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 88,
+      "start": 18.56,
+      "dur": 7.32,
+      "gen": {
+        "type": "image",
+        "name": "tomate_doblado_macro",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a bent wilted tomato stem folded over, soft focus background, drooping leaf, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_05",
+      "kind": "raw",
+      "anchor": "ni siquiera te fuiste",
+      "src": "img/b1_regadera.png",
+      "hue": "amber",
+      "kicker": "Regaste todos los días",
+      "start": 25.88,
+      "dur": 8.22,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "b1_06",
+      "kind": "quote",
+      "anchor": "la planta se te marchitó",
+      "image": "img/planta_marchita_close.png",
+      "eyebrow": "Y aún así...",
+      "text": "Se *marchitó*. ¿Y no entendés por qué?",
+      "accent": "danger",
+      "hue": "cold",
+      "fontSize": 84,
+      "start": 34.1,
+      "dur": 5.02,
+      "gen": {
+        "type": "image",
+        "name": "planta_marchita_close",
+        "prompt": "Realistic handheld 16:9 documentary close-up of a single collapsed wilting vegetable plant, leaves limp and yellowing over dry soil, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_07",
+      "kind": "headline",
+      "anchor": "Hoy te voy a contar dos cosas",
+      "eyebrow": "Hoy",
+      "tokens": [
+        {
+          "t": "Dos cosas",
+          "hl": true
+        },
+        {
+          "t": " que lo cambian todo"
+        }
+      ],
+      "bg": "image",
+      "image": "img/huerta_seca.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "huerta_seca",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a home vegetable garden under hot summer sun, dry soil, a few stressed plants, watering can on the ground, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 39.12,
+      "dur": 2.2
+    },
+    {
+      "id": "b1_08",
+      "kind": "splitlist",
+      "anchor": "La primera es por qué",
+      "title": "Lo que vas a aprender",
+      "items": [
+        "Por qué se mueren de sed aunque las riegues",
+        "El remedio: una botella de basura"
+      ],
+      "palette": "A",
+      "start": 41.2,
+      "dur": 5.68
+    },
+    {
+      "id": "b1_09",
+      "kind": "raw",
+      "anchor": "Una botella vacía",
+      "src": "img/botella_plastica.png",
+      "hue": "blue",
+      "kicker": "No cuesta ni una moneda",
+      "zoom": [
+        1.05,
+        1.14
+      ],
+      "gen": {
+        "type": "image",
+        "name": "botella_plastica",
+        "prompt": "Realistic handheld 16:9 documentary macro of an empty clear plastic 2-liter soda bottle held in a weathered hand over garden soil, label half peeled, natural outdoor daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, clean product photo, cartoon, CGI, 3D, watermark, logo, text."
+      },
+      "start": 46.88,
+      "dur": 11.22
+    },
+    {
+      "id": "b1_10",
+      "kind": "quote",
+      "anchor": "es uno de los trucos más viejos",
+      "image": "img/botella_luz.png",
+      "eyebrow": "Sabiduría vieja",
+      "text": "El truco más *viejo* de la tierra, en una botella.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80,
+      "start": 58.1,
+      "dur": 2.46,
+      "gen": {
+        "type": "image",
+        "name": "botella_luz",
+        "prompt": "Realistic handheld 16:9 documentary an empty clear plastic bottle held up against bright sunlight outdoors, light passing through, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_10b",
+      "kind": "raw",
+      "anchor": "vestido con una botella de plástico moderna",
+      "src": "img/b1_botellas_plastico.png",
+      "hue": "blue",
+      "kicker": "Con lo que tirás a la basura",
+      "start": 60.56,
+      "dur": 6.1,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "b1_10c",
+      "kind": "quote",
+      "anchor": "no hay un solo peso de ganancia",
+      "image": "img/vivero_caja.png",
+      "eyebrow": "Por qué nadie te lo cuenta",
+      "text": "No hay *ganancia* en que riegues gratis con la basura.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 74,
+      "start": 66.66,
+      "dur": 17.68,
+      "gen": {
+        "type": "image",
+        "name": "vivero_caja",
+        "prompt": "Realistic handheld 16:9 documentary a garden nursery checkout counter with potted plants and a cash register, person paying, store shelves, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_11",
+      "kind": "aged",
+      "anchor": "Primero tengo que decirte la verdad",
+      "eyebrow": "La verdad incómoda",
+      "heading": "Tú riegas mal.",
+      "lines": [
+        {
+          "text": "No es tu culpa."
+        },
+        {
+          "text": "Es como te enseñaron.",
+          "mark": true
+        }
+      ],
+      "accent": "amber",
+      "hue": "amber",
+      "start": 84.34,
+      "dur": 9.7
+    },
+    {
+      "id": "b1_12",
+      "kind": "raw",
+      "anchor": "agarras la regadera o la manguera",
+      "src": "img/b1_manguera_riego.png",
+      "hue": "amber",
+      "kicker": "Mojás la tierra por arriba",
+      "start": 94.04,
+      "dur": 5.04,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "b1_13",
+      "kind": "chips",
+      "anchor": "Dos cosas malas",
+      "bg": "image",
+      "image": "img/tierra_seca_sol.png",
+      "title": "Pasan dos cosas malas",
+      "chips": [
+        "Se evapora con el sol",
+        "Las raíces se quedan arriba"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "tierra_seca_sol",
+        "prompt": "Realistic handheld 16:9 documentary macro of dry cracked topsoil around a plant base under strong sun, faint steam of evaporation rising, muted earthy colors, natural harsh daylight, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 99.08,
+      "dur": 4.7
+    },
+    {
+      "id": "b1_14",
+      "kind": "diagram",
+      "anchor": "buena parte de esa agua se evapora",
+      "eyebrow": "Por qué el riego de arriba falla",
+      "hue": "amber",
+      "accent": "amber",
+      "slides": [
+        {
+          "image": "img/dg_evaporacion.png",
+          "title": "El sol se roba el agua",
+          "gen": {
+            "type": "image",
+            "name": "dg_evaporacion",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano pero muy profesional, limpia, premium y editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado. Muestra un corte de tierra con una planta: el agua regada por arriba (gotas azules) evaporándose hacia el sol caliente arriba, y solo un poquito llegando a las raíces superficiales. Flechas elegantes hacia arriba (evaporación) y una pequeña hacia abajo. Texto en español: 'EL SOL SE ROBA EL AGUA'. Dejá COMPLETAMENTE LIBRE la esquina superior derecha. Composición minimalista, pocos bloques, muy clara, se entiende en 1 segundo, vintage botanical archival textbook illustration, slightly aged paper texture."
+          }
+        },
+        {
+          "image": "img/dg_raices_arriba.png",
+          "title": "Raíces cortas y flojas",
+          "gen": {
+            "type": "image",
+            "name": "dg_raices_arriba",
+            "prompt": "Crear una infografía horizontal 16:9, estilo ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Corte de tierra mostrando una planta con raíces CORTAS pegadas a la superficie buscando la humedad de arriba, suelo seco más abajo. Texto en español: 'RAÍCES ARRIBA = PLANTA DÉBIL'. Dejá libre la esquina superior derecha. Minimalista, clara, se entiende en 1 segundo, vintage botanical archival illustration, aged paper texture."
+          }
+        }
+      ],
+      "start": 103.78,
+      "dur": 7.22
+    },
+    {
+      "id": "b1_15",
+      "kind": "cross",
+      "anchor": "donde de verdad están las raíces que importan",
+      "eyebrow": "Dónde llega de verdad el agua",
+      "title": "El perfil del suelo",
+      "hue": "amber",
+      "layers": [
+        {
+          "label": "Superficie mojada (se evapora)",
+          "depth": "0-3 cm",
+          "weight": 1.2,
+          "color": "#A9794A"
+        },
+        {
+          "label": "Capa media (apenas pasa)",
+          "depth": "3-10 cm",
+          "weight": 1.6,
+          "color": "#7C8A5A"
+        },
+        {
+          "label": "Raíces reales (llega muy poco)",
+          "depth": "15-20 cm",
+          "weight": 2,
+          "color": "#6F8478"
+        }
+      ],
+      "marker": {
+        "label": "Acá está la sed",
+        "atDepth": 0.8,
+        "color": "danger"
+      },
+      "start": 111,
+      "dur": 8.14
+    },
+    {
+      "id": "b1_16",
+      "kind": "quote",
+      "anchor": "sus raíces aprenden a quedarse arriba",
+      "image": "img/raices_cortas.png",
+      "eyebrow": "El problema de fondo",
+      "text": "Estás criando una planta *consentida*.",
+      "accent": "danger",
+      "hue": "amber",
+      "fontSize": 82,
+      "gen": {
+        "type": "image",
+        "name": "raices_cortas",
+        "prompt": "Realistic handheld 16:9 documentary macro of a plant pulled from soil showing short shallow weak roots clustered near the top, soil clinging, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, deep roots, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 119.14,
+      "dur": 2.64
+    },
+    {
+      "id": "b1_16b",
+      "kind": "raw",
+      "anchor": "Suben a buscar esa humedad superficial",
+      "src": "img/b1_raices_superficie.png",
+      "hue": "amber",
+      "kicker": "Raíces que suben, no bajan",
+      "start": 121.78,
+      "dur": 9.04,
+      "gen": {
+        "type": "image",
+        "name": "raices_flojas_maceta",
+        "prompt": "Realistic handheld 16:9 documentary a small plant lifted from a pot showing short weak shallow roots clinging near the surface, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      },
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "b1_16c",
+      "kind": "quote",
+      "anchor": "el primer fin de semana que no estás",
+      "image": "img/planta_muerta_seca.png",
+      "eyebrow": "Una planta que depende de vos",
+      "text": "El día que faltás... *se muere*.",
+      "accent": "danger",
+      "hue": "cold",
+      "fontSize": 80,
+      "start": 130.82,
+      "dur": 16.84,
+      "gen": {
+        "type": "image",
+        "name": "planta_muerta_seca",
+        "prompt": "Realistic handheld 16:9 documentary a completely dried dead plant in a pot, brittle brown leaves, abandoned look, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_17",
+      "kind": "raw",
+      "anchor": "el día que faltas se muere",
+      "src": "vid/yt_planta_seca_maceta.mp4",
+      "hue": "cold",
+      "kicker": "El día que faltás, se muere",
+      "start": 147.66,
+      "dur": 2.2,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b1_18",
+      "kind": "rule",
+      "anchor": "El secreto de los viejos era exactamente al revés",
+      "number": "01",
+      "label": "Lo que hacían los viejos",
+      "title": "Llevar el agua ABAJO",
+      "hue": "amber",
+      "start": 149.1,
+      "dur": 3.98
+    },
+    {
+      "id": "b1_19",
+      "kind": "diagram",
+      "anchor": "llevaban el agua abajo profundo",
+      "eyebrow": "El secreto: agua profunda",
+      "hue": "amber",
+      "accent": "good",
+      "slides": [
+        {
+          "image": "img/dg_agua_profunda.png",
+          "title": "El agua va directo a la raíz",
+          "gen": {
+            "type": "image",
+            "name": "dg_agua_profunda",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Corte de tierra con una planta y agua entregada en PROFUNDIDAD directo a las raíces (gotas azules abajo, cero evaporación arriba). Flecha elegante hacia abajo. Texto en español: 'EL AGUA, PROFUNDA Y DESPACIO'. Dejá libre la esquina superior derecha. Minimalista, clara, se entiende en 1 segundo, vintage botanical archival illustration, aged paper texture."
+          }
+        },
+        {
+          "image": "img/dg_raices_hondas.png",
+          "title": "Raíces hondas y fuertes",
+          "gen": {
+            "type": "image",
+            "name": "dg_raices_hondas",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos verde oliva. Corte de tierra mostrando una planta sana con raíces LARGAS, hondas y robustas que bajan a buscar el agua. Texto en español: 'RAÍCES HONDAS = PLANTA FUERTE'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage botanical archival illustration, aged paper texture."
+          }
+        }
+      ],
+      "start": 153.08,
+      "dur": 4.68
+    },
+    {
+      "id": "b1_16d",
+      "kind": "raw",
+      "anchor": "obligaban a la planta a echar raíces hondas",
+      "src": "img/raices_hondas_real.png",
+      "hue": "amber",
+      "kicker": "Raíces hondas, fuertes",
+      "start": 157.76,
+      "dur": 8.66,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "b1_19b",
+      "kind": "quote",
+      "anchor": "Aguanta la sequía",
+      "image": "img/tierra_humeda_honda.png",
+      "eyebrow": "Su propia despensa",
+      "text": "Tiene su *despensa* de agua allá abajo.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 78,
+      "start": 166.42,
+      "dur": 8.32,
+      "gen": {
+        "type": "image",
+        "name": "tierra_humeda_honda",
+        "prompt": "Realistic handheld 16:9 documentary macro cross view of dark moist deep soil being dug, damp earth layers, a trowel, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_20",
+      "kind": "quote",
+      "anchor": "No es cuánta agua le das",
+      "image": "img/raices_profundas.png",
+      "eyebrow": "Toda la diferencia",
+      "text": "No es *cuánta* agua. Es a qué *profundidad*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 78,
+      "gen": {
+        "type": "image",
+        "name": "raices_profundas",
+        "prompt": "Realistic handheld 16:9 documentary a healthy plant with very long deep roots descending into rich dark soil, side view, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      },
+      "start": 174.74,
+      "dur": 11.84
+    },
+    {
+      "id": "b1_21",
+      "kind": "raw",
+      "anchor": "Hace miles de años en las tierras secas",
+      "src": "vid/yt_olla_barro.mp4",
+      "hue": "blue",
+      "kicker": "Hace miles de años",
+      "zoom": [
+        1.04,
+        1.15
+      ],
+      "gen": {
+        "type": "image",
+        "name": "olla_barro_enterrada",
+        "prompt": "Realistic handheld 16:9 documentary-style frame of an ancient unglazed terracotta clay pot (olla) buried up to its neck in dry garden soil next to a plant, weathered porous clay sweating water, rustic dry land, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, glazed shiny pot, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 186.58,
+      "dur": 3.06
+    },
+    {
+      "id": "b1_22",
+      "kind": "journey",
+      "anchor": "enterraban ollas de barro sin coser",
+      "eyebrow": "Sabiduría de supervivencia",
+      "title": "La olla de barro por el mundo",
+      "worldImage": "img/dg_mapa_ollas.png",
+      "accent": "cold",
+      "waypoints": [
+        {
+          "x": 0.2,
+          "y": 0.55,
+          "z": 0,
+          "num": "1",
+          "label": "Norte de África",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.5,
+          "y": 0.4,
+          "z": 0.2,
+          "num": "2",
+          "label": "Medio Oriente",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.78,
+          "y": 0.5,
+          "z": 0,
+          "num": "3",
+          "label": "China",
+          "dwell": 3.2,
+          "travel": 1.8
+        },
+        {
+          "x": 0.5,
+          "y": 0.7,
+          "z": 0.1,
+          "num": "4",
+          "label": "Donde casi no llovía",
+          "dwell": 3,
+          "travel": 1.6
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "dg_mapa_ollas",
+        "prompt": "Crear una lámina horizontal 16:9 estilo mapa antiguo dibujado a mano, editorial premium. Fondo marfil/pergamino claro con textura de papel envejecido, líneas marrón oscuro tipo grabado, acentos verde oliva y terracota apagado. Un mapa del mundo viejo simplificado y hermoso (continentes con sombreado suave de acuarela), sin texto. Estética de atlas antiguo, sobrio, mucho espacio respirable. Negative prompt: modern map, bright colors, country labels, text, cartoon, CGI, 3D, watermark."
+      },
+      "start": 189.64,
+      "dur": 22
+    },
+    {
+      "id": "b1_23",
+      "kind": "quote",
+      "anchor": "esa misma olla de barro para el pobre",
+      "image": "img/olla_barro_goteo.png",
+      "eyebrow": "El truco de hoy",
+      "text": "La botella es esa *olla de barro*, hecha con lo que ibas a tirar.",
+      "accent": "good",
+      "hue": "blue",
+      "fontSize": 72,
+      "start": 211.64,
+      "dur": 14.96,
+      "gen": {
+        "type": "image",
+        "name": "olla_barro_goteo",
+        "prompt": "Realistic handheld 16:9 documentary close detail of an unglazed terracotta clay pot buried in soil, the porous wall sweating water droplets toward roots, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_24",
+      "kind": "rule",
+      "anchor": "Vamos a hacerla",
+      "number": "02",
+      "label": "Manos a la obra",
+      "title": "Cómo hacer la botella",
+      "hue": "amber",
+      "start": 226.6,
+      "dur": 2.2
+    },
+    {
+      "id": "b1_25",
+      "kind": "raw",
+      "anchor": "Necesitas una botella de plástico",
+      "src": "img/el_muestra_botella.png",
+      "hue": "amber",
+      "kicker": "De 1.5 o 2 litros, mejor",
+      "start": 228.26,
+      "dur": 9.22,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "b1_26",
+      "kind": "process",
+      "anchor": "Lávala bien por dentro",
+      "eyebrow": "Paso a paso",
+      "title": "Cuatro pasos",
+      "accent": "good",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Lavá la botella",
+          "desc": "Sin restos de azúcar ni jabón",
+          "image": "img/paso_lavar.png"
+        },
+        {
+          "title": "Agujeritos abajo",
+          "desc": "6 a 8, chicos, costados y fondo",
+          "image": "img/paso_agujeros.png"
+        },
+        {
+          "title": "Enterrá al lado",
+          "desc": "A un palmo, 15-20 cm de hondo",
+          "image": "img/paso_enterrar.png"
+        },
+        {
+          "title": "Llená de agua",
+          "desc": "Y dejá que trabaje sola",
+          "image": "img/paso_llenar.png"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "paso_lavar",
+        "prompt": "Realistic handheld 16:9 documentary macro of hands rinsing the inside of a clear plastic bottle with water at an outdoor tap, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 237.48,
+      "dur": 4.2
+    },
+    {
+      "id": "b1_el_perfora",
+      "kind": "raw",
+      "anchor": "con un clavo caliente",
+      "src": "img/el_perfora_botella.png",
+      "hue": "amber",
+      "kicker": "Le hago los agujeritos",
+      "zoom": [
+        1.18,
+        1.05
+      ],
+      "start": 241.68,
+      "dur": 9.02
+    },
+    {
+      "id": "b1_27",
+      "kind": "annotated",
+      "anchor": "los agujeros van en la mitad de abajo",
+      "image": "img/botella_agujeros.png",
+      "eyebrow": "La clave de todo",
+      "caption": "Los agujeros van ABAJO, no en el cuello",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.4,
+          "h": 0.32,
+          "label": "Mitad de abajo: costados y fondo",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.25,
+          "fromX": 0.8,
+          "fromY": 0.12,
+          "label": "Acá NO"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "botella_agujeros",
+        "prompt": "Realistic handheld 16:9 documentary macro of a clear plastic bottle lying on a workbench with several small holes pierced in its lower half (sides and bottom), a hot nail and a knife beside it, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, big holes on top, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 250.7,
+      "dur": 8.32
+    },
+    {
+      "id": "b1_28",
+      "kind": "callout",
+      "anchor": "Haz unos 6 u 8 agujeritos chicos",
+      "image": "img/clavo_caliente.png",
+      "figure": "6-8",
+      "eyebrow": "Cantidad justa",
+      "caption": "agujeritos chicos, repartidos abajo",
+      "accent": "good",
+      "hue": "amber",
+      "start": 259.02,
+      "dur": 8.88,
+      "gen": {
+        "type": "image",
+        "name": "clavo_caliente",
+        "prompt": "Realistic handheld 16:9 documentary a hand piercing small holes into the lower side of a plastic bottle with a hot nail held in pliers, wisp of smoke, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_29",
+      "kind": "quote",
+      "anchor": "El tamaño y la cantidad de los agujeros manda la velocidad",
+      "image": "img/botella_goteo.png",
+      "eyebrow": "El secreto fino",
+      "text": "Pocos y *chicos*. Despacio es la palabra.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80,
+      "gen": {
+        "type": "image",
+        "name": "botella_goteo",
+        "prompt": "Realistic handheld 16:9 documentary macro of water seeping slowly in tiny drops from small holes in the lower side of a plastic bottle into dark soil, very slow drip, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, gushing water, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 267.9,
+      "dur": 12.08
+    },
+    {
+      "id": "b1_30",
+      "kind": "stat",
+      "anchor": "que una botella te dure",
+      "value": 5,
+      "prefix": "3-",
+      "suffix": " días",
+      "label": "vaciándose de a poquito",
+      "eyebrow": "Una sola llenada",
+      "accent": "good",
+      "hue": "amber",
+      "start": 279.98,
+      "dur": 14.58
+    },
+    {
+      "id": "b1_31",
+      "kind": "raw",
+      "anchor": "Ahora la entierras",
+      "src": "img/el_entierra_botella.png",
+      "hue": "amber",
+      "kicker": "Cavás al lado, a un palmo",
+      "start": 294.56,
+      "dur": 3.1,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "b1_el_cava",
+      "kind": "raw",
+      "anchor": "Cavas un pozo al lado de la planta",
+      "src": "img/el_cava_pozo.png",
+      "hue": "amber",
+      "kicker": "Cavo al lado, a un palmo",
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ],
+      "start": 297.66,
+      "dur": 6.36
+    },
+    {
+      "id": "b1_32",
+      "kind": "annotated",
+      "anchor": "entierras la botella con los agujeros para abajo",
+      "image": "img/botella_enterrada.png",
+      "eyebrow": "Cómo enterrarla",
+      "caption": "Agujeros abajo, a 15-20 cm; solo el cuello afuera",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.78,
+          "fromX": 0.2,
+          "fromY": 0.9,
+          "label": "Agujeros a la altura de la raíz"
+        },
+        {
+          "kind": "underline",
+          "x": 0.5,
+          "y": 0.2,
+          "w": 0.3,
+          "label": "El cuello queda afuera"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "botella_enterrada",
+        "prompt": "Realistic handheld 16:9 documentary-style frame of a plastic bottle buried upright next to a tomato plant in garden soil, only the neck and cap sticking out, a small hole pierced in the cap, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 304.02,
+      "dur": 14.74
+    },
+    {
+      "id": "b1_33",
+      "kind": "checklist",
+      "anchor": "enterrarla cuando la planta está chica",
+      "title": "Para que salga perfecto",
+      "eyebrow": "Detalles que importan",
+      "accent": "good",
+      "hue": "amber",
+      "image": "img/botella_plantada_chica.png",
+      "items": [
+        {
+          "text": "Ideal: enterrarla con la planta recién trasplantada",
+          "state": "done"
+        },
+        {
+          "text": "A un palmo del tallo, sin cortar raíces gruesas",
+          "state": "done"
+        },
+        {
+          "text": "Tapa con un agujerito de alfiler (entra aire, no mosquitos)",
+          "state": "doing"
+        }
+      ],
+      "start": 318.76,
+      "dur": 22.98,
+      "gen": {
+        "type": "image",
+        "name": "botella_plantada_chica",
+        "prompt": "Realistic handheld 16:9 documentary a plastic bottle buried neck-up next to a small young seedling just transplanted in garden soil, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_34",
+      "kind": "raw",
+      "anchor": "que entre aire y el agua pueda bajar",
+      "src": "img/botella_tapa_agujero.png",
+      "hue": "amber",
+      "kicker": "Un agujerito de nada en la tapa",
+      "gen": {
+        "type": "image",
+        "name": "botella_tapa_agujero",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a plastic bottle cap with a single tiny pinhole pierced in the center, fingers holding it, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, big hole, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 341.74,
+      "dur": 9.82,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "b1_35",
+      "kind": "raw",
+      "anchor": "Llénala de agua y la botella empieza su trabajo",
+      "src": "img/el_llena_botella.png",
+      "hue": "amber",
+      "kicker": "Llenala y listo",
+      "start": 351.56,
+      "dur": 3.42,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b1_36",
+      "kind": "impact",
+      "anchor": "El agua va saliendo por los agujeritos",
+      "image": "img/goteo_raiz.png",
+      "setup": "El agua baja sola, derecho a la raíz:",
+      "impact": "CERO desperdicio",
+      "impactAccent": "good",
+      "hitAt": 2.5,
+      "boom": 1,
+      "hue": "amber",
+      "start": 354.98,
+      "dur": 6.06,
+      "gen": {
+        "type": "image",
+        "name": "goteo_raiz",
+        "prompt": "Realistic handheld 16:9 documentary underground macro of water droplets seeping slowly from a buried bottle directly onto plant roots in dark soil, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b1_37",
+      "kind": "chips",
+      "anchor": "Cero evaporación",
+      "bg": "image",
+      "image": "img/planta_sana_botella.png",
+      "title": "Lo que conseguís",
+      "chips": [
+        "Cero evaporación",
+        "Cero desperdicio",
+        "Cero hojas mojadas"
+      ],
+      "hue": "amber",
+      "start": 361.04,
+      "dur": 9.96,
+      "gen": {
+        "type": "image",
+        "name": "planta_sana_botella",
+        "prompt": "Realistic handheld 16:9 documentary a thriving green healthy tomato plant with a bottle neck sticking out of the soil beside it, lush leaves, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    }
+  ]
+}

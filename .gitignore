@@ -14,3 +14,7 @@ out/
 *.log
 img_index*.json
 vid_index*.json
+public/*.mp3
+eng.traineddata
+public/clips_src/
+scripts/bin/yt-dlp.exe

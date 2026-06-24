@@ -68,7 +68,10 @@ export const ImpactReveal: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const C = TONE[impactAccent];
-  const hit = sec(hitAt);
+  // clamp: si el cue dura MENOS que hitAt (cue corto forzado), el hit se corre al
+  // penúltimo frame → evita rangos de interpolate descendentes [hit, dur] no
+  // monótonos (crash "inputRange must be strictly monotonically increasing").
+  const hit = Math.min(sec(hitAt), durationInFrames - 1);
 
   // ── imagen: SPEED-RAMP — el zoom ACELERA hacia el golpe y FRENA en seco ─────
   // antes del hit: ease-in fuerte (acelera) hasta el ~92% del recorrido; en el

@@ -1,0 +1,662 @@
+{
+  "video": "botella2",
+  "avatar": "botella2_opt.mp4",
+  "_nota": "Video BOTELLA parte 2 (~5:43): todo lo que ganaste (tiempo, irte tranquilo, plantas fuertes/sanas, ahorro agua) → secretos de yapa (alimentar con abono, plantas grandes/macetas, zona seca con trapo) → por qué nadie te lo enseña (no hay plata en lo gratis: te venden maceta autorregante/goteo/medidor/gel) → cierre + tease (tierra negra). Clip-heavy: yt + deAPI macros + dg_* diagramas. anchors→sync.",
+  "beats": [
+    {
+      "id": "b2_01",
+      "kind": "headline",
+      "anchor": "todo lo que acabas de ganar con esta botella",
+      "eyebrow": "Con una botella de basura",
+      "tokens": [
+        {
+          "t": "Mirá todo lo que "
+        },
+        {
+          "t": "ganaste",
+          "hl": true
+        }
+      ],
+      "bg": "image",
+      "image": "img/huerta_verde_botella.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "huerta_verde_botella",
+        "prompt": "Realistic handheld 16:9 documentary-style frame of a healthy green home vegetable garden with a plastic bottle buried neck-up next to a thriving tomato plant, natural soft daylight, muted earthy greens, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 1.1,
+      "dur": 5.08
+    },
+    {
+      "id": "b2_02",
+      "kind": "checklist",
+      "anchor": "Ganaste tiempo",
+      "title": "Lo que ganaste",
+      "eyebrow": "Cinco cosas",
+      "accent": "good",
+      "hue": "amber",
+      "image": "img/huerta_prospera.png",
+      "items": [
+        {
+          "text": "Tiempo: regás cada 3-5 días, no cada día",
+          "state": "done"
+        },
+        {
+          "text": "Poder irte tranquilo un finde entero",
+          "state": "done"
+        },
+        {
+          "text": "Plantas más fuertes (raíces hondas)",
+          "state": "done"
+        },
+        {
+          "text": "Plantas más sanas (sin hojas mojadas)",
+          "state": "done"
+        },
+        {
+          "text": "Ahorro de agua: cero evaporación",
+          "state": "doing"
+        }
+      ],
+      "start": 6.18,
+      "dur": 3.1,
+      "gen": {
+        "type": "image",
+        "name": "huerta_prospera",
+        "prompt": "Realistic handheld 16:9 documentary a flourishing backyard vegetable garden, green healthy rows, buried bottle visible by a plant, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_03",
+      "kind": "stat",
+      "anchor": "llenas la botella cada 3",
+      "value": 5,
+      "prefix": "3-",
+      "suffix": " días",
+      "label": "entre llenada y llenada",
+      "eyebrow": "Ganaste tiempo",
+      "accent": "good",
+      "hue": "amber",
+      "start": 9.28,
+      "dur": 7.72
+    },
+    {
+      "id": "b2_04",
+      "kind": "raw",
+      "anchor": "Ganaste poder irte tranquilo",
+      "src": "vid/yt_valija_viaje.mp4",
+      "hue": "blue",
+      "kicker": "Te vas tranquilo",
+      "start": 17,
+      "dur": 6.18,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b2_05",
+      "kind": "quote",
+      "anchor": "tus plantas siguen verdes esperándote",
+      "image": "img/plantas_verdes_volver.png",
+      "eyebrow": "Volvés y...",
+      "text": "Tus plantas siguen *verdes*, esperándote.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 82,
+      "start": 23.18,
+      "dur": 2.2,
+      "gen": {
+        "type": "image",
+        "name": "plantas_verdes_volver",
+        "prompt": "Realistic handheld 16:9 documentary returning home to green thriving potted and bed plants, sunny, healthy foliage, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_06",
+      "kind": "raw",
+      "anchor": "Ganaste plantas más fuertes",
+      "src": "img/raices_hondas_robustas.png",
+      "hue": "amber",
+      "kicker": "Raíces hondas y robustas",
+      "gen": {
+        "type": "image",
+        "name": "raices_hondas_robustas",
+        "prompt": "Realistic handheld 16:9 documentary macro of a strong plant pulled to show long deep robust roots reaching far down into dark moist soil, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, shallow roots, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 25.04,
+      "dur": 8.02,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "b2_07",
+      "kind": "bars",
+      "anchor": "aguanta el calor que mataría a la del vecino",
+      "eyebrow": "En pleno calor",
+      "title": "Quién aguanta",
+      "unit": "",
+      "accent": "good",
+      "hue": "amber",
+      "bars": [
+        {
+          "label": "Planta con botella",
+          "value": 9,
+          "display": "Aguanta",
+          "tone": "good",
+          "winner": true
+        },
+        {
+          "label": "Planta del vecino",
+          "value": 3,
+          "display": "Se marchita",
+          "tone": "danger"
+        }
+      ],
+      "start": 33.06,
+      "dur": 2.92
+    },
+    {
+      "id": "b2_08",
+      "kind": "raw",
+      "anchor": "Ganaste plantas más sanas",
+      "src": "img/hojas_sanas.png",
+      "hue": "amber",
+      "kicker": "Plantas más sanas",
+      "gen": {
+        "type": "image",
+        "name": "hojas_sanas",
+        "prompt": "Realistic handheld 16:9 documentary macro of healthy dry tomato leaves in good condition, no spots, dry foliage in soft daylight, muted greens, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, disease, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 35.98,
+      "dur": 4.26,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "b2_09",
+      "kind": "diagram",
+      "anchor": "le quitas la humedad de arriba que es donde nacen los hongos",
+      "eyebrow": "Por qué se enferman menos",
+      "hue": "amber",
+      "accent": "good",
+      "slides": [
+        {
+          "image": "img/dg_hongos.png",
+          "title": "Hojas mojadas = hongos",
+          "gen": {
+            "type": "image",
+            "name": "dg_hongos",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Compará dos plantas: a la izquierda hojas MOJADAS con manchas de hongo/moho (gotas arriba, símbolos de hongo); a la derecha hojas SECAS y sanas con el agua yendo solo a la raíz abajo. Texto en español: 'MOJÁS LA RAÍZ, NO LA HOJA'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage botanical archival illustration, aged paper texture."
+          }
+        },
+        {
+          "image": "img/dg_riega_alimenta.png",
+          "title": "Riega y alimenta",
+          "gen": {
+            "type": "image",
+            "name": "dg_riega_alimenta",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil claro textura papel sutil, líneas marrón oscuro, acentos verde oliva y terracota. Una botella enterrada al lado de una planta soltando agua MÁS nutrientes (gotas con pequeños símbolos de hoja/abono) directo a las raíces. Texto en español: 'RIEGO Y COMIDA EN EL MISMO GESTO'. Dejá libre la esquina superior derecha. Minimalista, clara, vintage botanical archival illustration, aged paper texture."
+          }
+        }
+      ],
+      "start": 40.24,
+      "dur": 13.1
+    },
+    {
+      "id": "b2_10",
+      "kind": "quote",
+      "anchor": "Cada gota va a la raíz",
+      "image": "img/gota_raiz_macro.png",
+      "eyebrow": "Ahorro de agua",
+      "text": "Cada gota va a la raíz. En sequía, esto es *oro*.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 78,
+      "start": 53.34,
+      "dur": 6.26,
+      "gen": {
+        "type": "image",
+        "name": "gota_raiz_macro",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a single water drop landing on a plant root in dark moist soil, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_11",
+      "kind": "rule",
+      "anchor": "secretos extra de Yapa",
+      "number": "01",
+      "label": "De yapa",
+      "title": "Tres secretos extra",
+      "hue": "amber",
+      "start": 59.6,
+      "dur": 4.58
+    },
+    {
+      "id": "b2_12",
+      "kind": "raw",
+      "anchor": "la botella no solo riega también puede alimentar",
+      "src": "img/abono_liquido.png",
+      "hue": "amber",
+      "kicker": "También alimenta",
+      "gen": {
+        "type": "image",
+        "name": "abono_liquido",
+        "prompt": "Realistic handheld 16:9 documentary macro of a hand pouring dark liquid fertilizer (compost tea) into a plastic bottle funnel over garden soil, brownish water, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, clean product, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 64.18,
+      "dur": 7.1,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "b2_13",
+      "kind": "raw",
+      "anchor": "el agua donde dejaste reposar un puñado de compost",
+      "src": "img/compost_puñado.png",
+      "hue": "amber",
+      "kicker": "Agua de compost o estiércol",
+      "gen": {
+        "type": "image",
+        "name": "compost_puñado",
+        "prompt": "Realistic handheld 16:9 documentary macro of a weathered hand holding a fistful of dark crumbly compost over a bucket of water, garden background, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 71.28,
+      "dur": 9.36,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "b2_14",
+      "kind": "quote",
+      "anchor": "Riego y comida en el mismo gesto",
+      "image": "img/abono_gota.png",
+      "eyebrow": "El primer secreto",
+      "text": "Riego y *comida* en el mismo gesto.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 84,
+      "start": 80.64,
+      "dur": 5.66,
+      "gen": {
+        "type": "image",
+        "name": "abono_gota",
+        "prompt": "Realistic handheld 16:9 documentary macro of dark nutrient-rich liquid dripping into soil at the base of a plant near roots, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_15",
+      "kind": "raw",
+      "anchor": "para las plantas grandes los tomates cargados",
+      "src": "img/tomate_cargado.png",
+      "hue": "amber",
+      "kicker": "Plantas grandes: botella grande",
+      "gen": {
+        "type": "image",
+        "name": "tomate_cargado",
+        "prompt": "Realistic handheld 16:9 documentary frame of a large tomato plant heavy with ripe fruit, a big 2-liter bottle buried beside it, vegetable garden, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 86.3,
+      "dur": 5.66,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b2_16",
+      "kind": "callout",
+      "anchor": "ponle una botella grande o hasta dos",
+      "image": "img/dos_botellas.png",
+      "figure": "x2",
+      "eyebrow": "Plantas grandes",
+      "caption": "una botella de cada lado",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "dos_botellas",
+        "prompt": "Realistic handheld 16:9 documentary frame of a large vegetable plant with two plastic bottles buried one on each side, garden soil, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 91.96,
+      "dur": 3.22
+    },
+    {
+      "id": "b2_17",
+      "kind": "raw",
+      "anchor": "Para las plantas de maceta",
+      "src": "vid/yt_maceta_balcon.mp4",
+      "hue": "blue",
+      "kicker": "Las macetas son las que más sufren",
+      "start": 95.18,
+      "dur": 5.24,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "b2_18",
+      "kind": "impact",
+      "anchor": "una botellita chica enterrada en la maceta",
+      "image": "img/maceta_botellita.png",
+      "setup": "En la maceta, una botellita chica...",
+      "impact": "casi un MILAGRO",
+      "impactAccent": "good",
+      "hitAt": 2.5,
+      "boom": 1,
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "maceta_botellita",
+        "prompt": "Realistic handheld 16:9 documentary macro of a small plastic bottle buried in a terracotta flower pot next to a potted plant on a balcony, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 100.42,
+      "dur": 11.92
+    },
+    {
+      "id": "b2_19",
+      "kind": "raw",
+      "anchor": "envolverle el cuerpo con un trapo viejo",
+      "src": "img/trapo_botella.png",
+      "hue": "amber",
+      "kicker": "Zona seca: envolvela en un trapo",
+      "gen": {
+        "type": "image",
+        "name": "trapo_botella",
+        "prompt": "Realistic handheld 16:9 documentary macro of a plastic bottle wrapped in an old cloth rag being buried in very dry soil, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 112.34,
+      "dur": 5.38,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "b2_20",
+      "kind": "quote",
+      "anchor": "para que el agua salga aún más lento",
+      "image": "img/trapo_botella_seca.png",
+      "eyebrow": "El tercer secreto",
+      "text": "Sale más *lento* y dura más.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 84,
+      "start": 117.72,
+      "dur": 27.44,
+      "gen": {
+        "type": "image",
+        "name": "trapo_botella_seca",
+        "prompt": "Realistic handheld 16:9 documentary a plastic bottle wrapped in old cloth rag half buried in very dry cracked soil, detail, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_21",
+      "kind": "rule",
+      "anchor": "por qué un truco tan simple",
+      "number": "02",
+      "label": "El fondo del asunto",
+      "title": "¿Por qué nadie te lo enseña?",
+      "hue": "red",
+      "start": 145.16,
+      "dur": 7.74
+    },
+    {
+      "id": "b2_22",
+      "kind": "impact",
+      "anchor": "porque no hay dinero en lo gratis",
+      "image": "img/billetes_planta.png",
+      "setup": "La respuesta de siempre:",
+      "impact": "NO hay plata en lo gratis",
+      "impactAccent": "danger",
+      "hitAt": 2.5,
+      "boom": 2,
+      "hue": "red",
+      "start": 152.9,
+      "dur": 4.94,
+      "gen": {
+        "type": "image",
+        "name": "billetes_planta",
+        "prompt": "Realistic handheld 16:9 documentary a hand holding cash money next to gardening products in a store, suggesting spending money, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_23",
+      "kind": "splitlist",
+      "anchor": "Le conviene venderte la maceta especial",
+      "title": "Lo que te quieren vender",
+      "items": [
+        "Maceta autorregante carísima",
+        "Sistema de riego por goteo",
+        "Medidor de humedad",
+        "Gel que retiene agua"
+      ],
+      "palette": "D",
+      "cross": true,
+      "start": 157.84,
+      "dur": 6.22
+    },
+    {
+      "id": "b2_24",
+      "kind": "raw",
+      "anchor": "el sistema de riego por goteo",
+      "src": "vid/yt_tienda_jardineria.mp4",
+      "hue": "red",
+      "kicker": "Todo lo que te venden",
+      "start": 164.06,
+      "dur": 10.78,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "b2_25",
+      "kind": "quote",
+      "anchor": "le conviene venderte la planta nueva",
+      "image": "img/plantas_caidas.png",
+      "eyebrow": "Y sobre todo",
+      "text": "Venderte la *planta nueva* cuando la tuya se muere.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 76,
+      "start": 174.84,
+      "dur": 7.9
+    },
+    {
+      "id": "b2_26",
+      "kind": "chips",
+      "anchor": "compra menos de todo",
+      "bg": "image",
+      "image": "img/familia_huerta.png",
+      "title": "Una familia que sabe...",
+      "chips": [
+        "riega con basura",
+        "y compra menos de todo"
+      ],
+      "hue": "amber",
+      "start": 182.74,
+      "dur": 4.06,
+      "gen": {
+        "type": "image",
+        "name": "familia_huerta",
+        "prompt": "Realistic handheld 16:9 documentary a family tending a home vegetable garden together, hands in soil, warm everyday scene, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_27",
+      "kind": "aged",
+      "anchor": "en la memoria de los abuelos",
+      "eyebrow": "Sabiduría guardada",
+      "heading": "En las huertas viejas",
+      "lines": [
+        {
+          "text": "Ellos no tenían para comprar nada."
+        },
+        {
+          "text": "Tenían que saber. Y por saber, sus plantas vivían.",
+          "mark": true
+        }
+      ],
+      "accent": "amber",
+      "hue": "amber",
+      "start": 186.8,
+      "dur": 10.92
+    },
+    {
+      "id": "b2_28",
+      "kind": "raw",
+      "anchor": "Tú puedes ser el que recuerda cómo se hacía",
+      "src": "img/abuelo_huerta.png",
+      "hue": "amber",
+      "kicker": "Vos podés ser el que recuerda",
+      "gen": {
+        "type": "image",
+        "name": "abuelo_huerta",
+        "prompt": "Realistic handheld 16:9 documentary frame of an elderly farmer's weathered hands tending a small vegetable garden at golden hour, vintage rural feel, natural warm daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text, face closeup."
+      },
+      "start": 197.72,
+      "dur": 3.76,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "b2_29",
+      "kind": "process",
+      "anchor": "antes de tirar la próxima botella",
+      "eyebrow": "Esta semana",
+      "title": "Hacelo vos",
+      "accent": "good",
+      "hue": "amber",
+      "steps": [
+        {
+          "title": "Lavala",
+          "desc": "La próxima botella, no la tires",
+          "image": "img/paso_lavar.png"
+        },
+        {
+          "title": "Agujeritos abajo",
+          "desc": "Chicos, en la mitad de abajo",
+          "image": "img/botella_agujeros.png"
+        },
+        {
+          "title": "Enterrala",
+          "desc": "Al lado de la planta que más sufre",
+          "image": "img/botella_enterrada.png"
+        },
+        {
+          "title": "Llenala",
+          "desc": "Y en unos días mirá cómo está",
+          "image": "img/botella_goteo.png"
+        }
+      ],
+      "start": 201.48,
+      "dur": 9.38
+    },
+    {
+      "id": "b2_30",
+      "kind": "quote",
+      "anchor": "en unos días me cuentas cómo la ves",
+      "image": "img/tomate_sano_maduro.png",
+      "eyebrow": "Te apuesto",
+      "text": "La vas a ver *mejor que nunca*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 84,
+      "start": 210.86,
+      "dur": 24.26,
+      "gen": {
+        "type": "image",
+        "name": "tomate_sano_maduro",
+        "prompt": "Realistic handheld 16:9 documentary a healthy plant heavy with ripe red tomatoes in a thriving garden, payoff shot, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_31",
+      "kind": "raw",
+      "anchor": "La próxima vez te voy a mostrar otro truco",
+      "src": "img/tierra_negra.png",
+      "hue": "amber",
+      "kicker": "La próxima: tierra negra y rica",
+      "gen": {
+        "type": "image",
+        "name": "tierra_negra",
+        "prompt": "Realistic handheld 16:9 documentary macro of rich dark black crumbly compost soil falling through weathered hands, healthy garden background, natural daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 235.12,
+      "dur": 17.16,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "b2_32",
+      "kind": "impact",
+      "anchor": "Dale el agua a la raíz despacio y profundo",
+      "image": "img/botella_enterrada_final.png",
+      "setup": "No tires esa botella. Enterrala.",
+      "impact": "Despacio y profundo",
+      "impactAccent": "good",
+      "hitAt": 2.5,
+      "boom": 1,
+      "hue": "amber",
+      "start": 252.28,
+      "dur": 6.54,
+      "gen": {
+        "type": "image",
+        "name": "botella_enterrada_final",
+        "prompt": "Realistic handheld 16:9 documentary a plastic bottle buried beside a strong healthy plant in rich soil, wide reassuring shot, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, no cinematic lighting, low-resolution YouTube documentary screenshot look, casual DIY aesthetic, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, logo, text."
+      }
+    },
+    {
+      "id": "b2_33",
+      "kind": "quote",
+      "anchor": "Así lo hacían los de antes",
+      "image": "img/el_huerta_orgullo.png",
+      "eyebrow": "Y mirá cómo dejan de sufrir",
+      "text": "Así lo hacían *los de antes*.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 88,
+      "start": 258.82,
+      "dur": 2.2
+    }
+  ]
+}

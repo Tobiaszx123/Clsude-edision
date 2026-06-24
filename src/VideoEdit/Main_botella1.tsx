@@ -1,0 +1,27 @@
+// Main_botella1.tsx — ventanas de avatar en ./av_botella1.gen (generado), look webcam + cutaways del presentador.
+import { AbsoluteFill, Sequence } from "remotion";
+import { CUES } from "./cues_botella1.gen";
+import { sec, COLORS } from "./theme";
+import { CinematicWrap } from "./components/CinematicWrap";
+import { AvatarLayer } from "./scenes/AvatarLayer";
+import { AV } from "./av_botella1.gen";
+import { Captions } from "./scenes/Captions";
+
+const LAST = CUES.reduce((m, c) => Math.max(m, c.start + c.dur), 0);
+export const TOTAL_FRAMES_BOTELLA1 = sec(LAST + 0.5);
+
+export const MainBotella1: React.FC = () => {
+  return (
+    <AbsoluteFill style={{ backgroundColor: COLORS.bg0 }}>
+      <CinematicWrap handheld={0}>
+        {CUES.map((c) => (
+          <Sequence key={c.key} from={sec(c.start)} durationInFrames={sec(c.dur)}>
+            {c.el(sec(c.dur))}
+          </Sequence>
+        ))}
+      </CinematicWrap>
+      <AvatarLayer src="botella1_opt.mp4" windows={AV} />
+      <Captions src="captions_botella1.json" />
+    </AbsoluteFill>
+  );
+};

@@ -1,0 +1,528 @@
+{
+  "video": "jengibre2",
+  "avatar": "jengibre2_opt.mp4",
+  "_nota": "Jengibre parte 2 (6:46). Transcripción OpenAI. Cuidados + cosecha + historia + cierre.",
+  "beats": [
+    {
+      "id": "k01",
+      "start": 0,
+      "dur": 8,
+      "kind": "raw",
+      "src": "img/j2_selva.png",
+      "hue": "amber",
+      "kicker": "Viene de la selva",
+      "gen": {
+        "type": "image",
+        "name": "j2_selva",
+        "prompt": "Realistic handheld 16:9 documentary frame of lush green ginger plants growing in a warm humid tropical jungle setting, dappled light, muted green colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k02",
+      "start": 8,
+      "dur": 8,
+      "kind": "raw",
+      "src": "img/j2_media_sombra.png",
+      "hue": "amber",
+      "kicker": "Luz suave, media sombra",
+      "gen": {
+        "type": "image",
+        "name": "j2_media_sombra",
+        "prompt": "Realistic handheld 16:9 documentary frame of a leafy ginger plant in a pot in gentle dappled shade, soft filtered sunlight, not harsh, backyard, muted green colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, harsh midday sun, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k03",
+      "start": 16,
+      "dur": 9,
+      "kind": "raw",
+      "src": "img/j2_helada.png",
+      "hue": "cold",
+      "kicker": "El frío lo mata",
+      "gen": {
+        "type": "image",
+        "name": "j2_helada",
+        "prompt": "Realistic handheld 16:9 documentary macro of frost and ice crystals on green plant leaves on a freezing cold morning, garden, muted cold blue colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k04",
+      "start": 25,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/j2_maceta_ventana.png",
+      "hue": "amber",
+      "kicker": "En maceta, adentro en invierno",
+      "gen": {
+        "type": "image",
+        "name": "j2_maceta_ventana",
+        "prompt": "Realistic handheld 16:9 documentary frame of a ginger plant in a pot sitting by a kitchen window with warm daylight coming in, cozy home interior, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k05",
+      "start": 32,
+      "dur": 7,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/j2_balcon.png",
+      "title": "Te alcanza un rincón con calorcito",
+      "chips": [
+        "El patio",
+        "El balcón",
+        "La cocina, junto a la ventana"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "j2_balcon",
+        "prompt": "Realistic handheld 16:9 documentary frame of potted plants on a small sunny home balcony, cozy, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k06",
+      "start": 39,
+      "dur": 9,
+      "kind": "raw",
+      "src": "img/j2_riego_esponja.png",
+      "hue": "amber",
+      "kicker": "Húmeda como esponja",
+      "gen": {
+        "type": "image",
+        "name": "j2_riego_esponja",
+        "prompt": "Realistic handheld 16:9 documentary macro of water being poured onto dark rich soil of a ginger pot, soil damp like a sponge not flooded, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, flooded, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k07",
+      "start": 48,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/j2_rociar.png",
+      "hue": "amber",
+      "kicker": "Rociá las hojas",
+      "gen": {
+        "type": "image",
+        "name": "j2_rociar",
+        "prompt": "Realistic handheld 16:9 documentary frame of a spray bottle misting water onto the green leaves of a ginger plant, fine droplets, natural soft daylight, muted green colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k08",
+      "start": 55,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/j2_compost.png",
+      "hue": "amber",
+      "kicker": "Una mano de abono",
+      "gen": {
+        "type": "image",
+        "name": "j2_compost",
+        "prompt": "Realistic handheld 16:9 documentary macro of a hand adding dark crumbly compost to the soil around a ginger plant, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k09",
+      "start": 62,
+      "dur": 8,
+      "kind": "diagram",
+      "eyebrow": "Aporcar = más cosecha",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/d2_aporcar.png",
+          "title": "Tapá las raíces que asoman",
+          "gen": {
+            "type": "image",
+            "name": "d2_aporcar",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra raíces de jengibre asomando en la superficie de la tierra y una mano echando más tierra por encima para taparlas. Texto en español: 'Aporcar: tapar las raíces = más cosecha'. Minimalista, clara, estética botánica vintage premium."
+          }
+        }
+      ]
+    },
+    {
+      "id": "k10",
+      "start": 70,
+      "dur": 22,
+      "kind": "quote",
+      "eyebrow": "Pausa de corazón, vecino",
+      "text": "Dejá tu *me gusta* y suscribite.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k11",
+      "start": 92,
+      "dur": 8,
+      "kind": "headline",
+      "eyebrow": "Ahora lo más importante",
+      "bg": "black",
+      "hue": "amber",
+      "tokens": [
+        {
+          "t": "El"
+        },
+        {
+          "t": "momento"
+        },
+        {
+          "t": "de"
+        },
+        {
+          "t": "la"
+        },
+        {
+          "t": "COSECHA",
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "k12",
+      "start": 100,
+      "dur": 8,
+      "kind": "quote",
+      "eyebrow": "El otro secreto",
+      "text": "¿*Cuándo* cosechar?",
+      "accent": "amber",
+      "hue": "cold"
+    },
+    {
+      "id": "k13",
+      "start": 108,
+      "dur": 8,
+      "kind": "quote",
+      "eyebrow": "La virtud del huertero",
+      "text": "La *paciencia*. El jengibre no es para apurados.",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "k14",
+      "start": 116,
+      "dur": 9,
+      "kind": "stat",
+      "value": 10,
+      "eyebrow": "Desde que lo plantás",
+      "label": "8 a 10 meses. La planta trabaja sola.",
+      "suffix": " meses",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "k15",
+      "start": 133,
+      "dur": 9,
+      "kind": "annotated",
+      "image": "img/j2_hojas_amarillas.png",
+      "eyebrow": "La planta te avisa",
+      "caption": "Hojas amarillas y secas = está lista",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.45,
+          "y": 0.4,
+          "w": 0.22,
+          "h": 0.22,
+          "label": "Se ponen amarillas"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "j2_hojas_amarillas",
+        "prompt": "Realistic handheld 16:9 documentary frame of a ginger plant whose tall green leaves are turning yellow and drying out, end of season, backyard, natural daylight, muted yellow-green colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k16",
+      "start": 142,
+      "dur": 9,
+      "kind": "quote",
+      "eyebrow": "La planta te dice",
+      "text": "Ya está. *Vení a buscar tu premio*.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k17",
+      "start": 151,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/j2_cosecha_mano.png",
+      "hue": "amber",
+      "kicker": "Meté la mano y sacá",
+      "gen": {
+        "type": "image",
+        "name": "j2_cosecha_mano",
+        "prompt": "Realistic handheld 16:9 documentary frame of weathered hands digging into dark soil and pulling out a big clump of fresh ginger rhizomes, harvest, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k18",
+      "start": 158,
+      "dur": 8,
+      "kind": "raw",
+      "gen": {
+        "type": "image",
+        "name": "j2_mata_raices",
+        "prompt": "Realistic handheld 16:9 documentary frame of a huge clump of fat aromatic fresh ginger roots just harvested, held up, dirt on them, backyard garden, natural warm daylight, muted natural colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      },
+      "src": "img/j2_mata_raices.png",
+      "kicker": "Una mata ENTERA.",
+      "hue": "amber"
+    },
+    {
+      "id": "k19",
+      "start": 166,
+      "dur": 16,
+      "kind": "diagram",
+      "eyebrow": "Una alacena viva",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/d2_cortar_lado.png",
+          "title": "Cortá un pedazo del costado, dejá el resto",
+          "gen": {
+            "type": "image",
+            "name": "d2_cortar_lado",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra una mata de jengibre bajo tierra de la que una mano corta un pedazo del costado mientras el resto sigue creciendo. Texto en español: 'Cortá un pedazo, dejá el resto creciendo'. Minimalista, clara, estética botánica vintage premium."
+          }
+        }
+      ]
+    },
+    {
+      "id": "k20",
+      "start": 182,
+      "dur": 8,
+      "kind": "quote",
+      "eyebrow": "Sin matar la planta",
+      "text": "Jengibre fresco *cuando quieras*.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k21",
+      "start": 190,
+      "dur": 18,
+      "kind": "diagram",
+      "eyebrow": "El círculo se cierra",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/d2_circulo.png",
+          "title": "Guardá el mejor pedazo y replantalo",
+          "gen": {
+            "type": "image",
+            "name": "d2_circulo",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Un círculo/ciclo: cosechás jengibre → apartás el pedazo más lindo con buenas yemas → lo replantás → vuelve a crecer. Texto en español: 'Guardá el mejor pedazo y nunca más comprás jengibre'. Minimalista, clara, estética botánica vintage premium."
+          }
+        }
+      ]
+    },
+    {
+      "id": "k22",
+      "start": 208,
+      "dur": 8,
+      "kind": "quote",
+      "eyebrow": "Para siempre",
+      "text": "Eso, vecino, es *riqueza* de verdad.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k23",
+      "start": 216,
+      "dur": 9,
+      "kind": "raw",
+      "src": "img/j2_te_jengibre.png",
+      "hue": "amber",
+      "kicker": "El té de Rosa, para los dolores",
+      "gen": {
+        "type": "image",
+        "name": "j2_te_jengibre",
+        "prompt": "Realistic handheld 16:9 documentary frame of an older woman's hands holding a warm cup of ginger tea with slices of ginger nearby, cozy home, warm afternoon light, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k24",
+      "start": 234,
+      "dur": 8,
+      "kind": "raw",
+      "src": "img/j2_cajon_ventana.png",
+      "hue": "amber",
+      "kicker": "En un cajón viejo, junto a la ventana",
+      "gen": {
+        "type": "image",
+        "name": "j2_cajon_ventana",
+        "prompt": "Realistic handheld 16:9 documentary frame of ginger growing in an old wooden crate next to a kitchen window, humble and homey, warm daylight, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k25",
+      "start": 242,
+      "dur": 9,
+      "kind": "raw",
+      "gen": {
+        "type": "image",
+        "name": "j2_balde_rosa",
+        "prompt": "Realistic handheld 16:9 documentary frame of a bucket full of freshly harvested ginger roots on a humble kitchen table, warm home light, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      },
+      "src": "img/j2_balde_rosa.png",
+      "kicker": "Un balde de UN pedazo.",
+      "hue": "amber"
+    },
+    {
+      "id": "k26",
+      "start": 259,
+      "dur": 9,
+      "kind": "headline",
+      "eyebrow": "Date cuenta",
+      "bg": "black",
+      "hue": "amber",
+      "tokens": [
+        {
+          "t": "No"
+        },
+        {
+          "t": "es"
+        },
+        {
+          "t": "solo"
+        },
+        {
+          "t": "comida."
+        },
+        {
+          "t": "Es"
+        },
+        {
+          "t": "MEDICINA",
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "k27",
+      "start": 268,
+      "dur": 8,
+      "kind": "raw",
+      "src": "img/j2_capsulas.png",
+      "hue": "cold",
+      "kicker": "Carísimo en la farmacia",
+      "gen": {
+        "type": "image",
+        "name": "j2_capsulas",
+        "prompt": "Realistic handheld 16:9 documentary frame of ginger supplement capsules in a bottle on a pharmacy shelf with a price label, expensive, indoor store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, fake brands, person talking, logo, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k28",
+      "start": 276,
+      "dur": 8,
+      "kind": "quote",
+      "eyebrow": "Dejaste de pagar",
+      "text": "Lo sembraste *gratis* en tu casa.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k29",
+      "start": 290,
+      "dur": 9,
+      "kind": "quote",
+      "eyebrow": "Comida, remedios, agua, luz",
+      "text": "¿Cuántas cosas pagás que *podrías darte vos*?",
+      "accent": "amber",
+      "hue": "cold"
+    },
+    {
+      "id": "k30",
+      "start": 307,
+      "dur": 14,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/j2_manual.png",
+      "title": "El manual del constructor libre",
+      "chips": [
+        "Tu comida",
+        "Tu agua",
+        "Tu energía",
+        "Tus remedios"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "j2_manual",
+        "prompt": "Realistic handheld 16:9 documentary frame of a rustic printed manual/handbook lying on a rough wooden table next to garden tools, no readable title, warm daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable text, brand, person talking, logo, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k31",
+      "start": 334,
+      "dur": 14,
+      "kind": "quote",
+      "eyebrow": "Sin mentirte",
+      "text": "No es magia: *trabajo y paciencia*, como el jengibre.",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "k32",
+      "start": 348,
+      "dur": 15,
+      "kind": "quote",
+      "eyebrow": "Si querés vivir más libre",
+      "text": "El enlace está *abajo*, en la descripción.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "k33",
+      "start": 363,
+      "dur": 15,
+      "kind": "quote",
+      "eyebrow": "En los comentarios",
+      "text": "¿Vos tomás jengibre? ¿*Para qué*?",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "k34",
+      "start": 378,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/j2_rodilla_hoja.png",
+      "hue": "amber",
+      "kicker": "El próximo video",
+      "gen": {
+        "type": "image",
+        "name": "j2_rodilla_hoja",
+        "prompt": "Realistic handheld 16:9 documentary macro of a single green leaf being rubbed on a person's knee at night before sleep, home remedy, warm dim indoor light, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking to camera, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "k35",
+      "start": 385,
+      "dur": 14,
+      "kind": "quote",
+      "eyebrow": "No te lo pierdas",
+      "text": "Una hoja que esconde un *poder* que no imaginás.",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "k36",
+      "start": 399,
+      "dur": 7,
+      "kind": "quote",
+      "eyebrow": "Nos vemos del otro lado",
+      "text": "Soy *Timoteo*. Cuidate mucho, vecino.",
+      "accent": "good",
+      "hue": "amber"
+    }
+  ]
+}

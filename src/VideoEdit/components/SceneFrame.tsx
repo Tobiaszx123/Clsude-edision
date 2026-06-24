@@ -2,7 +2,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { FONT_STACK } from "../theme";
 import { TechBackground } from "./TechBackground";
 import { ImageBackdrop, PlainBackdrop } from "./Backdrops";
-import { useReveal, kenBurns, panOffset } from "../lib/anim";
+import { useReveal, panOffset } from "../lib/anim";
 
 // Opaque full-screen scene wrapper. Covers the avatar, paints the background,
 // and guarantees constant motion: a permanent Ken-Burns camera zoom (Rule 10A)
@@ -56,12 +56,16 @@ export const SceneFrame: React.FC<{
   const opacity = noReveal ? 1 : reveal.opacity;
   const scale = noReveal ? 1 : reveal.scale;
   const blur = noReveal ? 0 : reveal.blur;
-  const cam = kenBurns(frame, durationInFrames, zoom[0], zoom[1]);
+  // BALANCEO SUAVE casi imperceptible (pedido del usuario jun 2026): en vez del push-in del
+  // Ken-Burns (que "acercaba y hacía desaparecer" la imagen), un leve respiro + vaivén muy lento.
+  const cam = 1.02 + Math.sin(frame / 95) * 0.006;        // respira ~1.014–1.026 (apenas se nota)
+  const swayX = Math.sin(frame / 120) * 7;                // vaivén horizontal lento (px)
+  const swayY = Math.cos(frame / 150) * 5;                // vaivén vertical lento (px)
   const pn = panOffset(frame, durationInFrames, pan);
 
-  // parallax 2.5D: deriva de perspectiva muy sutil → la foto se siente con profundidad
-  const pRotY = Math.sin(frame / 115) * 1.1;
-  const pRotX = Math.cos(frame / 137) * 0.7;
+  // parallax 2.5D: deriva de perspectiva MUY sutil (reducida)
+  const pRotY = Math.sin(frame / 170) * 0.5;
+  const pRotX = Math.cos(frame / 200) * 0.32;
 
   // scrim de contraste detrás del texto (side-aware) → las tarjetas/píldoras siempre
   // se leen, aunque la foto sea clara. Va entre el fondo y el contenido.
@@ -75,7 +79,7 @@ export const SceneFrame: React.FC<{
   return (
     <AbsoluteFill style={{ fontFamily: FONT_STACK, opacity }}>
       {/* background gets its own slightly stronger parallax zoom + perspective for depth */}
-      <AbsoluteFill style={{ transform: `perspective(1800px) rotateY(${pRotY}deg) rotateX(${pRotX}deg) translate(${pn.x}px, ${pn.y}px) scale(${cam * 1.06})`, transformOrigin: "center center" }}>
+      <AbsoluteFill style={{ transform: `perspective(1800px) rotateY(${pRotY}deg) rotateX(${pRotX}deg) translate(${pn.x + swayX}px, ${pn.y + swayY}px) scale(${cam * 1.04})`, transformOrigin: "center center" }}>
         {bg === "image" && image ? (
           <ImageBackdrop
             src={image}

@@ -1,0 +1,402 @@
+{
+  "video": "polvo2",
+  "avatar": "polvo2_opt.mp4",
+  "_nota": "Video POLVO parte 2 (~3:40): otros polvos de los viejos (ceniza, cáscara de huevo, canela, café) → arsenal → por qué nadie te lo enseña (no hay plata en lo que dura; el veneno es el negocio; posguerra) → cierre + tease (spray natural). Clip-heavy: yt + deAPI macros + dg_*. CADA cue su imagen única. anchors→sync.",
+  "beats": [
+    {
+      "id": "p2_01",
+      "kind": "rule",
+      "anchor": "déjame darte de yapa los otros",
+      "number": "01",
+      "label": "De yapa",
+      "title": "Otros polvos de los viejos",
+      "hue": "amber",
+      "start": 2.44,
+      "dur": 11.98
+    },
+    {
+      "id": "p2_02",
+      "kind": "raw",
+      "anchor": "un anillo de ceniza seca alrededor",
+      "src": "img/el_ceniza.png",
+      "hue": "amber",
+      "kicker": "Ceniza: muralla contra babosas",
+      "start": 14.42,
+      "dur": 7.86,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "p2_03",
+      "kind": "callout",
+      "anchor": "le pasa potasio a la tierra",
+      "image": "img/ceniza_mano.png",
+      "figure": "K",
+      "eyebrow": "Y de regalo",
+      "caption": "Le da potasio a la tierra",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "ceniza_mano",
+        "prompt": "Realistic handheld 16:9 documentary macro of a weathered hand holding gray wood ash from a fireplace, fine powder, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 22.28,
+      "dur": 10.3
+    },
+    {
+      "id": "p2_04",
+      "kind": "raw",
+      "anchor": "La cáscara de huevo molida",
+      "src": "img/cascara_molida.png",
+      "hue": "amber",
+      "kicker": "Cáscara de huevo molida",
+      "gen": {
+        "type": "image",
+        "name": "cascara_molida",
+        "prompt": "Realistic handheld 16:9 documentary macro of crushed eggshells ground almost to powder with small sharp pieces in a bowl, kitchen table, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 32.58,
+      "dur": 18.62,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "p2_05",
+      "kind": "quote",
+      "anchor": "le dan calcio a la tierra",
+      "image": "img/tomate_culo_negro.png",
+      "eyebrow": "Y alimenta",
+      "text": "Calcio: justo lo que le falta al tomate *podrido* abajo.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 70,
+      "gen": {
+        "type": "image",
+        "name": "tomate_culo_negro",
+        "prompt": "Realistic handheld 16:9 documentary macro of a tomato with blossom end rot, dark sunken bottom, on the plant, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, perfect tomato, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 51.2,
+      "dur": 8.98
+    },
+    {
+      "id": "p2_06",
+      "kind": "raw",
+      "anchor": "La canela en polvo",
+      "src": "img/canela_plantines.png",
+      "hue": "amber",
+      "kicker": "Canela: contra el hongo de almácigos",
+      "gen": {
+        "type": "image",
+        "name": "canela_plantines",
+        "prompt": "Realistic handheld 16:9 documentary macro of ground cinnamon powder being sprinkled over tiny young seedlings in a seed tray, natural daylight, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 60.18,
+      "dur": 14.08,
+      "zoom": [
+        1.06,
+        1.16
+      ],
+      "pan": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": "p2_07",
+      "kind": "callout",
+      "anchor": "a las hormigas no les gusta nada su olor",
+      "image": "img/canela_cuchara.png",
+      "figure": "🐜",
+      "eyebrow": "Bonus",
+      "caption": "Las hormigas odian su olor y se van",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "canela_cuchara",
+        "prompt": "Realistic handheld 16:9 documentary macro of a spoon of ground cinnamon over a kitchen counter, warm tones, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 74.26,
+      "dur": 6
+    },
+    {
+      "id": "p2_08",
+      "kind": "raw",
+      "anchor": "el café usado la borra",
+      "src": "img/el_borra_cafe.png",
+      "hue": "amber",
+      "kicker": "Borra de café: las plagas se alejan",
+      "start": 80.26,
+      "dur": 12.61,
+      "zoom": [
+        1.16,
+        1.06
+      ],
+      "pan": [
+        -40,
+        0
+      ]
+    },
+    {
+      "id": "p2_09",
+      "kind": "splitlist",
+      "anchor": "Un arsenal entero contra las plagas",
+      "title": "Tu arsenal, de la basura",
+      "items": [
+        "Tierra de diatomeas (la reina)",
+        "Ceniza de madera",
+        "Cáscara de huevo molida",
+        "Canela y borra de café"
+      ],
+      "palette": "G",
+      "start": 92.87,
+      "dur": 2.2
+    },
+    {
+      "id": "p2_10",
+      "kind": "chips",
+      "anchor": "casi todo es cosa que ibas a tirar",
+      "bg": "image",
+      "image": "img/cosas_tirar.png",
+      "title": "Todo esto...",
+      "chips": [
+        "lo ibas a tirar",
+        "a la basura"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "cosas_tirar",
+        "prompt": "Realistic handheld 16:9 documentary frame of kitchen scraps gathered for the garden: eggshells, coffee grounds, wood ash in small containers on a rustic table, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 94.85,
+      "dur": 14.32
+    },
+    {
+      "id": "p2_11",
+      "kind": "rule",
+      "anchor": "por qué casi nadie te lo enseña",
+      "number": "02",
+      "label": "El fondo del asunto",
+      "title": "¿Por qué nadie te lo enseña?",
+      "hue": "red",
+      "start": 109.17,
+      "dur": 3.42
+    },
+    {
+      "id": "p2_12",
+      "kind": "raw",
+      "anchor": "lo primero que te ponen en la mano es el frasco de veneno",
+      "src": "img/mostrador_veneno.png",
+      "hue": "red",
+      "kicker": "Te ponen el frasco en la mano",
+      "gen": {
+        "type": "image",
+        "name": "mostrador_veneno",
+        "prompt": "Realistic handheld 16:9 documentary frame of a store clerk's hand offering a pesticide bottle across a garden store counter, shelves behind, store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, readable brand, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 112.59,
+      "dur": 5.78,
+      "zoom": [
+        1.04,
+        1.14
+      ],
+      "pan": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "p2_13",
+      "kind": "impact",
+      "anchor": "porque no hay dinero en lo que dura",
+      "image": "img/polvo_mar_pila.png",
+      "setup": "La respuesta de siempre:",
+      "impact": "no hay plata en lo que DURA",
+      "impactAccent": "danger",
+      "hitAt": 1,
+      "boom": 2,
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "polvo_mar_pila",
+        "prompt": "Realistic handheld 16:9 documentary macro of a generous pile of fine white diatomaceous earth powder, soft texture, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 118.37,
+      "dur": 2.2
+    },
+    {
+      "id": "p2_14",
+      "kind": "bars",
+      "anchor": "El veneno es un gran negocio",
+      "eyebrow": "El negocio",
+      "title": "Quién te hace volver a comprar",
+      "accent": "good",
+      "hue": "red",
+      "bars": [
+        {
+          "label": "Veneno",
+          "value": 9,
+          "display": "Comprás cada año",
+          "tone": "danger"
+        },
+        {
+          "label": "Polvo de mar",
+          "value": 1,
+          "display": "Una bolsa dura muchísimo",
+          "tone": "good",
+          "winner": true
+        }
+      ],
+      "start": 120.07,
+      "dur": 10.02
+    },
+    {
+      "id": "p2_15",
+      "kind": "quote",
+      "anchor": "Esa es la rueda que les da de comer",
+      "image": "img/estante_venenos.png",
+      "eyebrow": "La rueda",
+      "text": "Más fuerte, más caro, todos los años. *Para siempre*.",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 70,
+      "start": 130.09,
+      "dur": 8.58
+    },
+    {
+      "id": "p2_16",
+      "kind": "aged",
+      "anchor": "después de la guerra cuando los químicos coparon el campo",
+      "eyebrow": "Cómo se perdió",
+      "heading": "Después de la guerra",
+      "lines": [
+        {
+          "text": "Los químicos coparon el campo."
+        },
+        {
+          "text": "Estos saberes se empujaron al olvido. No porque no sirvieran: porque no se vendían.",
+          "mark": true
+        }
+      ],
+      "accent": "amber",
+      "hue": "amber",
+      "start": 138.67,
+      "dur": 15.86
+    },
+    {
+      "id": "p2_17",
+      "kind": "quote",
+      "anchor": "Tú puedes ser el que lo recuerda",
+      "image": "img/abuela_jardin.png",
+      "eyebrow": "Los viejos lo recordaban",
+      "text": "Vos podés ser *el que lo recuerda*.",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 84,
+      "gen": {
+        "type": "image",
+        "name": "abuela_jardin",
+        "prompt": "Realistic handheld 16:9 documentary frame of an elderly woman's hands tending a backyard garden at golden hour, vintage rural feel, natural warm daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text, close-up face."
+      },
+      "start": 154.53,
+      "dur": 9.62
+    },
+    {
+      "id": "p2_18",
+      "kind": "raw",
+      "anchor": "haz tu primer anillo de polvo",
+      "src": "img/primer_anillo.png",
+      "hue": "amber",
+      "kicker": "Esta semana: tu primer anillo",
+      "gen": {
+        "type": "image",
+        "name": "primer_anillo",
+        "prompt": "Realistic handheld 16:9 documentary frame of hands making a first thin ring of white powder around the base of the most pest-damaged plant on a dry day, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 164.15,
+      "dur": 6.26,
+      "zoom": [
+        1.05,
+        1.18
+      ]
+    },
+    {
+      "id": "p2_19",
+      "kind": "chips",
+      "anchor": "no tires la ceniza ni las cáscaras de huevo",
+      "bg": "image",
+      "image": "img/armas_basura.png",
+      "title": "Ahora sabés que son armas",
+      "chips": [
+        "ceniza",
+        "cáscaras",
+        "borra de café"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "armas_basura",
+        "prompt": "Realistic handheld 16:9 documentary frame of wood ash, ground eggshells and coffee grounds lined up in jars on a shed shelf, rustic, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 170.41,
+      "dur": 27.62
+    },
+    {
+      "id": "p2_20",
+      "kind": "raw",
+      "anchor": "preparar tu propio spray natural",
+      "src": "img/spray_natural.png",
+      "hue": "blue",
+      "kicker": "La próxima: spray natural casero",
+      "gen": {
+        "type": "image",
+        "name": "spray_natural",
+        "prompt": "Realistic handheld 16:9 documentary frame of a homemade natural spray bottle next to garlic, chili and herbs on a kitchen table, DIY remedy, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 198.03,
+      "dur": 11.24,
+      "zoom": [
+        1.18,
+        1.05
+      ]
+    },
+    {
+      "id": "p2_21",
+      "kind": "impact",
+      "anchor": "agarra el polvo de los abuelos",
+      "image": "img/polvo_blanco_mano2.png",
+      "setup": "Guardá el veneno.",
+      "impact": "Agarrá el polvo de los abuelos",
+      "impactAccent": "good",
+      "hitAt": 2.5,
+      "boom": 1,
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "polvo_blanco_mano2",
+        "prompt": "Realistic handheld 16:9 documentary macro of a weathered hand offering a small handful of fine white powder over a healthy garden, hopeful, natural daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, cartoon, CGI, 3D, watermark, text."
+      },
+      "start": 209.27,
+      "dur": 3.7
+    },
+    {
+      "id": "p2_22",
+      "kind": "quote",
+      "anchor": "Así lo hacían los viejos",
+      "image": "img/el_huerta_orgullo.png",
+      "eyebrow": "Cuidá tu mesa",
+      "text": "Cuidá tu huerta sin envenenar tu mesa. Así lo hacían *los viejos*.",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 72,
+      "start": 212.97,
+      "dur": 2.2
+    }
+  ]
+}

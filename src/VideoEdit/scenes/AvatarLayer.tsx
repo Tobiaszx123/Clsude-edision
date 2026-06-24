@@ -1,7 +1,5 @@
-import { Video } from "@remotion/media";
-import { AbsoluteFill, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
+import { AbsoluteFill, Audio, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import { useAudioData, visualizeAudio } from "@remotion/media-utils";
-import { COLORS } from "../theme";
 
 // ── AVATAR LAYER ──────────────────────────────────────────────────────────────
 // Una ÚNICA instancia del video del presentador (estufa_opt.mp4) que abarca todo
@@ -66,7 +64,7 @@ export const AvatarLayer: React.FC<{
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
-}> = ({ src, windows, accent = COLORS.accent, wav }) => {
+}> = ({ src, windows, wav }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -105,35 +103,39 @@ export const AvatarLayer: React.FC<{
   const w = lerp(fromGeom.w, toGeom.w, p);
   const h = lerp(fromGeom.h, toGeom.h, p);
   const r = lerp(fromGeom.r, toGeom.r, p);
-  const op = lerp(fromGeom.op, toGeom.op, p);
-  const chrome = lerp(fromGeom.chrome, toGeom.chrome, p);
+  // OPACIDAD BINARIA (corte duro): nunca semitransparente. El fade-in-place hacía
+  // que en cada transición hidden↔esquina el avatar cruzara op 0→1 y se viera
+  // "transparente"/fantasma sobre el b-roll. Ahora aparece/desaparece de golpe;
+  // entre modos VISIBLES la posición sí se desliza suave (op se mantiene en 1).
+  const op = curMode === "hidden" ? 0 : 1;
+  const chrome = curMode === "hidden" ? 0 : 1;
 
   // float sutil solo cuando NO está full (cuanto más chico, más flota)
   const smallness = 1 - w / W;
   const floatY = Math.sin(frame / 26) * 6 * smallness;
   const floatX = Math.cos(frame / 31) * 4 * smallness;
 
-  // cover-sizing del video 16:9 dentro de la caja (sesgo a la cara)
-  const ratio = 16 / 9;
+  // ZOOM sutil "vivo"; el ENCUADRE lo hace object-fit:cover → el video LLENA SIEMPRE
+  // la caja sin importar la relación de aspecto. Esto elimina el bug del avatar que
+  // quedaba chico/letterboxed y "corrido" a un costado dentro del recuadro.
   const kb = 1 + 0.05 * smallness * (0.5 + 0.5 * Math.sin(frame / 90));
-  let coverW = Math.max(w, h * ratio) * kb;
-  let coverH = coverW / ratio;
-  const offX = (w - coverW) / 2;
-  const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
+  // sesgo vertical para mostrar la CARA (un poco más arriba cuanto más chica la caja)
+  const faceY = 30 - 8 * smallness; // %
 
   if (op < 0.001) {
-    // invisible: igual hay que renderizar el Video para que SUENE la narración
+    // invisible: NO renderizamos video (antes el <Video> off-screen a veces salía
+    // vacío/negro en el render distribuido). La narración la da SIEMPRE la pista de
+    // audio del wav, independiente del video.
     return (
       <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <div style={{ position: "absolute", left: -9999, top: 0, width: 384, height: 512, overflow: "hidden" }}>
-          <Video src={staticFile(src)} style={{ width: 683, height: 384 }} />
-        </div>
+        <Audio src={staticFile(wavSrc)} />
       </AbsoluteFill>
     );
   }
 
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <Audio src={staticFile(wavSrc)} />
       <div
         style={{
           position: "absolute",
@@ -144,17 +146,32 @@ export const AvatarLayer: React.FC<{
           borderRadius: r,
           overflow: "hidden",
           opacity: op,
+          backgroundColor: "#1a1610", // fondo sólido: si un frame del video no decodifica, se ve oscuro, NUNCA transparente
+          // marco de WEBCAM neutro: borde blanco fino + sombra suave (sutilmente
+          // "respira" con la voz vía amp), SIN glow de color (el usuario pidió sacar
+          // el borde amarillo y que parezca un encuadre de webcam normal).
           boxShadow:
             chrome > 0.02
-              ? `0 ${30 * chrome}px ${80 * chrome}px rgba(0,0,0,${0.55 * chrome}), 0 0 0 ${(2 + amp * 2.5) * chrome}px ${accent}${Math.round((0.4 + amp * 0.5) * 255).toString(16).padStart(2, "0")}, 0 0 ${(10 + amp * 34) * chrome}px ${accent}${Math.round(amp * 160).toString(16).padStart(2, "0")}`
+              ? `0 ${(14 + amp * 8) * chrome}px ${44 * chrome}px rgba(0,0,0,${0.42 * chrome})`
               : "none",
-          border: chrome > 0.02 ? `1px solid rgba(255,255,255,${0.18 * chrome})` : "none",
+          border: chrome > 0.02 ? `${3 * chrome}px solid rgba(255,255,255,0.92)` : "none",
+          outline: chrome > 0.02 ? `1px solid rgba(0,0,0,0.18)` : "none",
           willChange: "left, top, width, height",
         }}
       >
-        <Video
+        <OffthreadVideo
           src={staticFile(src)}
-          style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
+          muted
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: `50% ${faceY}%`,
+            transform: `scale(${kb})`,
+            transformOrigin: `50% ${faceY}%`,
+          }}
         />
         {/* viñeta interna suave cuando es recuadro */}
         {chrome > 0.02 && (
