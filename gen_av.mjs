@@ -2,10 +2,10 @@
 // corner (4 esquinas) + media pantalla (right/left sobre b-roll) + 1 full + OCULTO
 // en los cutaways del presentador (imágenes el_*). Emite src/VideoEdit/av_<slug>.gen.ts
 import fs from "fs";
-const VIDEOS = ["jengibre1"];
+const VIDEOS = ["jengibre1","jengibre2"];
 const isEl = (b) => /img\/el_/.test(b.src||"") || /img\/el_/.test(b.image||"");
 // avatar SOLO en momentos hablados (quote/chips); en stat/diagrama/etc va oculto (voz en off).
-const VIS = new Set(["quote","chips"]);
+const VIS = new Set(["quote"]); // avatar SOLO en momentos de texto (huecos sin b-roll)
 const rawCycle = [["cornerTR",1.0],["right",1.0],["cornerBL",1.05],["left",1.0],["cornerTL",0.95],["cornerBR",1.05]];
 const cornerCycle = [["cornerTR",1.0],["cornerBL",1.05],["cornerTL",0.95],["cornerBR",1.0],["cornerTR",0.9]];
 for (const v of VIDEOS) {
@@ -19,11 +19,6 @@ for (const v of VIDEOS) {
     let mode="hidden",scale=null;
     if (isEl(b)) mode="hidden";
     else if (b.id===fullId) mode="full";
-    else if (b.kind==="raw"){
-      // mostrar el avatar SOLO en ~la mitad de los b-roll → el resto, plano general con voz en off
-      if (ri++ % 2 === 0){ const [m,s]=rawCycle[rawShown++%rawCycle.length]; mode=m; scale=s; }
-      else mode="hidden";
-    }
     else if (VIS.has(b.kind)){ const [m,s]=cornerCycle[ci++%cornerCycle.length]; mode=m; scale=s; }
     else mode="hidden";
     if (mode===prev && mode!=="hidden") continue; // evita repetir modo seguido

@@ -6,7 +6,6 @@ import { RawShot } from "./scenes/RawShot";
 import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { ChipsCluster } from "./scenes/ReframeContent";
 import { AvatarPresentation } from "./scenes/AvatarPresentation";
-import { ImpactReveal } from "./scenes/ImpactReveal";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { ProcessSteps } from "./scenes/ProcessSteps";
 import { Checklist } from "./scenes/Checklist";
@@ -15,10 +14,10 @@ import { AnnotatedImage } from "./scenes/AnnotatedImage";
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
 export const CUES: Cue[] = [
-  { key: "j01", start: 0, dur: 6.5, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="img/j1_jengibre_cocina.png" impact="Plantalo así." setup="Ese pedacito olvidado en la cocina." impactAccent="good" hitAt={3.5} /> },
+  { key: "j01", start: 0, dur: 6.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/j1_jengibre_cocina.png" hue="amber" kicker="Plantalo así." /> },
   { key: "j02", start: 6.5, dur: 8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/j1_jengibre_arrugado.png" hue="cold" kicker="Feo, arrugado… y vivo" /> },
   { key: "j03", start: 14.5, dur: 5.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/j1_jengibre_brote.png" hue="amber" kicker="Una planta entera esperando" /> },
-  { key: "j04", start: 20, dur: 6, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="img/j1_balde_lleno.png" impact="Un balde ENTERO." setup="En unos meses…" impactAccent="good" hitAt={2.5} /> },
+  { key: "j04", start: 20, dur: 6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/j1_balde_lleno.png" hue="amber" kicker="Un balde ENTERO." /> },
   { key: "j05", start: 26, dur: 5.5, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} eyebrow="Tu huerta en casa" words={parseQuote("Yo soy *Timoteo*.")} accent="good" hue="amber" /> },
   { key: "j06", start: 31.5, dur: 6.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/j1_jengibre_precio.png" hue="amber" kicker="Carísimo, por gramos" /> },
   { key: "j07", start: 38, dur: 10, kind: "chips", el: (d) => <ChipsCluster durationInFrames={d} bg="image" image="img/j1_jengibre_mano.png" title="La planta más generosa" chips={["Fácil de dar","Muy generosa","No la comprás más"]} hue="amber" /> },

@@ -13,6 +13,7 @@ import { MainPolvo1, TOTAL_FRAMES_POLVO1 } from "./VideoEdit/Main_polvo1";
 import { MainPolvo2, TOTAL_FRAMES_POLVO2 } from "./VideoEdit/Main_polvo2";
 import { MainPrueba1, TOTAL_FRAMES_PRUEBA1 } from "./VideoEdit/Main_prueba1";
 import { MainJengibre1, TOTAL_FRAMES_JENGIBRE1 } from "./VideoEdit/Main_jengibre1";
+import { MainJengibre2, TOTAL_FRAMES_JENGIBRE2 } from "./VideoEdit/Main_jengibre2";
 import { Thumbnail, ThumbProps } from "./Thumbnail";
 
 // ── Root ─────────────────────────────────────────────────────────────────────
@@ -32,6 +33,14 @@ export const RemotionRoot: React.FC = () => {
         id="Jengibre1"
         component={MainJengibre1}
         durationInFrames={TOTAL_FRAMES_JENGIBRE1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Jengibre2"
+        component={MainJengibre2}
+        durationInFrames={TOTAL_FRAMES_JENGIBRE2}
         fps={30}
         width={1920}
         height={1080}

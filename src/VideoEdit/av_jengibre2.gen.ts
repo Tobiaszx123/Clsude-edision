@@ -1,0 +1,25 @@
+// av_jengibre2.gen.ts — GENERADO por gen_av.mjs. No editar a mano.
+import { AvatarWindow } from "./scenes/AvatarLayer";
+export const AV: AvatarWindow[] = [
+  { start: 0, mode: "hidden" },
+  { start: 70, mode: "full" },
+  { start: 92, mode: "hidden" },
+  { start: 100, mode: "cornerTR", scale: 1 },
+  { start: 108, mode: "cornerBL", scale: 1.05 },
+  { start: 116, mode: "hidden" },
+  { start: 142, mode: "cornerTL", scale: 0.95 },
+  { start: 151, mode: "hidden" },
+  { start: 182, mode: "cornerBR", scale: 1 },
+  { start: 190, mode: "hidden" },
+  { start: 208, mode: "cornerTR", scale: 0.9 },
+  { start: 216, mode: "hidden" },
+  { start: 276, mode: "cornerTR", scale: 1 },
+  { start: 290, mode: "cornerBL", scale: 1.05 },
+  { start: 307, mode: "hidden" },
+  { start: 334, mode: "cornerTL", scale: 0.95 },
+  { start: 348, mode: "cornerBR", scale: 1 },
+  { start: 363, mode: "cornerTR", scale: 0.9 },
+  { start: 378, mode: "hidden" },
+  { start: 385, mode: "cornerTR", scale: 1 },
+  { start: 399, mode: "cornerBL", scale: 1.05 },
+];

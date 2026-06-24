@@ -3,86 +3,401 @@
   "avatar": "jengibre1_opt.mp4",
   "_nota": "Jengibre parte 1 (4:23). Transcripción OpenAI. Tiempos del timeline real. Assets propios de jengibre.",
   "beats": [
-    { "id": "j01", "start": 0.0, "dur": 6.5, "kind": "impact", "image": "img/j1_jengibre_cocina.png",
-      "setup": "Ese pedacito olvidado en la cocina.", "impact": "Plantalo así.", "impactAccent": "good", "hitAt": 3.5,
-      "gen": { "type": "image", "name": "j1_jengibre_cocina", "prompt": "Realistic handheld 16:9 documentary macro of a knobby fresh ginger root piece sitting on a worn wooden kitchen counter, a bit forgotten, natural soft indoor daylight, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j02", "start": 6.5, "dur": 8.0, "kind": "raw", "src": "img/j1_jengibre_arrugado.png", "hue": "cold", "kicker": "Feo, arrugado… y vivo",
-      "gen": { "type": "image", "name": "j1_jengibre_arrugado", "prompt": "Realistic handheld 16:9 documentary extreme macro of an old wrinkled shriveled piece of ginger root in a hand, looking ugly and forgotten, natural soft indoor light, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j03", "start": 14.5, "dur": 5.5, "kind": "raw", "src": "img/j1_jengibre_brote.png", "hue": "amber", "kicker": "Una planta entera esperando",
-      "gen": { "type": "image", "name": "j1_jengibre_brote", "prompt": "Realistic handheld 16:9 documentary extreme macro of a ginger rhizome with small green-pink sprouting buds starting to grow from its knobs, signs of life, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j04", "start": 20.0, "dur": 6.0, "kind": "impact", "image": "img/j1_balde_lleno.png",
-      "setup": "En unos meses…", "impact": "Un balde ENTERO.", "impactAccent": "good", "hitAt": 2.5,
-      "gen": { "type": "image", "name": "j1_balde_lleno", "prompt": "Realistic handheld 16:9 documentary frame of a bucket overflowing with freshly harvested ginger rhizomes, dirt still on them, in a backyard garden, natural warm daylight, muted natural colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j05", "start": 26.0, "dur": 5.5, "kind": "quote", "eyebrow": "Tu huerta en casa", "text": "Yo soy *Timoteo*.", "accent": "good", "hue": "amber" },
-
-    { "id": "j06", "start": 31.5, "dur": 6.5, "kind": "raw", "src": "img/j1_jengibre_precio.png", "hue": "amber", "kicker": "Carísimo, por gramos",
-      "gen": { "type": "image", "name": "j1_jengibre_precio", "prompt": "Realistic handheld 16:9 documentary frame of ginger root for sale at a supermarket produce shelf with a small price label, expensive, indoor fluorescent store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, fake prices, person talking, logo, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j07", "start": 38.0, "dur": 10.0, "kind": "chips", "bg": "image", "image": "img/j1_jengibre_mano.png",
-      "title": "La planta más generosa", "chips": ["Fácil de dar", "Muy generosa", "No la comprás más"], "hue": "amber",
-      "gen": { "type": "image", "name": "j1_jengibre_mano", "prompt": "Realistic handheld 16:9 documentary photo of a weathered hand holding several fresh ginger rhizomes over a garden bed, natural soft outdoor daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j08", "start": 48.5, "dur": 6.5, "kind": "headline", "eyebrow": "Te soy honesto", "bg": "black", "hue": "amber",
-      "tokens": [ {"t": "UN"}, {"t": "solo"}, {"t": "DETALLE", "hl": true}, {"t": "decide"}, {"t": "todo."} ] },
-
-    { "id": "j09", "start": 55.0, "dur": 6.0, "kind": "raw", "src": "img/j1_jengibre_podrido.png", "hue": "cold", "kicker": "O se pudre en la tierra",
-      "gen": { "type": "image", "name": "j1_jengibre_podrido", "prompt": "Realistic handheld 16:9 documentary macro of a rotting moldy piece of ginger half-buried in wet dark soil, soft and spoiled, doing nothing, natural daylight, muted dim colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, healthy ginger, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j10", "start": 61.0, "dur": 7.0, "kind": "quote", "eyebrow": "Por eso fracasan", "text": "Casi todos se *saltean* este paso.", "accent": "danger", "hue": "cold" },
-
-    { "id": "j11", "start": 72.5, "dur": 6.5, "kind": "quote", "eyebrow": "Acá empieza el secreto", "text": "No cualquier pedazo *sirve*.", "accent": "amber", "hue": "cold" },
-
-    { "id": "j12", "start": 79.0, "dur": 9.0, "kind": "checklist", "title": "Cómo elegir el jengibre", "eyebrow": "Para plantar", "hue": "amber",
-      "items": [ {"text": "Fresco y gordito", "state": "done"}, {"text": "Firme, no blandito", "state": "done"}, {"text": "Sin arrugas de viejo", "state": "done"} ] },
-
-    { "id": "j13", "start": 88.0, "dur": 7.5, "kind": "annotated", "image": "img/j1_yemas_macro.png", "eyebrow": "Mirá la superficie",
-      "caption": "Los puntos donde nace la planta", "hue": "amber",
-      "annotations": [ {"kind": "circle", "x": 0.38, "y": 0.42, "w": 0.16, "h": 0.16, "label": "Yemas"}, {"kind": "arrow", "x": 0.62, "y": 0.3, "fromX": 0.82, "fromY": 0.16, "label": "Ojitos / cuernitos"} ],
-      "gen": { "type": "image", "name": "j1_yemas_macro", "prompt": "Realistic handheld 16:9 documentary extreme macro of the surface of a ginger root showing small pointed growth buds (eyes) like little horns poking out, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j14", "start": 95.5, "dur": 13.5, "kind": "diagram", "eyebrow": "Las yemas = más brotes", "hue": "amber", "accent": "accent",
-      "slides": [ { "image": "img/d_yemas.png", "title": "Cada yema, un brote",
-        "gen": { "type": "image", "name": "d_yemas", "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra un rizoma de jengibre con flechas señalando varias yemas y, de cada yema, un brote verde naciendo. Texto en español: 'Más yemas = más brotes'. Minimalista, clara, estética botánica vintage premium, papel envejecido." } } ] },
-
-    { "id": "j15", "start": 109.0, "dur": 13.0, "kind": "quote", "eyebrow": "El detalle", "text": "Acá viene lo que *nadie* te cuenta.", "accent": "danger", "hue": "cold" },
-
-    { "id": "j16", "start": 122.0, "dur": 16.0, "kind": "diagram", "eyebrow": "Viene TRATADO", "hue": "amber", "accent": "danger",
-      "slides": [ { "image": "img/d_tratado.png", "title": "Le ponen un producto para que no brote",
-        "gen": { "type": "image", "name": "d_tratado", "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra un jengibre de supermercado con un símbolo de spray/producto encima y una yema bloqueada/dormida, indicando que está tratado para no brotar. Texto en español: 'El jengibre del super viene tratado para que NO brote'. Minimalista, clara, estética botánica vintage premium." } } ] },
-
-    { "id": "j17", "start": 138.0, "dur": 20.0, "kind": "process", "eyebrow": "Despertá el jengibre", "title": "Sacarle el producto", "accent": "good", "hue": "amber",
+    {
+      "id": "j01",
+      "start": 0,
+      "dur": 6.5,
+      "kind": "raw",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_cocina",
+        "prompt": "Realistic handheld 16:9 documentary macro of a knobby fresh ginger root piece sitting on a worn wooden kitchen counter, a bit forgotten, natural soft indoor daylight, muted warm colors, realistic imperfect handheld camera angle, slightly tilted, practical documentary look, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      },
+      "src": "img/j1_jengibre_cocina.png",
+      "kicker": "Plantalo así.",
+      "hue": "amber"
+    },
+    {
+      "id": "j02",
+      "start": 6.5,
+      "dur": 8,
+      "kind": "raw",
+      "src": "img/j1_jengibre_arrugado.png",
+      "hue": "cold",
+      "kicker": "Feo, arrugado… y vivo",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_arrugado",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of an old wrinkled shriveled piece of ginger root in a hand, looking ugly and forgotten, natural soft indoor light, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j03",
+      "start": 14.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/j1_jengibre_brote.png",
+      "hue": "amber",
+      "kicker": "Una planta entera esperando",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_brote",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of a ginger rhizome with small green-pink sprouting buds starting to grow from its knobs, signs of life, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j04",
+      "start": 20,
+      "dur": 6,
+      "kind": "raw",
+      "gen": {
+        "type": "image",
+        "name": "j1_balde_lleno",
+        "prompt": "Realistic handheld 16:9 documentary frame of a bucket overflowing with freshly harvested ginger rhizomes, dirt still on them, in a backyard garden, natural warm daylight, muted natural colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      },
+      "src": "img/j1_balde_lleno.png",
+      "kicker": "Un balde ENTERO.",
+      "hue": "amber"
+    },
+    {
+      "id": "j05",
+      "start": 26,
+      "dur": 5.5,
+      "kind": "quote",
+      "eyebrow": "Tu huerta en casa",
+      "text": "Yo soy *Timoteo*.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "j06",
+      "start": 31.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "img/j1_jengibre_precio.png",
+      "hue": "amber",
+      "kicker": "Carísimo, por gramos",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_precio",
+        "prompt": "Realistic handheld 16:9 documentary frame of ginger root for sale at a supermarket produce shelf with a small price label, expensive, indoor fluorescent store lighting, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, fake prices, person talking, logo, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j07",
+      "start": 38,
+      "dur": 10,
+      "kind": "chips",
+      "bg": "image",
+      "image": "img/j1_jengibre_mano.png",
+      "title": "La planta más generosa",
+      "chips": [
+        "Fácil de dar",
+        "Muy generosa",
+        "No la comprás más"
+      ],
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_mano",
+        "prompt": "Realistic handheld 16:9 documentary photo of a weathered hand holding several fresh ginger rhizomes over a garden bed, natural soft outdoor daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j08",
+      "start": 48.5,
+      "dur": 6.5,
+      "kind": "headline",
+      "eyebrow": "Te soy honesto",
+      "bg": "black",
+      "hue": "amber",
+      "tokens": [
+        {
+          "t": "UN"
+        },
+        {
+          "t": "solo"
+        },
+        {
+          "t": "DETALLE",
+          "hl": true
+        },
+        {
+          "t": "decide"
+        },
+        {
+          "t": "todo."
+        }
+      ]
+    },
+    {
+      "id": "j09",
+      "start": 55,
+      "dur": 6,
+      "kind": "raw",
+      "src": "img/j1_jengibre_podrido.png",
+      "hue": "cold",
+      "kicker": "O se pudre en la tierra",
+      "gen": {
+        "type": "image",
+        "name": "j1_jengibre_podrido",
+        "prompt": "Realistic handheld 16:9 documentary macro of a rotting moldy piece of ginger half-buried in wet dark soil, soft and spoiled, doing nothing, natural daylight, muted dim colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, healthy ginger, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j10",
+      "start": 61,
+      "dur": 7,
+      "kind": "quote",
+      "eyebrow": "Por eso fracasan",
+      "text": "Casi todos se *saltean* este paso.",
+      "accent": "danger",
+      "hue": "cold"
+    },
+    {
+      "id": "j11",
+      "start": 72.5,
+      "dur": 6.5,
+      "kind": "quote",
+      "eyebrow": "Acá empieza el secreto",
+      "text": "No cualquier pedazo *sirve*.",
+      "accent": "amber",
+      "hue": "cold"
+    },
+    {
+      "id": "j12",
+      "start": 79,
+      "dur": 9,
+      "kind": "checklist",
+      "title": "Cómo elegir el jengibre",
+      "eyebrow": "Para plantar",
+      "hue": "amber",
+      "items": [
+        {
+          "text": "Fresco y gordito",
+          "state": "done"
+        },
+        {
+          "text": "Firme, no blandito",
+          "state": "done"
+        },
+        {
+          "text": "Sin arrugas de viejo",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "id": "j13",
+      "start": 88,
+      "dur": 7.5,
+      "kind": "annotated",
+      "image": "img/j1_yemas_macro.png",
+      "eyebrow": "Mirá la superficie",
+      "caption": "Los puntos donde nace la planta",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.38,
+          "y": 0.42,
+          "w": 0.16,
+          "h": 0.16,
+          "label": "Yemas"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.62,
+          "y": 0.3,
+          "fromX": 0.82,
+          "fromY": 0.16,
+          "label": "Ojitos / cuernitos"
+        }
+      ],
+      "gen": {
+        "type": "image",
+        "name": "j1_yemas_macro",
+        "prompt": "Realistic handheld 16:9 documentary extreme macro of the surface of a ginger root showing small pointed growth buds (eyes) like little horns poking out, natural soft daylight, muted colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j14",
+      "start": 95.5,
+      "dur": 13.5,
+      "kind": "diagram",
+      "eyebrow": "Las yemas = más brotes",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/d_yemas.png",
+          "title": "Cada yema, un brote",
+          "gen": {
+            "type": "image",
+            "name": "d_yemas",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra un rizoma de jengibre con flechas señalando varias yemas y, de cada yema, un brote verde naciendo. Texto en español: 'Más yemas = más brotes'. Minimalista, clara, estética botánica vintage premium, papel envejecido."
+          }
+        }
+      ]
+    },
+    {
+      "id": "j15",
+      "start": 109,
+      "dur": 13,
+      "kind": "quote",
+      "eyebrow": "El detalle",
+      "text": "Acá viene lo que *nadie* te cuenta.",
+      "accent": "danger",
+      "hue": "cold"
+    },
+    {
+      "id": "j16",
+      "start": 122,
+      "dur": 16,
+      "kind": "diagram",
+      "eyebrow": "Viene TRATADO",
+      "hue": "amber",
+      "accent": "danger",
+      "slides": [
+        {
+          "image": "img/d_tratado.png",
+          "title": "Le ponen un producto para que no brote",
+          "gen": {
+            "type": "image",
+            "name": "d_tratado",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Muestra un jengibre de supermercado con un símbolo de spray/producto encima y una yema bloqueada/dormida, indicando que está tratado para no brotar. Texto en español: 'El jengibre del super viene tratado para que NO brote'. Minimalista, clara, estética botánica vintage premium."
+          }
+        }
+      ]
+    },
+    {
+      "id": "j17",
+      "start": 138,
+      "dur": 20,
+      "kind": "process",
+      "eyebrow": "Despertá el jengibre",
+      "title": "Sacarle el producto",
+      "accent": "good",
+      "hue": "amber",
       "steps": [
-        { "title": "Remojo de una noche", "desc": "En un bowl con agua tibia, le saca el producto", "image": "img/j1_remojo.png" },
-        { "title": "Envolvé en papel húmedo", "desc": "Lugar tibio y oscuro, unos días", "image": "img/j1_papel_humedo.png" },
-        { "title": "Las yemas se hinchan", "desc": "Puntitas verdes o rosadas = está vivo", "image": "img/j1_yemas_brotando.png" }
-      ] },
-
-    { "id": "j18", "start": 178.0, "dur": 6.0, "kind": "quote", "eyebrow": "Antes de plantar", "text": "Es como darle el *desayuno* a la planta.", "accent": "good", "hue": "amber" },
-
-    { "id": "j19", "start": 184.5, "dur": 13.5, "kind": "diagram", "eyebrow": "Crece a lo ANCHO", "hue": "amber", "accent": "accent",
-      "slides": [ { "image": "img/d_crece_ancho.png", "title": "No para abajo como la zanahoria",
-        "gen": { "type": "image", "name": "d_crece_ancho", "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Comparación lado a lado: a la izquierda una zanahoria creciendo hacia ABAJO (vertical, raíz honda); a la derecha un jengibre creciendo a lo ANCHO horizontal cerca de la superficie. Texto en español: 'El jengibre crece a lo ancho, no hacia abajo'. Minimalista, clara, estética botánica vintage premium." } } ] },
-
-    { "id": "j20", "start": 198.5, "dur": 12.5, "kind": "raw", "src": "img/j1_maceta_ancha.png", "hue": "amber", "kicker": "Ancho y bajito, no angosto",
-      "gen": { "type": "image", "name": "j1_maceta_ancha", "prompt": "Realistic handheld 16:9 documentary frame of a wide shallow container (a big low pot or a wooden crate) filled with soil ready to plant ginger, in a backyard, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, narrow deep pot, person talking, logo, text, cartoon, CGI, 3D, watermark." } },
-
-    { "id": "j21", "start": 211.0, "dur": 28.0, "kind": "process", "eyebrow": "Antes de plantar", "title": "Cortar y secar", "accent": "good", "hue": "amber",
+        {
+          "title": "Remojo de una noche",
+          "desc": "En un bowl con agua tibia, le saca el producto",
+          "image": "img/j1_remojo.png"
+        },
+        {
+          "title": "Envolvé en papel húmedo",
+          "desc": "Lugar tibio y oscuro, unos días",
+          "image": "img/j1_papel_humedo.png"
+        },
+        {
+          "title": "Las yemas se hinchan",
+          "desc": "Puntitas verdes o rosadas = está vivo",
+          "image": "img/j1_yemas_brotando.png"
+        }
+      ]
+    },
+    {
+      "id": "j18",
+      "start": 178,
+      "dur": 6,
+      "kind": "quote",
+      "eyebrow": "Antes de plantar",
+      "text": "Es como darle el *desayuno* a la planta.",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "j19",
+      "start": 184.5,
+      "dur": 13.5,
+      "kind": "diagram",
+      "eyebrow": "Crece a lo ANCHO",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/d_crece_ancho.png",
+          "title": "No para abajo como la zanahoria",
+          "gen": {
+            "type": "image",
+            "name": "d_crece_ancho",
+            "prompt": "Crear una infografía horizontal 16:9, ilustración hecha a mano profesional, limpia, editorial. Fondo marfil con textura de papel, líneas marrón oscuro, acentos verde oliva y terracota. Dejá LIBRE la esquina superior derecha. Comparación lado a lado: a la izquierda una zanahoria creciendo hacia ABAJO (vertical, raíz honda); a la derecha un jengibre creciendo a lo ANCHO horizontal cerca de la superficie. Texto en español: 'El jengibre crece a lo ancho, no hacia abajo'. Minimalista, clara, estética botánica vintage premium."
+          }
+        }
+      ]
+    },
+    {
+      "id": "j20",
+      "start": 198.5,
+      "dur": 12.5,
+      "kind": "raw",
+      "src": "img/j1_maceta_ancha.png",
+      "hue": "amber",
+      "kicker": "Ancho y bajito, no angosto",
+      "gen": {
+        "type": "image",
+        "name": "j1_maceta_ancha",
+        "prompt": "Realistic handheld 16:9 documentary frame of a wide shallow container (a big low pot or a wooden crate) filled with soil ready to plant ginger, in a backyard, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, narrow deep pot, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    },
+    {
+      "id": "j21",
+      "start": 211,
+      "dur": 28,
+      "kind": "process",
+      "eyebrow": "Antes de plantar",
+      "title": "Cortar y secar",
+      "accent": "good",
+      "hue": "amber",
       "steps": [
-        { "title": "Cortá en trozos", "desc": "Cada trozo con al menos 1 o 2 yemas", "image": "img/j1_cortar.png" },
-        { "title": "Dejá al aire 1 día", "desc": "La herida del corte forma costra y no se pudre", "image": "img/j1_secar_corte.png" }
-      ] },
-
-    { "id": "j22", "start": 239.0, "dur": 14.0, "kind": "process", "eyebrow": "Poca profundidad", "title": "A plantar", "accent": "good", "hue": "amber",
+        {
+          "title": "Cortá en trozos",
+          "desc": "Cada trozo con al menos 1 o 2 yemas",
+          "image": "img/j1_cortar.png"
+        },
+        {
+          "title": "Dejá al aire 1 día",
+          "desc": "La herida del corte forma costra y no se pudre",
+          "image": "img/j1_secar_corte.png"
+        }
+      ]
+    },
+    {
+      "id": "j22",
+      "start": 239,
+      "dur": 14,
+      "kind": "process",
+      "eyebrow": "Poca profundidad",
+      "title": "A plantar",
+      "accent": "good",
+      "hue": "amber",
       "steps": [
-        { "title": "Tierra rica con abono", "desc": "El jengibre es comelón, le gusta la tierra rica", "image": "img/j1_tierra_abono.png" },
-        { "title": "Yemas para arriba", "desc": "Acostados, tapá con 2-3 dedos de tierra", "image": "img/j1_plantar_yemas.png" }
-      ] },
-
-    { "id": "j23", "start": 253.0, "dur": 9.5, "kind": "raw", "src": "img/j1_regar.png", "hue": "amber", "kicker": "Húmeda como esponja, nunca empapada",
-      "gen": { "type": "image", "name": "j1_regar", "prompt": "Realistic handheld 16:9 documentary frame of a watering can gently watering freshly planted ginger in a wide container of dark rich soil, water making the soil damp, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, flooded soil, person talking, logo, text, cartoon, CGI, 3D, watermark." } }
+        {
+          "title": "Tierra rica con abono",
+          "desc": "El jengibre es comelón, le gusta la tierra rica",
+          "image": "img/j1_tierra_abono.png"
+        },
+        {
+          "title": "Yemas para arriba",
+          "desc": "Acostados, tapá con 2-3 dedos de tierra",
+          "image": "img/j1_plantar_yemas.png"
+        }
+      ]
+    },
+    {
+      "id": "j23",
+      "start": 253,
+      "dur": 9.5,
+      "kind": "raw",
+      "src": "img/j1_regar.png",
+      "hue": "amber",
+      "kicker": "Húmeda como esponja, nunca empapada",
+      "gen": {
+        "type": "image",
+        "name": "j1_regar",
+        "prompt": "Realistic handheld 16:9 documentary frame of a watering can gently watering freshly planted ginger in a wide container of dark rich soil, water making the soil damp, natural soft daylight, muted earthy colors, realistic imperfect handheld camera angle, slightly tilted, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: studio, cinematic, oversaturated, flooded soil, person talking, logo, text, cartoon, CGI, 3D, watermark."
+      }
+    }
   ]
 }
